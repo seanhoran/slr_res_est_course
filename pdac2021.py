@@ -1,5 +1,6 @@
 import streamlit as st
 import exercises.db_ex as db_ex
+import exercises.capping_ex as capping_ex
 
 radio_options = ["01 About the Course", 
                  "02 Database", 
@@ -27,4 +28,6 @@ if exercise == radio_options[0]:
   st.write("Can put bios here")
 if exercise == radio_options[1]:
   db_ex.db_ex()
+if exercise == radio_options[1]:
+  capping_ex.capping_ex()
 
