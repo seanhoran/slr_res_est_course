@@ -20,7 +20,7 @@ if exercise == radio_options[0]:
   st.write(about_course_text)
   st.write("")
   st.markdown("## Presenters")
-  st.markdown("*Sean Horan*")
+  st.markdown("**Sean Horan**")
   st.image("49640CBC-E71B-4565-9307-0558A8B916B4.jpeg", width=200)
   st.write("Can put bios here")
 
