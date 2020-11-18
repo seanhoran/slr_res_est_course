@@ -1,3 +1,4 @@
 import streamlit as st
 
-st.title("Capping Exercise")
+def capping_ex():
+  st.title("Capping Exercise")
