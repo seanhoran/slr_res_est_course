@@ -28,6 +28,6 @@ if exercise == radio_options[0]:
   st.write("Can put bios here")
 if exercise == radio_options[1]:
   db_ex.db_ex()
-if exercise == radio_options[1]:
+if exercise == radio_options[2]:
   capping_ex.capping_ex()
 
