@@ -1,5 +1,5 @@
 import streamlit as st
-import PDAC2021_res_est_course.db_ex as db_ex
+import db_ex
 
 radio_options = ["01 About the Course", 
                  "02 Database", 
