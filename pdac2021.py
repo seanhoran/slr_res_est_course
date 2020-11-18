@@ -1,4 +1,4 @@
 import streamlit as st
 
-radio_options = []
-st.sidebar.radio("Pick Exercise", options, index=0, format_func=<class 'str'>, key=None)
+radio_options = ["01 About the Course"]
+st.sidebar.radio("Pick Exercise", options=radio_otpions, index=0, key=None)
