@@ -6,7 +6,7 @@ import os
 # path = ""
 # for p in gp:
 #   path += (p + "//") 
-path = "//pdac2021_res_est_course//text_blocks"
+path = "..//pdac2021_res_est_course//text_blocks"
 
 def about_course():
   f = open(path + "//about_course.txt", "r")
