@@ -14,6 +14,7 @@ exercise=st.sidebar.radio("Pick Exercise",
                           key=None)
 
 if exercise == radio_options[0]:
+  st.image("055CF2A4-98DC-488C-B5A6-15CC02C9974E.png", width=100)
   st.title("Fundamentals of Resource Estimation")
   about_course_text = "This course introduces the fundamentals of estimating mineral resources and is intended for exploration and mine geologists. These workers are primarily responsible for the discovery, definition, and production of mineral discoveries— yet they are often sidelined when it comes to estimating resources. This course is intended to fill that knowledge gap to produce more informed geologists, which will lead to better resource estimates and drill hole targeting."
   about_course_text += "The course will start where many geologists stop, at the resource database and will proceed to domaining, block modeling, etc. Although most geologists do an excellent job interpreting the genesis and geometry of a mineral deposit, some aspects of their interpretation lack consideration necessary for a mineral resource model, including practical aspects such as proposed mining method and equipment, or geostatistical aspects such as the selection of appropriate domain criterion. RPA will explain the fundamentals and importance of each step, including common risks and mistakes."
