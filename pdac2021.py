@@ -17,8 +17,6 @@ exercise=st.sidebar.radio("Pick Exercise",
                           key=None)
 
 if exercise == radio_options[0]:
-  st.image("055CF2A4-98DC-488C-B5A6-15CC02C9974E.png", width=100)
-  st.title("Fundamentals of Resource Estimation")
   about_course.about_course()
 if exercise == radio_options[1]:
   db_ex.db_ex()
