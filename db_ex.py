@@ -1,3 +1,4 @@
 import streamlit as st
 
-st.write("db exercise")
+def db_ex():
+  st.write("db exercise")
