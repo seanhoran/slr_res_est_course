@@ -2,7 +2,11 @@ import streamlit as st
 import itertools
 import os
 
-path = itertools.chain(os.getcwd().split("//")[:-1]) + "//text_blocks"
+gp = os.getcwd().split("//")[:-1]
+path = ""
+for p in gp:
+  path += (p + "//") 
+path += "//text_blocks"
 
 def about_course():
   f = open(path + "//about_course.txt", "r")
