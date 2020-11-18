@@ -19,7 +19,7 @@ if exercise == radio_options[0]:
   about_course_text += "The course will start where many geologists stop, at the resource database and will proceed to domaining, block modeling, etc. Although most geologists do an excellent job interpreting the genesis and geometry of a mineral deposit, some aspects of their interpretation lack consideration necessary for a mineral resource model, including practical aspects such as proposed mining method and equipment, or geostatistical aspects such as the selection of appropriate domain criterion. RPA will explain the fundamentals and importance of each step, including common risks and mistakes."
   st.write(about_course_text)
   st.write("")
-  sr.markdown("## Presenters")
+  st.markdown("## Presenters")
   st.write("we can put photos here")
   st.write("Can put bios here")
 
