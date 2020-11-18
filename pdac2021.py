@@ -1,5 +1,5 @@
 import streamlit as st
-import db_ex
+import exercises.db_ex as db_ex
 
 radio_options = ["01 About the Course", 
                  "02 Database", 
