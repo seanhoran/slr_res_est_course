@@ -11,7 +11,7 @@ radio_options = ["01 About the Course",
                  "06 Interpolation", 
                  "07 Classification"]
 
-exercise=st.sidebar.radio("Pick Exercise", 
+exercise=st.sidebar.radio("", 
                           options=radio_options, 
                           index=0, 
                           key=None)
