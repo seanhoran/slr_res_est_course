@@ -1,4 +1,5 @@
 import streamlit as st
+import db_ex
 
 radio_options = ["01 About the Course", 
                  "02 Database", 
@@ -25,5 +26,5 @@ if exercise == radio_options[0]:
   st.image("49640CBC-E71B-4565-9307-0558A8B916B4.jpeg", width=200)
   st.write("Can put bios here")
 if exercise == radio_options[1]:
-  import db_ex
+  db_ex.db_ex()
 
