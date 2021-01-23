@@ -19,7 +19,7 @@ def capping_ex():
   else:
     st.write('wrong')
     
-  answer=st.radio('what is the answer', options=options, index=0, key='quest')
+  answer=st.radio('what is the answer', options=options, index=0, key='quest2')
   
   if answer=='right answer':
     st.write('correct')
