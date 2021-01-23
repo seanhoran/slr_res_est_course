@@ -11,7 +11,11 @@ def capping_ex():
     unsafe_allow_html=True)
   
   st.title("Capping Exercise")
-  options = ['None', 'Answer 1', 'right answer']
+  
+  options = ['None', 
+             'Answer 1', 
+             'right answer']
+  
   answer=st.radio('what is the answer', options=options, index=0, key='quest')
   
   if answer=='right answer':
