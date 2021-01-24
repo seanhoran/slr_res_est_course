@@ -1,2 +1,3 @@
 mpl_toolkits
 matplotlib
+win32com
