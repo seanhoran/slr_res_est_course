@@ -2,7 +2,7 @@ import streamlit as st
 
 def db_ex():
   st.write("db exercise")
-  from mpl_toolkits.mplot3d import Axes3D
+  #from mpl_toolkits.mplot3d import Axes3D
   import numpy as np
   import matplotlib.pyplot as plt
   N1 = 10
