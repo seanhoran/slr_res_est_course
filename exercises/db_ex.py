@@ -1,10 +1,11 @@
 import streamlit as st
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+import matplotlib.pyplot as plt
 
 def db_ex():
   st.write("db exercise")
-  #from mpl_toolkits.mplot3d import Axes3D
-  import numpy as np
-  import matplotlib.pyplot as plt
+  #
   N1 = 10
   N2 = 10
   N3 = 10
