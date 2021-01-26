@@ -13,16 +13,16 @@ def capping_ex():
   q1_answer=st.radio('what is the answer', options=options, index=0, key='quest')
   
   if q1_answer=='right answer':
-    count_correct +=1
+   count_correct +=1
     
-   q2_options = ['Please Select an Answer', 
+  q2_options = ['Please Select an Answer', 
              'Answer 1', 
              'right answer']
     
   q2_answer=st.radio('what is the answer', options=options, index=0, key='quest2')
   
   if q2_answer=='right answer':
-    count_correct +=1
+   count_correct +=1
     
   st.write("Number correct = " + str(count_correct) + " out of 2"
     
