@@ -3,6 +3,7 @@ import exercises.about_course as about_course
 import exercises.db_ex as db_ex
 import exercises.capping_ex as capping_ex
 import exercises.variograms as variograms
+import matplotlib.pyplot as plt
 
 max_width = 1200
 
