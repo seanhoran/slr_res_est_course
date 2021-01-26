@@ -14,11 +14,13 @@ def variograms():
   col1, col2 = st.beta_columns([1, 2])
   with col1:
     nugget = st.slider('Nugget', 0.0, 1.0, 0.1, 0.05, key='nugget') 
-    srange = st.slider('Range', 0.0, 120., 100., 10., key='range') 
-  with col2:
+    srange = st.slider('Range', 0.0, 120., 100., 10., key='range')
     gamma, h = variogram(nugget, srange)
     fig, ax = plt.subplots()
     plt.plot(h, gamma, '-r')
     plt.xlabel('Range (m)')
     plt.ylabel('Gamma')
-    st.pyplot(fig)
+    st.pyplot(fig)  
+  with col2:
+    st.image("..//pdac2021_res_est_course//images//sim1.jpg", use_column_width=True)
+   
