@@ -1,18 +1,18 @@
 import streamlit as st
 
 def capping_ex():
-  st.markdown(
-    """ <style>
-            div[role="radiogroup"] >  :first-child{
-                display: none !important;
-            }
-        </style>
-        """,
-    unsafe_allow_html=True)
+#   st.markdown(
+#     """ <style>
+#             div[role="radiogroup"] >  :first-child{
+#                 display: none !important;
+#             }
+#         </style>
+#         """,
+#     unsafe_allow_html=True)
   
   st.title("Capping Exercise")
   
-  options = ['None', 
+  options = ['Please Select an Answer', 
              'Answer 1', 
              'right answer']
   
