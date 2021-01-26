@@ -2,20 +2,20 @@ Mineral resources, and their subsequent conversion to mineral reserves, are of k
 
 This short course focuses on the practical aspects of resource estimation, and includes easy to follow guidelines for navigating the principal decision points in a resource estimation workflow:
 
-• The resource database
-• Geological and resource domain modelling
-• Exploratory data analysis
-• Outlier restriction tools (including capping)
-• Compositing
-• Trend analysis
-• Incorporation of conceptual mining inputs (minimum thickness, cut-off grade)
-• Interpolation design (search ellipse size and orientation, sample restrictions, etc.)
-• Classification considerations
-• Model verification tools
-• Mineral Resource reporting
+* The resource database
+* Geological and resource domain modelling
+* Exploratory data analysis
+* Outlier restriction tools (including capping)
+* Compositing
+* Trend analysis
+* Incorporation of conceptual mining inputs (minimum thickness, cut-off grade)
+* Interpolation design (search ellipse size and orientation, sample restrictions, etc.)
+* Classification considerations
+* Model verification tools
+* Mineral Resource reporting
 
 Top “take-aways”:
-• Understand the steps involved to estimate Mineral Resources.
-• Build a basic tool kit to estimate Mineral Resources.
-• Identify, navigate, and mediate common risks and gaps in the estimation process.
-• Apply practical considerations of resource estimation and mining to field data collection and collation.
+* Understand the steps involved to estimate Mineral Resources.
+* Build a basic tool kit to estimate Mineral Resources.
+* Identify, navigate, and mediate common risks and gaps in the estimation process.
+* Apply practical considerations of resource estimation and mining to field data collection and collation.
