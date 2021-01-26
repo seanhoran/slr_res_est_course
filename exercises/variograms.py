@@ -53,11 +53,11 @@ def variograms():
   st.markdown("Assume the figures measure 100m by 100m.")
   
   ex_var(example=1, 
-           hint='Hint: Contrary to popular flat earther beliefs.", 
+           hint='Hint: Contrary to popular flat earther beliefs.', 
            key_nugget='nug1', key_range='range1', key_stype='stype1', 
            im='sim1.jpg')
   ex_var(example=2, 
-           hint='Hint: Think about sand...", 
+           hint='Hint: Think about sand...', 
            key_nugget='nug2', key_range='range2', key_stype='stype2', 
            im='sim2.jpg')
   
