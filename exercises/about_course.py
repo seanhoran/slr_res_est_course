@@ -24,7 +24,7 @@ def about_course():
   with col1:
     st.image("..//pdac2021_res_est_course//headshots//" + ucase_name + ".jpeg", use_column_width=True)
     text = funcs.get_text_block("title_" + lcase_name + ".txt")
-    st.write(text)
+    st.markdown(text)
   with col2:
     text = funcs.get_text_block("resume_" + lcase_name + ".txt")
     st.write(text)
