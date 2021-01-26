@@ -30,32 +30,6 @@ st.markdown(
         unsafe_allow_html=True,
     )
 
-max_width = 500
-padding_top = 0
-padding_right = 0
-padding_left = 0
-padding_bottom = 0
-COLOR = 'black'
-BACKGROUND_COLOR = 'white'
-
-st.sidebar.markdown(
-        f"""
-<style>
-    .reportview-container .main .block-container{{
-        max-width: {max_width}px;
-        padding-top: {padding_top}rem;
-        padding-right: {padding_right}rem;
-        padding-left: {padding_left}rem;
-        padding-bottom: {padding_bottom}rem;
-    }}
-    .reportview-container .main {{
-        color: {COLOR};
-        background-color: {BACKGROUND_COLOR};
-    }}
-</style>
-""",
-        unsafe_allow_html=True,
-    )
 
 st.sidebar.image("..//pdac2021_res_est_course//055CF2A4-98DC-488C-B5A6-15CC02C9974E.png", width=100)
 
