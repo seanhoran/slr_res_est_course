@@ -3,6 +3,8 @@ import exercises.about_course as about_course
 import exercises.db_ex as db_ex
 import exercises.capping_ex as capping_ex
 
+st.sidebar.image("..//pdac2021_res_est_course//055CF2A4-98DC-488C-B5A6-15CC02C9974E.png", use_column_width=True)
+
 radio_options = ["01 About the Course", 
                  "02 Database", 
                  "03 Capping", 
