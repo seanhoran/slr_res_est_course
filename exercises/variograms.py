@@ -16,8 +16,8 @@ def variograms():
   st.write("Model the appropriate variogram")
   col1, col2 = st.beta_columns([1, 2])
   with col1:
-    nugget = st.slider('Nugget', 0.0, 1.0, 0.1, 0.05, key='nugget') 
-    srange = st.slider('Range', 0.0, 120., 100., 10., key='range')
+    nugget = st.slider('*Nugget*', 0.0, 1.0, 0.1, 0.05, key='nugget') 
+    srange = st.slider('*Range*', 0.0, 120., 100., 10., key='range')
     gamma, h = variogram(nugget, srange)
     fig, ax = plt.subplots()
     plt.plot(h, gamma, '-r')
