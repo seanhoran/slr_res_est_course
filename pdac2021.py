@@ -9,7 +9,7 @@ padding_top = 0
 padding_right = 0
 padding_left = 0
 padding_bottom = 0
-COLOR = '#063970'
+COLOR = '#180c52'
 BACKGROUND_COLOR = 'white'
 
 st.markdown(
