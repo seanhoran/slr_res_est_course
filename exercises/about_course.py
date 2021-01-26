@@ -17,7 +17,7 @@ def about_course():
   st.write("")
   st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
   st.markdown("# Presenters")
-  st.write("")
+  presenter = st.selectbox("", options=['Sean Horan'])
   
   col1, col2 = st.beta_columns([1,2.5])
   with col1:
