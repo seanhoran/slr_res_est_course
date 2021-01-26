@@ -3,6 +3,25 @@ import exercises.about_course as about_course
 import exercises.db_ex as db_ex
 import exercises.capping_ex as capping_ex
 
+st.markdown(
+        f"""
+<style>
+    .reportview-container .main .block-container{{
+        max-width: {max_width}px;
+        padding-top: {padding_top}rem;
+        padding-right: {padding_right}rem;
+        padding-left: {padding_left}rem;
+        padding-bottom: {padding_bottom}rem;
+    }}
+    .reportview-container .main {{
+        color: {COLOR};
+        background-color: {BACKGROUND_COLOR};
+    }}
+</style>
+""",
+        unsafe_allow_html=True,
+    )
+
 st.sidebar.image("..//pdac2021_res_est_course//055CF2A4-98DC-488C-B5A6-15CC02C9974E.png", width=100)
 
 radio_options = ["01 About the Course", 
