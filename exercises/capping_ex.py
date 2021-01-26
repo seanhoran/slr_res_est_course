@@ -8,7 +8,8 @@ def capping_ex():
   
   q1_options = ['Please Select an Answer', 
              'Answer 1', 
-             'right answer']
+             'right answer', 
+                'Answer 3']
   
   q1_answer=st.radio('what is the answer', options=q1_options, index=0, key='quest')
   
