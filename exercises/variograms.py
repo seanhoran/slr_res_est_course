@@ -25,5 +25,5 @@ def variograms():
     plt.ylabel('Gamma')
     st.pyplot(fig)  
   with col2:
-    st.image("..//pdac2021_res_est_course//images//sim1.jpg", width=500)
+    st.image("..//pdac2021_res_est_course//images//sim1.jpg", width=400)
    
