@@ -11,6 +11,9 @@ def variogram(nugget=0.0, srange=100.):
   return gamma, h; 
 
 def variograms():
+  st.title("Variogram Exercise")
+  st.write("")
+  st.write("Model the appropriate variogram")
   col1, col2 = st.beta_columns([1, 2])
   with col1:
     nugget = st.slider('Nugget', 0.0, 1.0, 0.1, 0.05, key='nugget') 
@@ -22,5 +25,5 @@ def variograms():
     plt.ylabel('Gamma')
     st.pyplot(fig)  
   with col2:
-    st.image("..//pdac2021_res_est_course//images//sim1.jpg", use_column_width=True)
+    st.image("..//pdac2021_res_est_course//images//sim1.jpg", width=500)
    
