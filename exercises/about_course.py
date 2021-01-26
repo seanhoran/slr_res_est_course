@@ -17,7 +17,7 @@ def about_course():
   st.markdown("# Presenters")
   st.write("")
   
-  col1, col2 = st.beta_columns([1,3])
+  col1, col2 = st.beta_columns([1,2.5])
   with col1:
     st.image("..//pdac2021_res_est_course//headshots//Sean_Horan.jpeg", use_column_width=True)
     st.markdown("**Sean Horan P.Geo - Technical Manager Geology**")
