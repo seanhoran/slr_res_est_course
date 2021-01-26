@@ -3,13 +3,13 @@ import exercises.about_course as about_course
 import exercises.db_ex as db_ex
 import exercises.capping_ex as capping_ex
 
-max_width = 2000
+max_width = 1500
 padding_top = 0
 padding_right = 0
 padding_left = 0
 padding_bottom = 0
-COLOR = 'red'
-BACKGROUND_COLOR = 'grey'
+COLOR = 'black'
+BACKGROUND_COLOR = 'white'
 
 st.markdown(
         f"""
