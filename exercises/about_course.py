@@ -16,7 +16,7 @@ def about_course():
   st.write("")
   st.markdown("# Presenters")
   st.write("")
-  st.image("..//pdac2021_res_est_course//49640CBC-E71B-4565-9307-0558A8B916B4.jpeg", width=200)
+  st.image("..//pdac2021_res_est_course//exercises//Sean_Horan.jpeg", width=200)
   st.markdown("**Sean Horan P.Geo - Technical Manager Geology**")
   st.markdown("<shoran@slrconsulting.com>")
   st.write("Can put bios here")
