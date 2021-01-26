@@ -2,8 +2,6 @@ import streamlit as st
 import exercises.about_course as about_course
 import exercises.db_ex as db_ex
 import exercises.capping_ex as capping_ex
-from folium.plugins import Fullscreen
-Fullscreen().add_to(map)
 
 radio_options = ["01 About the Course", 
                  "02 Database", 
