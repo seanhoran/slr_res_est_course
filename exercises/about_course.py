@@ -23,4 +23,7 @@ def about_course():
     st.markdown("**Sean Horan P.Geo - Technical Manager Geology**")
     st.markdown("<shoran@slrconsulting.com>")
   with col2:
-    st.write("Can put bios here")
+    path = "..//pdac2021_res_est_course//text_blocks"
+    f = open(path + "//resume_sean_horan.txt", "r")
+    st.write(f.read())
+ 
