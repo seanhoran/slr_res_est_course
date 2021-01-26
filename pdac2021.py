@@ -2,6 +2,7 @@ import streamlit as st
 import exercises.about_course as about_course
 import exercises.db_ex as db_ex
 import exercises.capping_ex as capping_ex
+import exercises.variograms as variograms
 
 max_width = 1200
 
@@ -60,4 +61,6 @@ if exercise == radio_options[1]:
   db_ex.db_ex()
 if exercise == radio_options[2]:
   capping_ex.capping_ex()
+if exercise == radio_options[4]:
+  variograms.variograms()
 
