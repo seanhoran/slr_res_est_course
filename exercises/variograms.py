@@ -13,7 +13,7 @@ def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
   elif struct_type == 'Gaussian':
     pass
   elif struct_type == 'Power':
-    pass
+    gamma = nugget + h**(h/srange)
   else:
     gamma = var*(1.0-np.cos((h**2/srange**2)*np.pi)*np.exp((-3*h)/(srange*1.2))) + nugget
  
