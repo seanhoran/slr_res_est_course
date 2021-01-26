@@ -28,6 +28,6 @@ def about_course():
 #     st.markdown("**Sean Horan P.Geo - Technical Manager Geology**")
 #     st.markdown("<shoran@slrconsulting.com>")
   with col2:
-    text = funcs.get_text_block(resume_" + lcase_name + ".txt")
+    text = funcs.get_text_block("resume_" + lcase_name + ".txt")
     st.write(text)
  
