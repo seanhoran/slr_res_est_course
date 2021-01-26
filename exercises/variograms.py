@@ -20,5 +20,5 @@ def variograms():
     fig, ax = plt.subplots()
     plt.plot(h, gamma, '-r')
     plt.xlabel('Range (m)')
-    plt.ylable('Gamma')
+    plt.ylabel('Gamma')
     st.pyplot(fig)
