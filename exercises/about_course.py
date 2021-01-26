@@ -8,12 +8,7 @@ def about_course():
   st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
   st.title("Fundamentals of Resource Estimation")
   
-#   # this is how to read a block of text:
-#   path = "..//pdac2021_res_est_course//text_blocks"
-#   f = open(path + "//about_course.txt", "r")
-#   # and then write it to the app
-#   st.write(f.read())
-  
+  # get text from text_blocks:
   text = funcs.get_text_block("about_course.txt")
   st.write(text)
   
@@ -28,10 +23,11 @@ def about_course():
   col1, col2 = st.beta_columns([1,2.5])
   with col1:
     st.image("..//pdac2021_res_est_course//headshots//" + ucase_name + ".jpeg", use_column_width=True)
-    st.markdown("**Sean Horan P.Geo - Technical Manager Geology**")
-    st.markdown("<shoran@slrconsulting.com>")
+    text = funcs.get_text_block(title_" + lcase_name + ".txt")
+    st.write(text)
+#     st.markdown("**Sean Horan P.Geo - Technical Manager Geology**")
+#     st.markdown("<shoran@slrconsulting.com>")
   with col2:
-    path = "..//pdac2021_res_est_course//text_blocks"
-    f = open(path + "//resume_" + lcase_name + ".txt", "r")
-    st.write(f.read())
+    text = funcs.get_text_block(resume_" + lcase_name + ".txt")
+    st.write(text)
  
