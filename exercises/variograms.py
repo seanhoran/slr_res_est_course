@@ -38,7 +38,7 @@ def variograms():
     plt.xlabel('Range (m)')
     plt.ylabel('Gamma')
     plt.xlim((0.,120.))
-    plt.ylim((0.,1.2))
+    plt.ylim((0.,1.5))
     st.pyplot(fig)  
   with col2:
     st.write("")
