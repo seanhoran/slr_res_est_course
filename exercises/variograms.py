@@ -21,7 +21,7 @@ def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
   return gamma, h; 
 
 def ex_var(example=1, 
-           hint='Hint: Contrary to popular flat earther beliefs.", 
+           hint='Hint: Contrary to popular flat earther beliefs.', 
            key_nugget='nug1', key_range='range1', key_stype='stype1', 
            im='sim1.jpg'):  
   st.markdown("### Example " + str(example) + ":")
