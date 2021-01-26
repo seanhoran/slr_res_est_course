@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import streamlit as st
 
 def variogram(nugget=0.0, srange=100.):
   var = 1.-nugget
