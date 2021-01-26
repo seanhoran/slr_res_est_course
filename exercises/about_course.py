@@ -5,7 +5,7 @@ import os
 def about_course():
   
   st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
-  st.title("Fundametals of Resource Estimation")
+  st.title("Fundamentals of Resource Estimation")
   
   # this is how to read a block of text:
   path = "..//pdac2021_res_est_course//text_blocks"
