@@ -34,13 +34,20 @@ st.markdown(
 
 st.sidebar.image("..//pdac2021_res_est_course//055CF2A4-98DC-488C-B5A6-15CC02C9974E.png", width=100)
 
+# Capping Exercise - interactive
+# Compositing - Q&A
+# Variograms - interactive
+# Interpolation - interactive
+# Compositing - Q&A
+
 radio_options = ["01 About the Course", 
                  "02 Database", 
                  "03 Capping", 
                  "04 Compositing", 
                  "05 Variograms", 
                  "06 Interpolation", 
-                 "07 Classification"]
+                 "07 Cut-Off Grade", 
+                 "08 Classification"]
 
 exercise=st.sidebar.radio("", 
                           options=radio_options, 
