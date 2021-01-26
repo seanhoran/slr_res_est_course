@@ -2,7 +2,6 @@ import streamlit as st
 import exercises.about_course as about_course
 import exercises.db_ex as db_ex
 import exercises.capping_ex as capping_ex
-import win32com.client as win32
 
 radio_options = ["01 About the Course", 
                  "02 Database", 
