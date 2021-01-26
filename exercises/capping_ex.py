@@ -6,6 +6,8 @@ def capping_ex():
   
   count_correct = 0
   
+  st.write("Write some stuff")
+  
   st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
   
   q1_options = ['Please Select an Answer', 
