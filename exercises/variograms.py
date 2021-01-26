@@ -8,14 +8,16 @@ def variogram(nugget=0.0, srange=100.):
   gamma = nugget + var*((3*h)/(2*srange)-(h**3)/(2*srange**3))
   gamma[h==0]=0.
   gamma[h>srange]=1.0
+  gamma[0] = nugget
   return gamma, h; 
 
 def variograms():
   st.title("Variogram Exercise")
   st.write("")
-  st.write("Model the appropriate variogram")
+  st.write("Model the appropriate variogram for each grade pattern observed")
   col1, col2 = st.beta_columns([1, 2])
   with col1:
+    struct_type = st.selectbox
     nugget = st.slider('*Nugget*', 0.0, 1.0, 0.1, 0.05, key='nugget') 
     srange = st.slider('*Range*', 0.0, 120., 100., 10., key='range')
     gamma, h = variogram(nugget, srange)
