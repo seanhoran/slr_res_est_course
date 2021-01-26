@@ -5,9 +5,9 @@ import streamlit as st
 def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
   var = 1.-nugget
   h = np.arange(120.)
+  gamma = h
   if struct_type == 'Spherical':
     gamma = nugget + var*((3*h)/(2*srange)-(h**3)/(2*srange**3))
-    gamma[h==0]=0.
     gamma[h>srange]=1.0
     gamma[0] = nugget
   elif struct_type == 'Gaussian':
@@ -15,7 +15,7 @@ def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
   elif struct_type == 'Power':
     pass
   else:
-    gamma = np.exp(-(h**2/srange**2)*np.cos(10*h)
+    gamma = np.exp(-(h**2/srange**2))*np.cos(10*h)
     
       
   return gamma, h; 
