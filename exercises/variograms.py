@@ -31,5 +31,7 @@ def variograms():
   with col2:
     st.write("")
     st.write("")
+    st.write("")
+    st.write("")
     st.image("..//pdac2021_res_est_course//images//sim1.jpg", width=460)
    
