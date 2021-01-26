@@ -44,5 +44,5 @@ def variograms():
     st.write("")
     st.write("")
     st.write("")
-    st.image("..//pdac2021_res_est_course//images//sim1.jpg", width=460)
+    st.image("..//pdac2021_res_est_course//images//sim1.jpg", width=500)
    
