@@ -25,8 +25,6 @@ def about_course():
     st.image("..//pdac2021_res_est_course//headshots//" + ucase_name + ".jpeg", use_column_width=True)
     text = funcs.get_text_block("title_" + lcase_name + ".txt")
     st.write(text)
-#     st.markdown("**Sean Horan P.Geo - Technical Manager Geology**")
-#     st.markdown("<shoran@slrconsulting.com>")
   with col2:
     text = funcs.get_text_block("resume_" + lcase_name + ".txt")
     st.write(text)
