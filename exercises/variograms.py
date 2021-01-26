@@ -33,6 +33,7 @@ def variograms():
     srange = st.slider('Range', 0.0, 120., 100., 10., key='range')
     gamma, h = variogram(nugget, srange, struct_type)
     fig, ax = plt.subplots()
+    plt.plot([0, 120.], [1.0, 1.0], '--k')
     plt.plot(h, gamma, '-r')
     plt.xlabel('Range (m)')
     plt.ylabel('Gamma')
