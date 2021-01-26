@@ -4,6 +4,7 @@ import exercises.db_ex as db_ex
 import exercises.capping_ex as capping_ex
 
 max_width = 1200
+
 padding_top = 0
 padding_right = 0
 padding_left = 0
@@ -15,7 +16,7 @@ st.markdown(
         f"""
 <style>
     .reportview-container .main .block-container{{
-        max-width: {max_width}px;
+        max-width: {100vw;// 100% view widt}px;
         padding-top: {padding_top}rem;
         padding-right: {padding_right}rem;
         padding-left: {padding_left}rem;
