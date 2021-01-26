@@ -20,17 +20,17 @@ def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
       
   return gamma, h; 
 
-def variograms():
-  st.title("Variogram Exercise")
-  st.write("")
-  st.markdown("## Model the appropriate variogram for each grade pattern observed")
-  st.markdown("Assume the figures measure 100m by 100m")
-  st.markdown("### Example 1:")
+def ex_var(example=1, 
+           hint='Hint: Contrary to popular flat earther beliefs.", 
+           key_nugget='nug1', key_range='range1', key_stype='stype1', 
+           im='sim1.jpg'):  
+  st.markdown("### Example " + str(example) + ":")
+  st.markdown(hint)
   col1, col2 = st.beta_columns([1, 2])
   with col1:
-    struct_type = st.selectbox("Structure Type", options=["Spherical", "Power", "Hole Effect"], index=0)
-    nugget = st.slider('Nugget', 0.0, 1.0, 0.1, 0.05, key='nugget') 
-    srange = st.slider('Range', 0.0, 120., 100., 10., key='range')
+    struct_type = st.selectbox("Structure Type", options=["Spherical", "Power", "Hole Effect"], index=0, key=key_stype)
+    nugget = st.slider('Nugget', 0.0, 1.0, 0.1, 0.05, key=key_nugget) 
+    srange = st.slider('Range', 0.0, 120., 100., 10., key=key_range)
     gamma, h = variogram(nugget, srange, struct_type)
     fig, ax = plt.subplots()
     plt.plot([0, 120.], [1.0, 1.0], '--k')
@@ -44,5 +44,22 @@ def variograms():
     st.write("")
     st.write("")
     st.write("")
-    st.image("..//pdac2021_res_est_course//images//sim1.jpg", width=500)
+    st.image("..//pdac2021_res_est_course//images//" + im, width=500)
+  
+def variograms():
+  st.title("Variogram Exercise")
+  st.write("")
+  st.markdown("## Model the appropriate variogram for each grade pattern observed")
+  st.markdown("Assume the figures measure 100m by 100m.")
+  
+  ex_var(example=1, 
+           hint='Hint: Contrary to popular flat earther beliefs.", 
+           key_nugget='nug1', key_range='range1', key_stype='stype1', 
+           im='sim1.jpg')
+  ex_var(example=2, 
+           hint='Hint: Think about sand...", 
+           key_nugget='nug2', key_range='range2', key_stype='stype2', 
+           im='sim2.jpg')
+  
+  
    
