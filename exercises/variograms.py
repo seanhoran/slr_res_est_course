@@ -14,7 +14,8 @@ def variogram(nugget=0.0, srange=100.):
 def variograms():
   st.title("Variogram Exercise")
   st.write("")
-  st.write("Model the appropriate variogram for each grade pattern observed")
+  st.markdown("## Model the appropriate variogram for each grade pattern observed")
+   st.markdown("### Example 1:")
   col1, col2 = st.beta_columns([1, 2])
   with col1:
     struct_type = st.selectbox
