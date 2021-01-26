@@ -4,7 +4,7 @@ import streamlit as st
 
 def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
   var = 1.-nugget
-  h = np.arange(120.)
+  h = np.arange(150.)
   gamma = h
   if struct_type == 'Spherical':
     gamma = nugget + var*((3*h)/(2*srange)-(h**3)/(2*srange**3))
