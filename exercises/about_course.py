@@ -5,6 +5,7 @@ import os
 def about_course():
   
   st.image("..//pdac2021_res_est_course//055CF2A4-98DC-488C-B5A6-15CC02C9974E.png", width=100)
+  st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
   st.title("Fundametals of Resource Estimation")
   
   # this is how to read a block of text:
@@ -14,6 +15,7 @@ def about_course():
   st.write(f.read())
   
   st.write("")
+  st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
   st.markdown("# Presenters")
   st.write("")
   
