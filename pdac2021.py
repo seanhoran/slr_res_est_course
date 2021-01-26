@@ -8,6 +8,8 @@ padding_top = 0
 padding_right = 0
 padding_left = 0
 padding_bottom = 0
+COLOR = 'red'
+BACKGROUND_COLOR = 'grey'
 
 st.markdown(
         f"""
