@@ -11,7 +11,7 @@ def capping_ex():
              'right answer', 
                 'Answer 3']
   
-  q1_answer=st.radio('what is the answer', options=q1_options, index=0, key='quest')
+  q1_answer=st.radio('This is the question', options=q1_options, index=0, key='quest1')
   
   if q1_answer=='right answer':
    count_correct +=1
