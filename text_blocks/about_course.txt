@@ -1,7 +1,21 @@
-This course introduces the fundamentals of estimating mineral resources and is intended for exploration and mine geologists. These workers are primarily 
-responsible for the discovery, definition, and production of mineral discoveries— yet they are often sidelined when it comes to estimating resources. This 
-course is intended to fill that knowledge gap to produce more informed geologists, which will lead to better resource estimates and drill hole targeting. 
-The course will start where many geologists stop, at the resource database and will proceed to domaining, block modeling, etc. Although most geologists do 
-an excellent job interpreting the genesis and geometry of a mineral deposit, some aspects of their interpretation lack consideration necessary for a mineral 
-resource model, including practical aspects such as proposed mining method and equipment, or geostatistical aspects such as the selection of appropriate domain 
-criterion. RPA will explain the fundamentals and importance of each step, including common risks and mistakes."
+Mineral resources, and their subsequent conversion to mineral reserves, are of key importance to mining companies and to the mineral industry. Their reliable estimation is critical to the confidence in a project, to its underlying economics, and to the day-to-day operation of a mine. There is a requirement for high quality interpretation and estimation of mineral resources in order to make sound investment and operational decisions. This short course builds and improves upon the 2019 PDAC short course offering, and is designed to share best practice guidance with practitioners, as well as relevant upstream and downstream stakeholders.
+
+This short course focuses on the practical aspects of resource estimation, and includes easy to follow guidelines for navigating the principal decision points in a resource estimation workflow:
+
+• The resource database
+• Geological and resource domain modelling
+• Exploratory data analysis
+• Outlier restriction tools (including capping)
+• Compositing
+• Trend analysis
+• Incorporation of conceptual mining inputs (minimum thickness, cut-off grade)
+• Interpolation design (search ellipse size and orientation, sample restrictions, etc.)
+• Classification considerations
+• Model verification tools
+• Mineral Resource reporting
+
+Top “take-aways”:
+• Understand the steps involved to estimate Mineral Resources.
+• Build a basic tool kit to estimate Mineral Resources.
+• Identify, navigate, and mediate common risks and gaps in the estimation process.
+• Apply practical considerations of resource estimation and mining to field data collection and collation.
