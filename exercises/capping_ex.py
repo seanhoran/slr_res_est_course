@@ -1,33 +1,29 @@
 import streamlit as st
 
 def capping_ex():
-#   st.markdown(
-#     """ <style>
-#             div[role="radiogroup"] >  :first-child{
-#                 display: none !important;
-#             }
-#         </style>
-#         """,
-#     unsafe_allow_html=True)
-  
+ 
   st.title("Capping Exercise")
   
-  options = ['Please Select an Answer', 
+  count_correct = 0
+  
+  q1_options = ['Please Select an Answer', 
              'Answer 1', 
              'right answer']
   
-  answer=st.radio('what is the answer', options=options, index=0, key='quest')
+  q1_answer=st.radio('what is the answer', options=options, index=0, key='quest')
   
-  if answer=='right answer':
-    st.write('correct')
-  else:
-    st.write('wrong')
+  if q1_answer=='right answer':
+    count_correct +=1
     
-  answer=st.radio('what is the answer', options=options, index=0, key='quest2')
+   q2_options = ['Please Select an Answer', 
+             'Answer 1', 
+             'right answer']
+    
+  q2_answer=st.radio('what is the answer', options=options, index=0, key='quest2')
   
-  if answer=='right answer':
-    st.write('correct')
-  else:
-    st.write('wrong')
+  if q2_answer=='right answer':
+    count_correct +=1
+    
+  st.write("Number correct = " + str(count_correct) + " out of 2"
     
     
