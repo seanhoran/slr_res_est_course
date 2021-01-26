@@ -15,7 +15,7 @@ def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
   elif struct_type == 'Power':
     pass
   else:
-    gamma = var*(1.0-np.cos((h/srange)*np.pi))
+    gamma = nugget*(1.0-np.exp((-3*h/srange)*np.pi)*(np.cos(h/10)*np.pi))
     gamma = 1.0 - gamma
     
       
