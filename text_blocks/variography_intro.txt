@@ -1,0 +1,4 @@
+The practise of variogram fitting should be treated as more than just a curve fitted to data points exercise. The experimental variogram can be impacted by lack of data, sampling bias, clustering and the proportional effect. 
+The objective of this exercise is to try and picture what the variogram model for the different spatial grade distributions presented looks like. A seasoned resource geologist will already have a variogram in their mind prior to doing any exploratory variography. The points plotted on the graph are merely a confirmation of the hypothesis.
+
+Assume the figures measure 100m by 100m.
