@@ -75,6 +75,8 @@ def variograms():
            key_nugget='nug4', key_range='range4', key_stype='stype4', 
            im='sim4.jpg')
   results.append([4, s,n,r])
-  df = pd.DataFrame(data=results, columns=['Example', 'Structure Type', 'Nugget', 'Range'])
+  df = pd.DataFrame(data=results, 
+                    columns=['Example', 'Structure Type', 'Nugget', 'Range'])
+  df.to_csv("test.csv")
   st.dataframe(results)
   
