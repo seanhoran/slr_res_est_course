@@ -76,5 +76,5 @@ def variograms():
            im='sim4.jpg')
   results.append([4, s,n,r])
   df = pd.DataFrame(data=results, columns=['Example', 'Structure Type', 'Nugget', 'Range'])
-  st..dataframe(results)
+  st.dataframe(results)
   
