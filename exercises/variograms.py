@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
+import funcs
 
 def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
   var = 1.-nugget
@@ -46,7 +47,8 @@ def variograms():
   st.title("Variogram Exercise")
   st.write("")
   st.markdown("## Model the appropriate variogram for each grade pattern observed")
-  st.markdown("Assume the figures measure 100m by 100m.")
+  text = funcs.get_text_block("variography_intro.txt")
+  st.markdown(text)
   
   ex_var(example=1, 
            hint='Hint: Contrary to popular flat earther beliefs.', 
