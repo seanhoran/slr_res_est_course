@@ -42,6 +42,8 @@ def ex_var(example=1,
     st.write("")
     st.write("")
     st.image("..//pdac2021_res_est_course//images//" + im, width=500)
+    
+  return struct_type, nugget, srange
   
 def variograms():
   st.title("Variogram Exercise")
@@ -50,21 +52,27 @@ def variograms():
   text = funcs.get_text_block("variography_intro.txt")
   st.markdown(text)
   
-  ex_var(example=1, 
+  results = []
+  
+  s,n,r = ex_var(example=1, 
            hint='Hint: Contrary to popular flat earther beliefs.', 
            key_nugget='nug1', key_range='range1', key_stype='stype1', 
            im='sim1.jpg')
-  ex_var(example=2, 
+  results.append([1, s,n,r])
+  s,n,r = ex_var(example=2, 
            hint='Hint: Think about the seasons.', 
            key_nugget='nug2', key_range='range2', key_stype='stype2', 
            im='sim2.jpg')
-  
-  ex_var(example=3, 
+  results.append([2, s,n,r])
+  s,n,r = ex_var(example=3, 
            hint='Hint: Think about sand...', 
            key_nugget='nug3', key_range='range3', key_stype='stype3', 
            im='sim3.jpg')
-  ex_var(example=4, 
+  results.append([3, s,n,r])
+  s,n,r = ex_var(example=4, 
            hint='Hint: This is when you wonder why you bother to get out of bed in the morning.', 
            key_nugget='nug4', key_range='range4', key_stype='stype4', 
            im='sim4.jpg')
+  results.append([4, s,n,r])
+  st.write(results)
   
