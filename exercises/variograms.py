@@ -68,5 +68,3 @@ def variograms():
            key_nugget='nug4', key_range='range4', key_stype='stype4', 
            im='sim4.jpg')
   
-  
-   
