@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 import funcs
+import pandas as pd
 
 def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
   var = 1.-nugget
@@ -74,5 +75,6 @@ def variograms():
            key_nugget='nug4', key_range='range4', key_stype='stype4', 
            im='sim4.jpg')
   results.append([4, s,n,r])
-  st.write(results)
+  df = pd.DataFrame(data=results, columns=['Example', 'Structure Type', 'Nugget', 'Range'])
+  st..dataframe(results)
   
