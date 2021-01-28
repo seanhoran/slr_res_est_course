@@ -82,7 +82,7 @@ def variograms():
   url = 'https://drive.google.com/file/d/1le3aC1ex5DtLQIBrR5MrRGQ2hNSOzvIo/view?usp=drivesdk'
   url = 'https://drive.google.com/drive/folders/1SqzkZI34It3kiTlW1k0pfS91YSLYBG41'
   #path = 'https://drive.google.com/uc?export=download&id='+url+'/'+'test.xlsx'
-  path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-1] + '/T1.csv'
+  path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-3] + '/T1.csv'
   
   
   df = pd.read_csv(path, delimiter=';')
