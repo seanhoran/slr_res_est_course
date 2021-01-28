@@ -84,6 +84,6 @@ def variograms():
   path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
   
   
-  df = pd.read_csv(path)
+  df = pd.read_csv(path, delimiter=';')
   st.dataframe(df)
   
