@@ -75,8 +75,12 @@ def variograms():
            key_nugget='nug4', key_range='range4', key_stype='stype4', 
            im='sim4.jpg')
   results.append([4, s,n,r])
-  df = pd.DataFrame(data=results, 
+  results = pd.DataFrame(data=results, 
                     columns=['Example', 'Structure Type', 'Nugget', 'Range'])
   df.to_csv("test.csv")
   st.dataframe(results)
+  url = 'https://drive.google.com/drive/folders/1SqzkZI34It3kiTlW1k0pfS91YSLYBG41'
+  path = 'https://drive.google.com/uc?export=download&id='+url+'/'+'test.xlsx'
+  df = pd.read_excel(path)
+  st.dataframe(df)
   
