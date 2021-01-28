@@ -80,7 +80,10 @@ def variograms():
   df.to_csv("test.csv")
   st.dataframe(df)
   url = 'https://drive.google.com/drive/folders/1SqzkZI34It3kiTlW1k0pfS91YSLYBG41'
-  path = 'https://drive.google.com/uc?export=download&id='+url+'/'+'test.xlsx'
+  #path = 'https://drive.google.com/uc?export=download&id='+url+'/'+'test.xlsx'
+  path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2] + '/test.xlsx'
+  
+  
   df = pd.read_excel(path)
   st.dataframe(df)
   
