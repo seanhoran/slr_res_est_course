@@ -3,6 +3,7 @@ import exercises.about_course as about_course
 import exercises.db_ex as db_ex
 import exercises.capping_ex as capping_ex
 import exercises.variograms as variograms
+import exercises.block_modelling as block_modelling
 import matplotlib.pyplot as plt
 
 max_width = 1200
@@ -64,4 +65,5 @@ if exercise == radio_options[2]:
   capping_ex.capping_ex()
 if exercise == radio_options[4]:
   variograms.variograms()
-
+if exercise == radio_options[5]:
+  block_modelling.block_modelling()
