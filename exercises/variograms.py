@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import streamlit as st
 import funcs
 import pandas as pd
+import getpass
+import pymysql
 
 def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
   var = 1.-nugget
@@ -77,14 +79,20 @@ def variograms():
   results.append([4, s,n,r])
   df = pd.DataFrame(data=results, 
                     columns=['Example', 'Structure Type', 'Nugget', 'Range'])
-  df.to_csv("test.csv")
   st.dataframe(df)
-  url = 'https://drive.google.com/file/d/1le3aC1ex5DtLQIBrR5MrRGQ2hNSOzvIo/view?usp=drivesdk'
-  url = 'https://drive.google.com/drive/folders/1SqzkZI34It3kiTlW1k0pfS91YSLYBG41'
-  #path = 'https://drive.google.com/uc?export=download&id='+url+'/'+'test.xlsx'
-  path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2] + '/T1.csv'
   
+  uname = getpass.getuser()
+  df['user'] = uname
+  if st.button('Submit Results'):
+    host="pdac2021v1.chnzgdwh9rg1.ca-central-1.rds.amazonaws.com"
+    port=3306
+    dbname="pdac2021_db"
+    user="admin"
+    password="pdac2021"
+    conn = pymysql.connect(host=host, user=user,port=port,
+                               passwd=password, db=dbname)  
+    
+    df.to_sql(con=conn, name='variograms_ex', if_exists='replace', flavor='mysql')
   
-  df = pd.read_csv(path, delimiter=';')
-  st.dataframe(df)
+
   
