@@ -5,8 +5,7 @@ import exercises.capping_ex as capping_ex
 import exercises.variograms as variograms
 import exercises.block_modelling as block_modelling
 import matplotlib.pyplot as plt
-import getpass
-import pymysql
+
 
 max_width = 1200
 
