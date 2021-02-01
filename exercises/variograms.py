@@ -49,7 +49,7 @@ def ex_var(example=1,
     
   return struct_type, nugget, srange
   
-def variograms():
+def variograms(nickname):
   st.title("Variogram Exercise")
   st.write("")
   st.markdown("## Model the appropriate variogram for each grade pattern observed")
@@ -81,7 +81,7 @@ def variograms():
   df = pd.DataFrame(data=results, 
                     columns=['Example', 'Structure Type', 'Nugget', 'Range'])
   uname = getpass.getuser()
-  df['user'] = uname
+  df['user'] = nickname
   st.table(df)
   
   if st.button('Submit Results'):
