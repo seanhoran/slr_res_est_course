@@ -80,10 +80,10 @@ def variograms():
   results.append([4, s,n,r])
   df = pd.DataFrame(data=results, 
                     columns=['Example', 'Structure Type', 'Nugget', 'Range'])
-  st.dataframe(df)
-  
   uname = getpass.getuser()
   df['user'] = uname
+  st.dataframe(df)
+  
   if st.button('Submit Results'):
     host="pdac2021v1.chnzgdwh9rg1.ca-central-1.rds.amazonaws.com"
     port=3306
