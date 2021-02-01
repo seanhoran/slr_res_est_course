@@ -81,7 +81,6 @@ def variograms():
   df = pd.DataFrame(data=results, 
                     columns=['Example', 'Structure Type', 'Nugget', 'Range'])
   uname = getpass.getuser()
-  df['user'] = nickname
   st.table(df)
   
 
