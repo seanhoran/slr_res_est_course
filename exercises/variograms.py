@@ -92,6 +92,9 @@ def variograms():
     conn = pymysql.connect(host=host, user=user,port=port,
                                passwd=password, db=dbname)  
     
+    dfTable = pd.read_sql("SELECT * FROM vario", conn)
+    st.table(dfTable)
+    
     df.to_sql(con=conn, name='vario', if_exists='replace', flavor='mysql')
   
 
