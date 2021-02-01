@@ -5,6 +5,7 @@ import pandas as pd
 import getpass
 import pymysql
 import matplotlib.pyplot as plt
+from sqlalchemy import create_engine
 
 def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
   var = 1.-nugget
@@ -91,6 +92,9 @@ def variograms():
     password="pdac2021"
     conn = pymysql.connect(host=host, user=user,port=port,
                                passwd=password, db=dbname)  
+    
+    conn = create_engine(‘mysql+pymysql://’ + user + ‘:’ + password + ‘@’ + host + ‘:’ + str(port) + ‘/’ + dbname , echo=False)
+ 
     
     dfTable = pd.read_sql("SELECT * FROM vario", conn)
     st.table(dfTable)
