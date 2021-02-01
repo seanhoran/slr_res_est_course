@@ -92,7 +92,7 @@ def variograms():
     conn = pymysql.connect(host=host, user=user,port=port,
                                passwd=password, db=dbname)  
     
-    df.to_sql(con=conn, name='variograms_ex', if_exists='replace', flavor='mysql')
+    df.to_sql(con=conn, name='vario', if_exists='replace', flavor='mysql')
   
 
   
