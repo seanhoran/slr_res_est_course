@@ -82,7 +82,7 @@ def variograms():
                     columns=['Example', 'Structure Type', 'Nugget', 'Range'])
   uname = getpass.getuser()
   df['user'] = uname
-  st.dataframe(df)
+  st.table(df)
   
   if st.button('Submit Results'):
     host="pdac2021v1.chnzgdwh9rg1.ca-central-1.rds.amazonaws.com"
