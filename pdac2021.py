@@ -4,8 +4,6 @@ import exercises.db_ex as db_ex
 import exercises.capping_ex as capping_ex
 import exercises.variograms as variograms
 import exercises.block_modelling as block_modelling
-import matplotlib.pyplot as plt
-
 
 max_width = 1200
 
