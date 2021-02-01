@@ -85,7 +85,8 @@ def variograms(nickname):
   st.table(df)
   
   if st.button('Submit Results'):
-    host="pdac2021v1.chnzgdwh9rg1.ca-central-1.rds.amazonaws.com"
+#     host="pdac2021v1.chnzgdwh9rg1.ca-central-1.rds.amazonaws.com"
+    host = "172.31.0.0/16"
     port=3306
     dbname="pdac2021_db"
     user="admin"
