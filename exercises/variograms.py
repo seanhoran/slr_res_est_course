@@ -95,9 +95,8 @@ def variograms(nickname):
 #                                passwd=password, db=dbname)  
     
     conn = create_engine('mysql+pymysql://' + user + ':' + password + '@' + host + ':' + str(port) + '/' + dbname , echo=False)
- 
     st.write("success")
-#     dfTable = pd.read_sql("SELECT * FROM vario", conn)
+    dfTable = pd.read_sql("SELECT * FROM vario", conn)
 #     st.table(dfTable)
 #     df.to_sql(con=conn, name='vario', if_exists='replace', flavor='mysql')
   
