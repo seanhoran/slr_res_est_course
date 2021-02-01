@@ -90,8 +90,8 @@ def variograms(nickname):
     dbname="pdac2021_db"
     user="admin"
     password="pdac2021"
-    conn = pymysql.connect(host=host, user=user,port=port,
-                               passwd=password, db=dbname)  
+#     conn = pymysql.connect(host=host, user=user,port=port,
+#                                passwd=password, db=dbname)  
     
     conn = create_engine('mysql+pymysql://' + user + ':' + password + '@' + host + ':' + str(port) + '/' + dbname , echo=False)
  
