@@ -49,7 +49,7 @@ def ex_var(example=1,
     
   return struct_type, nugget, srange
   
-def variograms(nickname):
+def variograms():
   st.title("Variogram Exercise")
   st.write("")
   st.markdown("## Model the appropriate variogram for each grade pattern observed")
