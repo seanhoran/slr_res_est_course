@@ -42,6 +42,8 @@ st.sidebar.image("..//pdac2021_res_est_course//055CF2A4-98DC-488C-B5A6-15CC02C99
 # Interpolation - interactive
 # Compositing - Q&A
 
+nickname = st.sidebar.text_input("*Enter Nickname")
+
 radio_options = ["01 About the Course", 
                  "02 Database", 
                  "03 Capping", 
@@ -63,6 +65,9 @@ if exercise == radio_options[1]:
 if exercise == radio_options[2]:
   capping_ex.capping_ex()
 if exercise == radio_options[4]:
-  variograms.variograms()
+  if nickname == "":
+        st.error("Please Enter Nickname")
+  else:
+        variograms.variograms(nickname)
 if exercise == radio_options[5]:
   block_modelling.block_modelling()
