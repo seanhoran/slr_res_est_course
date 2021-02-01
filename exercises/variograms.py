@@ -1,10 +1,10 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import streamlit as st
 import funcs
 import pandas as pd
 import getpass
 import pymysql
+import matplotlib.pyplot as plt
 
 def variogram(nugget=0.0, srange=100., struct_type='Spherical'):
   var = 1.-nugget
