@@ -84,22 +84,7 @@ def variograms(nickname):
   df['user'] = nickname
   st.table(df)
   
-  if st.button('Submit Results'):
-    host="pdac2021v1.chnzgdwh9rg1.ca-central-1.rds.amazonaws.com"
-    port=3306
-    dbname="pdac2021_db"
-    user="admin"
-    password="pdac2021"
-    
-#     conn = pymysql.connect(host=host, user=user,port=port,
-#                                passwd=password, db=dbname)  
-    
-    conn = create_engine('mysql+pymysql://' + user + ':' + password + '@' + host + ':' + str(port) + '/' + dbname , echo=False)
-    
-    dfTable = pd.read_sql("SELECT * FROM vario", conn)
-    st.write("success")
-#     st.table(dfTable)
-#     df.to_sql(con=conn, name='vario', if_exists='replace', flavor='mysql')
+
   
 
   
