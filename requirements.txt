@@ -1,4 +1,5 @@
+pymysql
 matplotlib
 xlrd
 getpass
-pymysql
+
