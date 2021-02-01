@@ -93,7 +93,7 @@ def variograms():
     conn = pymysql.connect(host=host, user=user,port=port,
                                passwd=password, db=dbname)  
     
-    conn = create_engine(‘mysql+pymysql://’ + user + ‘:’ + password + ‘@’ + host + ‘:’ + str(port) + ‘/’ + dbname , echo=False)
+    conn = create_engine('mysql+pymysql://' + user + ':' + password + '@' + host + ':' + str(port) + '/' + dbname , echo=False)
  
     
     dfTable = pd.read_sql("SELECT * FROM vario", conn)
