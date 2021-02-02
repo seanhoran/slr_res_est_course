@@ -11,11 +11,11 @@ def adjust_calculation(df2):
     st.markdown("Production")
     df2.loc[0, 'Resource COG'] = st.slider("Tonnes", 1000000, 10000000, 5000000, 1000000, key="cgsl1")
     df2.loc[1, 'Resource COG'] = st.slider("Cu %", 0., 2.0, 1.0, 0.1, key="cgsl2")
-    df2.loc[2, 'Resource COG'] = st.slider("Au g/t", 0., 2.0, 1.0, 0.1, key="cgsl3")
+    df2.loc[2, 'Resource COG'] = st.slider("Au g/t", 0., 2.0, 0.5, 0.1, key="cgsl3")
   with colx2:
     st.markdown("Production")
     df2.loc[4, 'Resource COG'] = st.slider("Cu Recovery", 60., 95., 87., 1.0, key="cgsl4")
-    df2.loc[5, 'Resource COG'] = st.slider("Au Recover", 60., 95., 87., 1.0, key="cgsl5")
+    df2.loc[5, 'Resource COG'] = st.slider("Au Recover", 60., 95., 90., 1.0, key="cgsl5")
   with colx3:
     st.markdown("Metal Prices")
     df2.loc[16, 'Resource COG'] = st.slider("Cu Price ($/lbs)", 2.5, 4.0, 3.25, 0.1, key="cgsl6")
@@ -27,7 +27,7 @@ def adjust_calculation(df2):
     df2.loc[14, 'Comments'] = st.slider("Payable Au", 85., 100., 99., 1.0, key="cgsl10")
   
   df2.loc[7, 'Resource COG'] = np.round(df2.loc[0, 'Resource COG']*(df2.loc[1, 'Resource COG']/100.)*(df2.loc[4, 'Resource COG']/100.)*2.20462,0)
-  df2.loc[8, 'Resource COG'] = np.round(df2.loc[0, 'Resource COG']*(df2.loc[2, 'Resource COG'])*(df2.loc[5, 'Resource COG']/100.)/31.103, 0)
+  df2.loc[8, 'Resource COG'] = np.round(df2.loc[0, 'Resource COG']*(df2.loc[2, 'Resource COG'])/31.1035*(df2.loc[5, 'Resource COG']/100.), 0)
   df2.loc[9, 'Resource COG'] = np.round(df2.loc[7, 'Resource COG']*1000./2204.62/df2.loc[10, 'Resource COG']/100., 0)
   df2.loc[11, 'Resource COG'] = np.round(df2.loc[8, 'Resource COG']*31.1035/df2.loc[9, 'Resource COG'],2)
   
