@@ -2,6 +2,7 @@ import streamlit as st
 import funcs
 import pandas as pd
 import numpy as np
+import plotly.express as px
 
 def adjust_calculation(df2):
   
@@ -50,6 +51,18 @@ def adjust_calculation(df2):
                                          
   df2.loc[30, 'Resource COG'] = np.round((df2.loc[27, 'Resource COG']*df2.loc[25, 'Resource COG']*1000./(df2.loc[0, 'Resource COG']*df2.loc[1, 'Resource COG'])),0)
   df2.loc[31, 'Resource COG'] = np.round((df2.loc[28, 'Resource COG']*df2.loc[25, 'Resource COG']*1000./(df2.loc[0, 'Resource COG']*df2.loc[2, 'Resource COG'])),0)
+  
+  colz1, colz2 = st.beta_columns((1,1))
+  ddf = df2[[30:31]].copy()
+  with colz1:
+    ddf = ddf.rename(columns={'Resource COG':'Revenue by Metal Unit', 'Production':'Metal'}
+    fig = px.bar(x='Metal', y='Revenue by Metal Unit', color='Metal')
+    st.plotly(fig)
+   with colz2:
+    ddf = ddf.rename(columns={'Resource COG':'Revenue by Metal Unit', 'Production':'Metal'}
+    fig = px.bar(x='Metal', y='Revenue by Metal Unit', color='Metal')
+    st.plotly(fig)
+    
   
   st.table(df2)
   
@@ -100,6 +113,6 @@ def cut_off():
                 'D. The block value exceeds all cut-off grades']
   cog_q2_answer = st.radio("Select the appropriate statement:", options=q2_options, key='cog_q2')
   st.write("")
-  st.markdown("## Sensitivities")
+  st.markdown("## Question 3: Sensitivities")
   adjust_calculation(df.copy())
   
