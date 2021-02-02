@@ -5,6 +5,7 @@ import pandas as pd
 def cut_off():
   
   df = pd.read_csv("..//pdac2021_res_est_course//data//Worksheet COGs.csv")
+  df = df.fillna("")
 
   st.title("Cut-off Grade Exercise")
   st.write("")
@@ -38,4 +39,4 @@ def cut_off():
     text = funcs.get_text_block("cog_q2_intro.txt")
     st.markdown(text)
   with col4:
-    st.table(df)
+    st.DataFrame(df)
