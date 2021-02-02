@@ -2,6 +2,7 @@ import streamlit as st
 import exercises.about_course as about_course
 import exercises.capping_ex as capping_ex
 import exercises.variograms as variograms
+import exercises.cut_off as cut_off
 import exercises.block_modelling as block_modelling
 
 max_width = 1200
@@ -64,3 +65,5 @@ if exercise == radio_options[3]:
   variograms.variograms()
 if exercise == radio_options[4]:
   block_modelling.block_modelling()
+if exercise == radio_options[5]:
+  cut_off.cut_off()
