@@ -1,5 +1,5 @@
 import streamlit as st
-
+import funcs
 
 def cut_off():
   st.title("Cut-off Grade Exercise")
@@ -24,4 +24,10 @@ def cut_off():
     st.markdown('* G&A: $15/t')
   
   q1_options = ['yes', 'no']
-  cog_q1_answer = st.radio("Select the correct answer:", options=q1_options, key='cog_q1')           
+  cog_q1_answer = st.radio("Do we send this block to the processing plant?", options=q1_options, key='cog_q1')
+  
+  st.write("")
+  st.markdown("## Question 2: Complex Cut-off Calculation")
+  st.write("")
+  text = funcs.get_text_block("cog_q2_intro.txt")
+  st.markdown(text)
