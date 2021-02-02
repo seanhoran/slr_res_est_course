@@ -4,7 +4,7 @@ import pandas as pd
 
 def cut_off():
   
-  df = pd.read_excel("..//pdac2021_res_est_course//data//Worksheet COGs.xlsx")
+  df = pd.read_csv("..//pdac2021_res_est_course//data//Worksheet COGs.csv")
 
   st.title("Cut-off Grade Exercise")
   st.write("")
