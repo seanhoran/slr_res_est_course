@@ -1,6 +1,7 @@
 import streamlit as st
 import funcs
 import pandas as pd
+import numpy as np
 
 def adjust_calculation(df2):
   
@@ -25,8 +26,8 @@ def adjust_calculation(df2):
     df2.loc[13, 'Comments'] = st.slider("Payabe Cu", 85., 100., 90., 1.0, key="cgsl9")
     df2.loc[14, 'Comments'] = st.slider("Payable Au", 85., 100., 99., 1.0, key="cgsl10")
   
-  df2.loc[7, 'Resource COG'] = df2.loc[0, 'Resource COG']*(df2.loc[1, 'Resource COG']/100.)*(df2.loc[4, 'Resource COG']/100.)*2.20462
-  df2.loc[8, 'Resource COG'] = df2.loc[0, 'Resource COG']*(df2.loc[2, 'Resource COG'])*(df2.loc[5, 'Resource COG']/100.)/31.103
+  df2.loc[7, 'Resource COG'] = np.round(df2.loc[0, 'Resource COG']*(df2.loc[1, 'Resource COG']/100.)*(df2.loc[4, 'Resource COG']/100.)*2.20462,0)
+  df2.loc[8, 'Resource COG'] = np.round(df2.loc[0, 'Resource COG']*(df2.loc[2, 'Resource COG'])*(df2.loc[5, 'Resource COG']/100.)/31.103)
   
   st.table(df2)
   
