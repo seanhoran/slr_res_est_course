@@ -56,11 +56,11 @@ def adjust_calculation(df2):
   
   ddf = df2.loc[30:31].copy()
   with colz1:
-    ddf = ddf.rename(columns={'Resource COG':'Revenue by Metal Unit', 'Production':'Metal'}
+    ddf = ddf.rename(columns={'Resource COG':'Revenue by Metal Unit', 'Production':'Metal'})
     fig = px.bar(x='Metal', y='Revenue by Metal Unit', color='Metal')
     st.plotly(fig)
    with colz2:
-    ddf = ddf.rename(columns={'Resource COG':'Revenue by Metal Unit', 'Production':'Metal'}
+    ddf = ddf.rename(columns={'Resource COG':'Revenue by Metal Unit', 'Production':'Metal'})
     fig = px.bar(x='Metal', y='Revenue by Metal Unit', color='Metal')
     st.plotly(fig)
     
