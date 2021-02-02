@@ -6,12 +6,14 @@ def cut_off():
   st.write("")
   st.markdown("## Question 1: Do we send this block to the processing plant?")
   st.write("")
+  
   col1, col2 = st.beta_columns([1, 2])
+  
   with col1:
     st.write("")
     st.write("")
-    st.image("..//pdac2021_res_est_course//images//cog1_block.jpg", width=500
-  with col1:
+    st.image("..//pdac2021_res_est_course//images//cog1_block.jpg", width=500)
+  with col2:
     st.markdown('### Operating costs:')
     st.markdown('* Mining: $50/t')
     st.markdown('* Process: $20/t')
