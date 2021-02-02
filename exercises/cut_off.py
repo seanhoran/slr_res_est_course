@@ -35,8 +35,7 @@ def adjust_calculation(df2):
   df2.loc[14, 'Resource COG'] = np.round(df2.loc[8, 'Resource COG']*(df2.loc[14, 'Comments'])/100,0)
   
   df2.loc[18, 'Resource COG'] = np.round(df2.loc[13, 'Resource COG']*df2.loc[16, 'Resource COG'], 0)
-  st.write(df2.loc[14, 'Resource COG'], df2.loc[17, 'Resource COG'])
-  df2.loc[19, 'Resource COG'] = np.round(df2.loc[14, 'Resource COG']*float(df2.loc[17, 'Resource COG']), 0)
+  df2.loc[19, 'Resource COG'] = np.round(df2.loc[14, 'Resource COG']*float(df2.loc[17, 'Resource COG']/1000.), 0)
     
   df2.loc[20, 'Resource COG'] = df2.loc[18, 'Resource COG']+df2.loc[19, 'Resource COG']
                                          
