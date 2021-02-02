@@ -1,6 +1,6 @@
 
 
-Metallurgical Recoveries<br>  
+Metallurgical Recoveries 
 * Cu = **87%**
 * Au = **90%**
 
