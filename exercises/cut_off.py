@@ -4,7 +4,7 @@ import pandas as pd
 
 def adjust_calculation(df2):
   
-  colx1, colx2, colx3 = st.beta_columns((1,1,1,1))
+  colx1, colx2, colx3, colx4 = st.beta_columns((1,1,1,1))
   
   with colx1:
     st.markdown("Production")
