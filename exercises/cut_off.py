@@ -47,4 +47,4 @@ def cut_off():
                 'The block is below all cut-off grades', 
                 'The block is greater than the marginal but less than the break-even cut-off', 
                 'The block exceeds all cut-off grades']
-  cog_q2_answer = st.radio("Select the appropriate statement?", options=q2_options, key='cog_q2')
+  cog_q2_answer = st.radio("Select the appropriate statement:", options=q2_options, key='cog_q2')
