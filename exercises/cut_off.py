@@ -60,11 +60,11 @@ def adjust_calculation(df2):
     ddf = ddf.rename(columns={'Resource COG':'Revenue by Metal Unit', 'PRODUCTION':'Metal'})
     st.table(ddf)
     fig = px.bar(ddf, x='Metal', y='Revenue by Metal Unit', color='Metal')
-    st.plotly(fig)
+    st.plotly_chart(fig)
   with colz2:
     ddf = ddf.rename(columns={'Resource COG':'Revenue by Metal Unit', 'Production':'Metal'})
     fig = px.bar(ddf, x='Metal', y='Revenue by Metal Unit', color='Metal')
-    st.plotly(fig)
+    st.plotly_chart(fig)
     
   
   st.table(df2)
