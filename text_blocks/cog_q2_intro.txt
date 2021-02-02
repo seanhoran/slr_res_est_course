@@ -1,16 +1,16 @@
 
 
-Metallurgical Recoveries
+Metallurgical Recoveries  
 * Cu = **87%**
 * Au = **90%**
-Concentrate Grade
+Concentrate Grade  
 * **25%** Cu
-Payable Metals
+Payable Metals  
 * Cu = **90%**
 * Au = **99%**
-Metal Price
+Metal Price  
 * Cu = **US$3.25/lb**
 * Au = **US$1,500/oz**
-TC/RC
+TC/RC  
 * Cu: TC = **$90/t; RC = $0.09/lb**
 * Au: RC = **$5.00/oz**
