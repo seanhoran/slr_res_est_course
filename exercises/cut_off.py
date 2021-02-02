@@ -12,7 +12,7 @@ def cut_off():
   with col1:
     st.write("")
     st.write("")
-    st.image("..//pdac2021_res_est_course//images//cog1_block.jpg", width=500)
+    st.image("..//pdac2021_res_est_course//images//cog1_block.jpg", width=300)
   with col2:
     st.markdown('### Operating costs:')
     st.markdown('* Mining: $50/t')
@@ -20,4 +20,4 @@ def cut_off():
     st.markdown('* G&A: $15/t')
   
   q1_options = ['yes', 'no']
-  cog_q1_answer = st.radio("Select the correct answer:", options=options, key='cog_q1')           
+  cog_q1_answer = st.radio("Select the correct answer:", options=q1_options, key='cog_q1')           
