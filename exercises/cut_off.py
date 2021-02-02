@@ -53,7 +53,8 @@ def adjust_calculation(df2):
   df2.loc[31, 'Resource COG'] = np.round((df2.loc[28, 'Resource COG']*df2.loc[25, 'Resource COG']*1000./(df2.loc[0, 'Resource COG']*df2.loc[2, 'Resource COG'])),0)
   
   colz1, colz2 = st.beta_columns((1,1))
-  ddf = df2[[30:31]].copy()
+  
+  ddf = df2.loc[30:31].copy()
   with colz1:
     ddf = ddf.rename(columns={'Resource COG':'Revenue by Metal Unit', 'Production':'Metal'}
     fig = px.bar(x='Metal', y='Revenue by Metal Unit', color='Metal')
