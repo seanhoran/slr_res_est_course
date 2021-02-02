@@ -41,4 +41,4 @@ def cut_off():
     text = funcs.get_text_block("cog_q2_intro.txt")
     st.markdown(text)
   with col4:
-    st.dataframe(df, height=20)
+    st.dataframe(df, height=10)
