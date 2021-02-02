@@ -98,6 +98,7 @@ def cut_off():
   st.markdown("## Question 2: Complex Cut-off Calculation")
   st.write("")
   st.markdown("### Considering the block grades from question 1, analyze the NSR calculation and answer the question below")
+   st.write("")
   col3, col4 = st.beta_columns([1, 2])
   with col3:
     text = funcs.get_text_block("cog_q2_intro.txt")
