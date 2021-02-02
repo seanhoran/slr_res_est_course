@@ -55,9 +55,10 @@ def adjust_calculation(df2):
   colz1, colz2 = st.beta_columns((1,1))
   
   ddf = df2.loc[30:31].copy()
-  st.table(ddf)
+  
   with colz1:
     ddf = ddf.rename(columns={'Resource COG':'Revenue by Metal Unit', 'Production':'Metal'})
+    st.table(ddf)
     fig = px.bar(x='Metal', y='Revenue by Metal Unit', color='Metal')
     st.plotly(fig)
   with colz2:
