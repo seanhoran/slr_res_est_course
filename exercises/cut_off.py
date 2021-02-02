@@ -17,6 +17,7 @@ def cut_off():
     st.write("")
     st.write("")
     st.write("")
+    st.write("")
     st.markdown('### Operating costs:')
     st.markdown('* Mining: $50/t')
     st.markdown('* Process: $20/t')
