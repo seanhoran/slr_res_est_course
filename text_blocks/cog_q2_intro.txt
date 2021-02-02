@@ -18,3 +18,8 @@ Metal Price
 TC/RC  
 * Cu: TC = **$90/t; RC = $0.09/lb**
 * Au: RC = **$5.00/oz**  
+
+Operating costs:
+* Mining: $50/t
+* Process: $20/t
+* G&A: $15/t
