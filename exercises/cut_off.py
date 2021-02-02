@@ -27,7 +27,28 @@ def adjust_calculation(df2):
     df2.loc[14, 'Comments'] = st.slider("Payable Au", 85., 100., 99., 1.0, key="cgsl10")
   
   df2.loc[7, 'Resource COG'] = np.round(df2.loc[0, 'Resource COG']*(df2.loc[1, 'Resource COG']/100.)*(df2.loc[4, 'Resource COG']/100.)*2.20462,0)
-  df2.loc[8, 'Resource COG'] = np.round(df2.loc[0, 'Resource COG']*(df2.loc[2, 'Resource COG'])*(df2.loc[5, 'Resource COG']/100.)/31.103)
+  df2.loc[8, 'Resource COG'] = np.round(df2.loc[0, 'Resource COG']*(df2.loc[2, 'Resource COG'])*(df2.loc[5, 'Resource COG']/100.)/31.103, 0)
+  df2.loc[9, 'Resource COG'] = np.round(df2.loc[7, 'Resource COG']*1000./2204.62/df2.loc[10, 'Resource COG']/100., 0)
+  df2.loc[11, 'Resource COG'] = np.round(df2.loc[8, 'Resource COG']*31.1035/df2.loc[9, 'Resource COG'],2)
+  
+  df2.loc[13, 'Resource COG'] = np.round(df2.loc[7, 'Resource COG']*(df2.loc[13, 'Comments']),0)
+  df2.loc[14, 'Resource COG'] = np.round(df2.loc[8, 'Resource COG']*(df2.loc[14, 'Comments']),0)
+  
+  df2.loc[18, 'Resource COG'] = np.round(df2.loc[13, 'Resource COG']*(df2.loc[16, 'Resource COG'], 0)
+  df2.loc[19, 'Resource COG'] = np.round(df2.loc[14, 'Resource COG']*(df2.loc[17, 'Resource COG'], 0)
+  df2.loc[20, 'Resource COG'] = df2.loc[18, 'Resource COG']+df2.loc[19, 'Resource COG']
+                                         
+  df2.loc[22, 'Resource COG'] = np.round(df2.loc[9, 'Resource COG']*9.0, 0)
+  df2.loc[23, 'Resource COG'] = np.round(df2.loc[13, 'Resource COG']*0.09,0)
+  df2.loc[24, 'Resource COG'] = np.round(df2.loc[14, 'Resource COG']*5.0, 0)
+                                         
+  df2.loc[25, 'Resource COG'] = np.round(df2.loc[20, 'Resource COG']-df2.loc[22, 'Resource COG']-df2.loc[23, 'Resource COG']-df2.loc[24, 'Resource COG'], 0)
+                                         
+  df2.loc[27, 'Resource COG'] = np.round((df2.loc[18, 'Resource COG']-df2.loc[22, 'Resource COG']-df2.loc[23, 'Comments']*df2.loc[13, 'Resource COG']/1000.)/df2.loc[25, 'Resource COG'], 2)
+  df2.loc[28, 'Resource COG'] = np.round((df2.loc[19, 'Resource COG']-df2.loc[23, 'Resource COG']-df2.loc[24, 'Comments']*df2.loc[14, 'Resource COG']/1000.)/df2.loc[25, 'Resource COG'], 2)
+                                         
+  df2.loc[30, 'Resource COG'] = np.round((df2.loc[27, 'Resource COG']*df2.loc[25, 'Resource COG']*1000./(df2.loc[0, 'Resource COG']*df2.loc[1, 'Resource COG'])),0)
+  df2.loc[31, 'Resource COG'] = np.round((df2.loc[28, 'Resource COG']*df2.loc[25, 'Resource COG']*1000./(df2.loc[0, 'Resource COG']*df2.loc[2, 'Resource COG'])),0)
   
   st.table(df2)
   
