@@ -44,7 +44,9 @@ def cut_off():
   with col4:
     st.table(df)
   q2_options = ['A. I have no idea', 
-                'B. The block is below all cut-off grades', 
-                'C. The block is greater than the marginal but less than the break-even cut-off', 
-                'D. The block exceeds all cut-off grades']
+                'B. The block value is below all cut-off grades', 
+                'C. The block value is greater than the marginal but less than the break-even cut-off', 
+                'D. The block value exceeds all cut-off grades']
   cog_q2_answer = st.radio("Select the appropriate statement:", options=q2_options, key='cog_q2')
+  st.write("")
+  st.markdown("## Question 3: Complex Cut-off Calculation")
