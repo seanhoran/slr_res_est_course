@@ -34,8 +34,8 @@ def adjust_calculation(df2):
   df2.loc[13, 'Resource COG'] = np.round(df2.loc[7, 'Resource COG']*(df2.loc[13, 'Comments']),0)
   df2.loc[14, 'Resource COG'] = np.round(df2.loc[8, 'Resource COG']*(df2.loc[14, 'Comments']),0)
   
-  df2.loc[18, 'Resource COG'] = np.round(df2.loc[13, 'Resource COG']*(df2.loc[16, 'Resource COG'], 0)
-  df2.loc[19, 'Resource COG'] = np.round(df2.loc[14, 'Resource COG']*(df2.loc[17, 'Resource COG'], 0)
+  df2.loc[18, 'Resource COG'] = np.round(df2.loc[13, 'Resource COG']*df2.loc[16, 'Resource COG'], 0)
+  df2.loc[19, 'Resource COG'] = np.round(df2.loc[14, 'Resource COG']*df2.loc[17, 'Resource COG'], 0)
   df2.loc[20, 'Resource COG'] = df2.loc[18, 'Resource COG']+df2.loc[19, 'Resource COG']
                                          
   df2.loc[22, 'Resource COG'] = np.round(df2.loc[9, 'Resource COG']*9.0, 0)
