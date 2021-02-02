@@ -8,6 +8,7 @@ def cut_off():
   df = df.fillna("")
   df = df.drop(df.columns[-1],axis=1).copy()
   df = df.drop(df.columns[-1],axis=1).copy()
+  df = df[:32].copy()
 
   st.title("Cut-off Grade Exercise")
   st.write("")
