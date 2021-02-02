@@ -19,7 +19,7 @@ def adjust_calculation(df2):
   with colx3:
     st.markdown("Metal Prices")
     df2.loc[16, 'Resource COG'] = st.slider("Cu Price ($/lbs)", 2.5, 4.0, 3.25, 0.1, key="cgsl6")
-    df2.loc[17, 'Comments'] = float(st.slider("Au Price ($/oz)", 1000., 2000., 1500., 500., key="cgsl7"))
+    df2.loc[17, 'Resource COG'] = float(st.slider("Au Price ($/oz)", 1000.0, 2000.0, 1500.0, 500.0, key="cgsl7"))
   with colx4:
     st.markdown("Other")
     df2.loc[10, 'Resource COG'] = st.slider("Cu Con Grade", 20.0, 35.0, 25.0, 1.0, key="cgsl8")
