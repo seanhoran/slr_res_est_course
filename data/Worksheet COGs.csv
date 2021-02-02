@@ -1,0 +1,33 @@
+PRODUCTION,Units,Resource COG,Comments
+Production,tonnes,"5,000,000",Resources
+Cu,%,1,
+Au,g/t,0.5,
+Metallurgical Recovery,,,
+Cu,%,87%,Studies
+Au,%,90%,
+Metal Production,,,
+Cu,000 lbs,"95,901",
+Au,oz,"72,340",
+Concentrate,dry tonnes,"174,000",
+Cu,%,25,Studies
+Au,g/t,12.93124236,
+Payable Metal,,,Payable %
+Cu,000 lbs,"86,311",90%
+Au,oz,"71,617",99%
+REVENUE,,,
+Metal Price - Cu,US$/lb,3.25,
+Metal Price - Au,US$/oz,1500,
+Revenue - Cu,US$ '000,"280,510",
+Revenue - Au,US$ '000,"107,425",
+Gross Revenue,US$ '000,"387,936",
+SMELTER CHARGES,,,
+Treatment Charges,US$ '000,"1,566",US$09.00 / dmt conc
+Refining Charges - Cu,US$ '000,"7,768",US$0.09 / lb Cu
+Refining Charges - Au,US$ '000,358.0844292,US$5.00 / oz Au
+Net Revenue,US$ '000,"378,244",
+Revenue by Metal,,,
+Cu,%,74%,
+Au,%,28%,
+Revenue by Metal unit,,,
+Cu,US$ per %,55.78731385,
+Au,US$ per g,42.82689773,
