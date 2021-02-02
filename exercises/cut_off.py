@@ -34,8 +34,8 @@ def cut_off():
   st.markdown("## Question 2: Complex Cut-off Calculation")
   st.write("")
   col3, col4 = st.beta_columns([1, 2])
-  with col1=3:
+  with col3:
     text = funcs.get_text_block("cog_q2_intro.txt")
     st.markdown(text)
-  with col1=4:
+  with col4:
     st.table(df)
