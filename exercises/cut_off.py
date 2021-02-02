@@ -57,8 +57,8 @@ def cut_off():
   
   df = pd.read_csv("..//pdac2021_res_est_course//data//Worksheet COGs.csv")
   df = df.fillna("")
-  df = df.drop(df.columns[-1],axis=1).copy()
-  df = df.drop(df.columns[-1],axis=1).copy()
+#   df = df.drop(df.columns[-1],axis=1).copy()
+#   df = df.drop(df.columns[-1],axis=1).copy()
   df = df[:32].copy()
 
   st.title("Cut-off Grade Exercise")
