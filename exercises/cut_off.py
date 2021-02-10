@@ -102,7 +102,7 @@ def cut_off():
     text = funcs.get_text_block("cog_q2_intro.txt")
     st.markdown(text)
   with col4:
-    st.table(df)
+    st.image("..//pdac2021_res_est_course//images//nsr_table.jpg", width=300)
   q2_options = ['A. I have no idea', 
                 'B. The block value is below all cut-off grades', 
                 'C. The block value is greater than the marginal but less than the break-even cut-off', 
