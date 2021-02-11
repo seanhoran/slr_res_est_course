@@ -132,8 +132,8 @@ def cut_off():
   st.markdown("## Question 3: Sensitivities")
   st.write("")
   st.markdown("### By Adjusting the various input parameters given below, comment on the following:")
-  st.number_input("1. What copper price results in a revenue which is double the break-even cut-off grade", min_value=1.0, max_value=5.0, value=3.25,key='tt1')
-  st.number_input("2. What copper grade results in a revenue which is double the break-even cut-off grade", min_value=0.0, max_value=10.0, value=1.0 ,key='tt2')
+  st.text_area("1. What copper price results in a revenue which is double the break-even cut-off grade",key='tt1')
+  st.text_area("2. What copper grade results in a revenue which is double the break-even cut-off grade" ,key='tt2')
   st.write("")
   adjust_calculation(df.copy())
   
