@@ -54,7 +54,7 @@ def adjust_calculation(df2):
   
   colz1, colz2, colz3 = st.beta_columns((1,1,1))
   
-  metal = ['Cu', 'Au]
+  metal = ['Cu', 'Au']
   grades = [cug, aug]
   nsr_fact = [df2.loc[30, 'Resource COG'], df2.loc[31, 'Resource COG']]
   blk_rev = grades*nsr_fact
