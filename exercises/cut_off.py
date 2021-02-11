@@ -9,10 +9,10 @@ def adjust_calculation(df2):
   colx1, colx2, colx3, colx4 = st.beta_columns((1,1,1,1))
   
   with colx1:
-    st.markdown("Production")
-    df2.loc[0, 'Resource COG'] = st.slider("Tonnes", 1000000, 10000000, 5000000, 1000000, key="cgsl1")
-    df2.loc[1, 'Resource COG'] = st.slider("Cu %", 0., 2.0, 1.0, 0.1, key="cgsl2")
-    df2.loc[2, 'Resource COG'] = st.slider("Au g/t", 0., 2.0, 0.5, 0.1, key="cgsl3")
+    st.markdown("Block Grade")
+    # df2.loc[0, 'Resource COG'] = st.slider("Tonnes", 1000000, 10000000, 5000000, 1000000, key="cgsl1")
+    df2.loc[1, 'Resource COG'] = st.slider("Cu %", 0., 2.0, 0.9, 0.1, key="cgsl2")
+    df2.loc[2, 'Resource COG'] = st.slider("Au g/t", 0., 2.0, 0.7, 0.1, key="cgsl3")
   with colx2:
     st.markdown("Production")
     df2.loc[4, 'Resource COG'] = st.slider("Cu Recovery", 60., 95., 87., 1.0, key="cgsl4")
@@ -60,7 +60,7 @@ def adjust_calculation(df2):
   st.plotly_chart(fig)
 
   
-  st.table(df2)
+  # st.table(df2)
   
 def cut_off():
   
