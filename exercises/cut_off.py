@@ -22,7 +22,7 @@ def adjust_calculation(df2):
   with colx3:
     st.markdown("Metal Prices")
     df2.loc[16, 'Resource COG'] = st.slider("Cu Price ($/lbs)", 2.5, 10.0, 3.25, 0.1, key="cgsl6")
-    df2.loc[17, 'Resource COG'] = float(st.slider("Au Price ($/oz)", 1000.0, 2000.0, 1500.0, 500.0, key="cgsl7"))
+    df2.loc[17, 'Resource COG'] = float(st.slider("Au Price ($/oz)", 1000.0, 2000.0, 1500.0, 100.0, key="cgsl7"))
   with colx4:
     st.markdown("Other")
     df2.loc[10, 'Resource COG'] = st.slider("Cu Con Grade", 20.0, 35.0, 25.0, 1.0, key="cgsl8")
@@ -63,6 +63,12 @@ def adjust_calculation(df2):
   ddf = pd.DataFrame({'Metal':metal, 'Grade': grades, 'Revenue by Metal Unit': nsr_fact, 'Block Revenue per tonne':blk_rev})
   
   with colz1:
+    st.write("")
+    st.write("")
+    st.write("")
+    st.write("")
+    st.write("")
+    st.write("")
     st.table(ddf)    
   with colz2:  
     fig = px.bar(ddf, x='Metal', y='Revenue by Metal Unit', color='Metal')
