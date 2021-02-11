@@ -122,7 +122,7 @@ def cut_off():
     st.markdown(text)
   with col4:
     st.image("..//pdac2021_res_est_course//images//nsr_table.png", width=500)
-    st.write("*Note that the average grade of the deposit is not known until the cut-off is known, this is normally an early approximation and and iterative process. While it does not impact the calculations, once the average grade is known, a simple cash flow analysis can be performed.")
+    st.write("*Note that the average grade of the deposit is not known until the cut-off is known. This is normally an early approximation and an iterative process. While it does not impact the calculations, once the average grade is known, a simple cash flow analysis can be performed.")
   q2_options = ['A. I have no idea', 
                 'B. The block value is below all cut-off grades', 
                 'C. The block value is greater than the marginal but less than the break-even cut-off', 
