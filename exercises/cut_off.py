@@ -16,7 +16,7 @@ def adjust_calculation(df2):
     cug = df2.loc[1, 'Resource COG']
     aug = df2.loc[2, 'Resource COG']
   with colx2:
-    st.markdown("Production")
+    st.markdown("Recoveries")
     df2.loc[4, 'Resource COG'] = st.slider("Cu Recovery", 60., 95., 87., 1.0, key="cgsl4")
     df2.loc[5, 'Resource COG'] = st.slider("Au Recover", 60., 95., 90., 1.0, key="cgsl5")
   with colx3:
