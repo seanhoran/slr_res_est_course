@@ -69,6 +69,8 @@ def adjust_calculation(df2):
     st.write("")
     st.write("")
     st.write("")
+    st.write("")
+    st.write("")
     st.table(ddf)    
   with colz2:  
     fig = px.bar(ddf, x='Metal', y='Revenue by Metal Unit', color='Metal')
