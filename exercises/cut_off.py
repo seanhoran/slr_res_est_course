@@ -71,7 +71,7 @@ def adjust_calculation(df2):
     st.write("")
     st.write("")
     st.write("")
-    st.dataframe(ddf)    
+    st.table(ddf)    
   with colz2:  
     fig = px.bar(ddf, x='Metal', y='Revenue by Metal Unit', color='Metal')
     st.plotly_chart(fig,  use_container_width=True)
