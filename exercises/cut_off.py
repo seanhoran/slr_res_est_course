@@ -11,8 +11,8 @@ def adjust_calculation(df2):
   with colx1:
     st.markdown("Block Grade")
     # df2.loc[0, 'Resource COG'] = st.slider("Tonnes", 1000000, 10000000, 5000000, 1000000, key="cgsl1")
-    df2.loc[1, 'Resource COG'] = st.slider("Cu %", 0., 2.0, 0.9, 0.1, key="cgsl2")
-    df2.loc[2, 'Resource COG'] = st.slider("Au g/t", 0., 2.0, 0.7, 0.1, key="cgsl3")
+    cug = st.slider("Cu %", 0., 2.0, 0.9, 0.1, key="cgsl2")
+    aug = st.slider("Au g/t", 0., 2.0, 0.7, 0.1, key="cgsl3")
   with colx2:
     st.markdown("Production")
     df2.loc[4, 'Resource COG'] = st.slider("Cu Recovery", 60., 95., 87., 1.0, key="cgsl4")
@@ -52,14 +52,23 @@ def adjust_calculation(df2):
   df2.loc[30, 'Resource COG'] = np.round((df2.loc[27, 'Resource COG']*df2.loc[25, 'Resource COG']*1000./(df2.loc[0, 'Resource COG']*df2.loc[1, 'Resource COG'])),0)
   df2.loc[31, 'Resource COG'] = np.round((df2.loc[28, 'Resource COG']*df2.loc[25, 'Resource COG']*1000./(df2.loc[0, 'Resource COG']*df2.loc[2, 'Resource COG'])),0)
   
-  colz1, colz2 = st.beta_columns((1,1))
+  colz1, colz2, colz3 = st.beta_columns((1,1,1))
   
-  ddf = df2.loc[30:31].copy()
-  ddf = ddf.rename(columns={'Resource COG':'Revenue by Metal Unit', 'PRODUCTION':'Metal'})
-  fig = px.bar(ddf, x='Metal', y='Revenue by Metal Unit', color='Metal')
-  st.plotly_chart(fig)
-
+  metal = ['Cu', 'Au]
+  grades = [cug, aug]
+  nsr_fact = [df2.loc[30, 'Resource COG'], df2.loc[31, 'Resource COG']]
+  blk_rev = grades*nsr_fact
+  ddf = pd.DataFrame({'Metal':metal, 'Grade': grades, 'Revenue by Metal Unit': nsr_fact, 'Block Revenue per tonne':blk_rev})
   
+  with colz1:
+    st.table(ddf)    
+  with colz2:  
+    fig = px.bar(ddf, x='Metal', y='Revenue by Metal Unit', color='Metal')
+    st.plotly_chart(fig)
+  with colz3:
+    fig = px.bar(ddf, x='Metal', y='Block Revenue per tonne', color='Metal')
+    st.plotly_chart(fig)   
+           
   # st.table(df2)
   
 def cut_off():
@@ -102,7 +111,8 @@ def cut_off():
     text = funcs.get_text_block("cog_q2_intro.txt")
     st.markdown(text)
   with col4:
-    st.image("..//pdac2021_res_est_course//images//nsr_table.jpg", width=550)
+    st.image("..//pdac2021_res_est_course//images//nsr_table.png", width=550)
+    st.write("*Note that the average grade of the deposit is not known until the cut-off is known, this is normally an early approximation")
   q2_options = ['A. I have no idea', 
                 'B. The block value is below all cut-off grades', 
                 'C. The block value is greater than the marginal but less than the break-even cut-off', 
