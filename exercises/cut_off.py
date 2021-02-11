@@ -57,8 +57,8 @@ def adjust_calculation(df2):
   colz1, colz2, colz3 = st.beta_columns((1,1,1))
   
   metal = ['Cu', 'Au']
-  grades = [cug, aug]
-  nsr_fact = [df2.loc[30, 'Resource COG'], df2.loc[31, 'Resource COG']]
+  grades = np.array([cug, aug])
+  nsr_fact = np.array([df2.loc[30, 'Resource COG'], df2.loc[31, 'Resource COG']])
   blk_rev = grades*nsr_fact
   ddf = pd.DataFrame({'Metal':metal, 'Grade': grades, 'Revenue by Metal Unit': nsr_fact, 'Block Revenue per tonne':blk_rev})
   
