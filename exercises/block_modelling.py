@@ -162,7 +162,7 @@ def block_modelling():
     with col2:
         st.markdown('#### Variogram Model (Variances)')
         nugget = st.slider('Nugget Effect',min_value=0.0, max_value=1.0, value=0.1, step=0.05)
-        c1 = st.slider('C1', min_value=0.0, max_value=1.0, value=0.2, step=0.05)
+        c1 = st.slider('C1', min_value=0.0, max_value=1.0-nugget, value=0.0, step=0.05)
         c2 = 1.0 - (c1 + nugget)
     with col3:
         st.markdown('#### Variogram Model (Ranges)')
