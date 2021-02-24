@@ -234,9 +234,9 @@ def block_modelling():
 
     bcol1, bcol2 = st.beta_columns((1, 1))
     with bcol1:
-        block_size = st.number_input('Block Size', min_value=5., max_value=100., value=5., step=5.)
+        block_size = st.number_input('Block Size', min_value=5., max_value=100., value=10., step=5.)
     with bcol2:
-        id_exponent = st.number_input('ID Exponent', min_value=0.0, max_value=10.0, value=2., step=0.1)
+        id_exponent = st.number_input('ID Exponent', min_value=0.0, max_value=10.0, value=2., step=1.)
 
     if st.button("Run Interpolation"):
 
