@@ -6,7 +6,7 @@ def capping_ex():
   
   count_correct = 0
   
-  st.write("Write some stuff")
+  st.write("Write some stuff2")
   
   st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
   
