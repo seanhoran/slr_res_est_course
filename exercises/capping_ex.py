@@ -23,10 +23,15 @@ def capping_ex():
   st.image("..//pdac2021_res_est_course//images//HG_LG_Decile.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//HG_LG_HISTO.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//HG_LG_PP.jpg", use_column_width=True)
+  st.image("..//pdac2021_res_est_course//images//HG_LG_PlanCaps.jpg", use_column_width=True)
+  st.image("..//pdac2021_res_est_course//images//HG_LG_ObliqueCaps.jpg", use_column_width=True)
   
+  if q1_answer=='10 g/t Au':
+   count_correct +=0.5
   if q1_answer=='20 g/t Au':
+   count_correct +=2
+  if q1_answer=='25 g/t Au':
    count_correct +=1
-
   if q1_answer=='Something is wrong':
    count_correct +=3
 
