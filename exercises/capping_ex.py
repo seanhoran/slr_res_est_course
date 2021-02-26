@@ -49,11 +49,18 @@ def capping_ex():
   st.image("..//pdac2021_res_est_course//images//LG_Decile.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//LG_HISTO.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//LG_PP.jpg", use_column_width=True)
+  st.image("..//pdac2021_res_est_course//images//LG_PlanCaps.jpg", use_column_width=True)
+  st.image("..//pdac2021_res_est_course//images//LG_ObliqueCaps.jpg", use_column_width=True)
   
-  if q2_answer=='5 g/t Au':
-   count_correct +=1
+  if q1_answer=='5 g/t Au':
+   count_correct +=3
+  if q1_answer=='10 g/t Au':
+   count_correct +=2
+  if q1_answer=='15 g/t Au':
+   count_correct +=0.5
 
-   
+
+  
     
   st.write("Number correct = " + str(count_correct) + " out of 21")
     
