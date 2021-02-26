@@ -30,7 +30,8 @@ def capping_ex():
   if q1_answer=='Something is wrong':
    count_correct +=3
 
- st.header("Exercise 1 - Gold Deposit - Question 2")
+
+  st.header("Exercise 1 - Gold Deposit - Question 2")
 
   q2_options = ['Please Select an Answer', 
              '5 g/t Au', 
