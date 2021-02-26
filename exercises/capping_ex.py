@@ -29,6 +29,6 @@ def capping_ex():
   if q2_answer=='right answer':
    count_correct +=1
     
-  st.write("Number correct = " + str(count_correct) + " out of 2")
+  st.write("Number correct = " + str(count_correct) + " out of 21")
     
     
