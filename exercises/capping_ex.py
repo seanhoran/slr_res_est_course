@@ -107,7 +107,7 @@ def capping_ex():
    
   q4_options = ['Please Select an Answer', 
              '10 g/t Au', 
-             '20 g/t Au', 
+             '15 g/t Au', 
              '25 g/t Au',
                'Other',
                'Something is wrong']
