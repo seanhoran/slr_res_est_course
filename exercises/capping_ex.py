@@ -40,7 +40,7 @@ def capping_ex():
                'Other',
                'Something is wrong']
     
-  q2_answer=st.radio(''Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.'', options=q2_options, index=0, key='quest2')
+  q2_answer=st.radio(''Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q2_options, index=0, key='quest2')
   st.image("..//pdac2021_res_est_course//images//LG_Decile.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//LG_HISTO.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//LG_PP.jpg", use_column_width=True)
