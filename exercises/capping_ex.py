@@ -26,8 +26,9 @@ def capping_ex():
   st.image("..//pdac2021_res_est_course//images//HG_LG_HISTO.jpg", use_column_width=True)
   st.subheader("Probability Plot")
   st.image("..//pdac2021_res_est_course//images//HG_LG_PP.jpg", use_column_width=True)
+  st.subheader("Plan View - Looking Along Strike")
   st.image("..//pdac2021_res_est_course//images//HG_LG_PlanCaps.jpg", use_column_width=True)
-  st.subheader("View Along Strike")
+  st.subheader("Oblique View - Looking Along Strike")
   st.image("..//pdac2021_res_est_course//images//HG_LG_ObliqueCaps.jpg", use_column_width=True)
   
   if q1_answer=='10 g/t Au':
@@ -50,10 +51,15 @@ def capping_ex():
                'Something is wrong']
   
   q2_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q2_options, index=0, key='quest2')
+  st.subheader("Decile Analysis")
   st.image("..//pdac2021_res_est_course//images//LG_Decile.jpg", use_column_width=True)
+  st.subheader("Histogram")
   st.image("..//pdac2021_res_est_course//images//LG_HISTO.jpg", use_column_width=True)
+  st.subheader("Probability Plot")
   st.image("..//pdac2021_res_est_course//images//LG_PP.jpg", use_column_width=True)
+  st.subheader("Plan View - Looking Along Strike")
   st.image("..//pdac2021_res_est_course//images//LG_PlanCaps.jpg", use_column_width=True)
+  st.subheader("Oblique View - Looking Along Strike")
   st.image("..//pdac2021_res_est_course//images//LG_ObliqueCaps.jpg", use_column_width=True)
   
   if q2_answer=='5 g/t Au':
@@ -74,11 +80,17 @@ def capping_ex():
                'Something is wrong']
   
   q3_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q3_options, index=0, key='quest3')
+  st.subheader("Decile Analysis")
   st.image("..//pdac2021_res_est_course//images//HG_Decile.jpg", use_column_width=True)
+  st.subheader("Histogram")
   st.image("..//pdac2021_res_est_course//images//HG_HISTO.jpg", use_column_width=True)
+  st.subheader("Probability Plot")
   st.image("..//pdac2021_res_est_course//images//HG_PP.jpg", use_column_width=True)
+  st.subheader("Plan View - Looking Along Strike")
   st.image("..//pdac2021_res_est_course//images//HG_PlanCaps.jpg", use_column_width=True)
+  st.subheader("Oblique View - Looking Along Strike")
   st.image("..//pdac2021_res_est_course//images//HG_ObliqueCaps.jpg", use_column_width=True)
+  
   
   if q3_answer=='10 g/t Au':
    count_correct +=0.5
