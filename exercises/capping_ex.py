@@ -20,7 +20,7 @@ def capping_ex():
   
   q1_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q1_options, index=0, key='quest1')
   st.image("..//pdac2021_res_est_course//images//HG_LG_Decile.jpg", use_column_width=True)
-  st.image("..//pdac2021_res_est_course//images//HG_LG_Histo.jpg", use_column_width=True)
+  st.image("..//pdac2021_res_est_course//images//HG_LG_HISTO.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//HG_LG_PP.jpg", use_column_width=True)
   
   if q1_answer=='20 g/t Au':
