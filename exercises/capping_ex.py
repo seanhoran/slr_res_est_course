@@ -32,21 +32,22 @@ def capping_ex():
 
 
   st.header("Exercise 1 - Gold Deposit - Question 2")
-
+   
   q2_options = ['Please Select an Answer', 
              '5 g/t Au', 
              '10 g/t Au', 
              '15 g/t Au',
                'Other',
                'Something is wrong']
-    
-  q2_answer=st.radio(''Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q2_options, index=0, key='quest2')
+  
+  q2_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q2_options, index=0, key='quest1')
   st.image("..//pdac2021_res_est_course//images//LG_Decile.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//LG_HISTO.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//LG_PP.jpg", use_column_width=True)
   
   if q2_answer=='5 g/t Au':
    count_correct +=1
+
    
     
   st.write("Number correct = " + str(count_correct) + " out of 21")
