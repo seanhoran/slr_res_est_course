@@ -45,7 +45,7 @@ def capping_ex():
                'Other',
                'Something is wrong']
   
-  q2_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q2_options, index=0, key='quest1')
+  q2_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q2_options, index=0, key='quest2')
   st.image("..//pdac2021_res_est_course//images//LG_Decile.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//LG_HISTO.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//LG_PP.jpg", use_column_width=True)
@@ -69,7 +69,7 @@ def capping_ex():
                'Other',
                'Something is wrong']
   
-  q3_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q3_options, index=0, key='quest1')
+  q3_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q3_options, index=0, key='quest3')
   st.image("..//pdac2021_res_est_course//images//HG_Decile.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//HG_HISTO.jpg", use_column_width=True)
   st.image("..//pdac2021_res_est_course//images//HG_PP.jpg", use_column_width=True)
