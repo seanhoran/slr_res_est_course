@@ -10,7 +10,7 @@ def capping_ex():
 
   st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
 
-  st.title("Exercise 1 - Gold Deposit")
+  st.header("Exercise 1 - Gold Deposit - Question 1")
    
   q1_options = ['Please Select an Answer', 
              '10 g/t Au', 
@@ -30,6 +30,7 @@ def capping_ex():
   if q1_answer=='Something is wrong':
    count_correct +=3
 
+ st.header("Exercise 1 - Gold Deposit - Question 2")
 
   q2_options = ['Please Select an Answer', 
              '5 g/t Au', 
