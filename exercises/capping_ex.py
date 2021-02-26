@@ -24,8 +24,8 @@ def capping_ex():
    count_correct +=1
 
    st.image("..//pdac2021_res_est_course//images//HG_LG_Decile.jpg", use_column_width=True)
-      st.image("..//pdac2021_res_est_course//images//HG_LG_Histo.jpg", use_column_width=True)
-       st.image("..//pdac2021_res_est_course//images//HG_LG_PP.jpg", use_column_width=True)
+   st.image("..//pdac2021_res_est_course//images//HG_LG_Histo.jpg", use_column_width=True)
+   st.image("..//pdac2021_res_est_course//images//HG_LG_PP.jpg", use_column_width=True)
 
   q2_options = ['Please Select an Answer', 
              'Answer 1', 
