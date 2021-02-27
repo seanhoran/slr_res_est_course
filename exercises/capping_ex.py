@@ -131,9 +131,38 @@ def capping_ex():
    count_correct +=1
 
 
+  st.header("Exercise 1 - Gold Deposit - Question 5")
+   
+  q5_options = ['Please Select an Answer', 
+             '10 g/t Au', 
+             '20 g/t Au', 
+             '25 g/t Au',
+               'Other',
+               'Something is wrong']
+  
+  q5_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q5_options, index=0, key='quest5')
+  st.subheader("Decile Analysis")
+  st.image("..//pdac2021_res_est_course//images//HG1_Decile.jpg", use_column_width=True)
+  st.subheader("Histogram")
+  st.image("..//pdac2021_res_est_course//images//HG1_HISTO.jpg", use_column_width=True)
+  st.subheader("Probability Plot")
+  st.image("..//pdac2021_res_est_course//images//HG1_PP.jpg", use_column_width=True)
+  st.subheader("Plan View - Looking Along Strike")
+  st.image("..//pdac2021_res_est_course//images//HG1_PlanCaps.jpg", use_column_width=True)
+  st.subheader("Oblique View - Looking Along Strike")
+  st.image("..//pdac2021_res_est_course//images//HG1_ObliqueCaps.jpg", use_column_width=True)
+  
+  
+  if q5_answer=='10 g/t Au':
+   count_correct +=1
+  if q5_answer=='20 g/t Au':
+   count_correct +=3
+  if q5_answer=='25 g/t Au':
+   count_correct +=1
+
   
   
     
-  st.write("Number correct = " + str(count_correct) + " out of 21")
+  st.write("Number correct = " + str(count_correct) + " out of 15")
     
     
