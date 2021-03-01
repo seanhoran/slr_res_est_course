@@ -27,9 +27,16 @@ def capping_ex():
    st.image("..//pdac2021_res_est_course//images//HG_LG_Decile.jpg", use_column_width=True)
   with col2:
    st.subheader("Histogram")
+   st.write("")
+   st.write("")
+   st.write("")
+   st.write("")
    st.image("..//pdac2021_res_est_course//images//HG_LG_HISTO.jpg", use_column_width=True)
   with col3:
    st.subheader("Probability Plot")
+   st.write("")
+   st.write("")
+   st.write("")
    st.image("..//pdac2021_res_est_course//images//HG_LG_PP.jpg", use_column_width=True)
   
   cola1, cola2 = st.beta_columns((1,1))
