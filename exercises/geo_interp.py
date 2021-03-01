@@ -64,7 +64,7 @@ def geo_interp():
         st.write("")
         st.write("")
         st.write("")
-        st.image("..//pdac2021_res_est_course//images//flow_chart.jpg", width=400)
+        st.image("..//pdac2021_res_est_course//images//flow_chart.jpg", width=350)
     with colz2:
         sel_graph = st.selectbox("Select Graph", options=['Fe vs Si', 'P vs Si'], index=0, key='g1')
         if sel_graph == 'Fe vs Si':
