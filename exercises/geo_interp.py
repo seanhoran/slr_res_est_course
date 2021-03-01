@@ -58,6 +58,20 @@ def geo_interp():
                   "Silica and iron together, phosphorus separate."]
 
     st.radio("How will I domain and estimate these elements?", options=q3_options, key="q3")
-    st.image("..//pdac2021_res_est_course//images//flow_chart.jpg")
+    colz1, colz2, colz3 = st.beta_columns((1,1,1))
+    
+    with colz1:
+        st.image("..//pdac2021_res_est_course//images//flow_chart.jpg", width=400)
+    with colz2:
+        sel_graph = st.selectbox(labe, options['Fe vs Si', 'P vs Si'], index=0, key='g1')
+        if sel_graph == 'Fe vs Si':
+            inp = 'fesi.jpg'
+        else:
+            inp = 'psi.jpg'
+        st.image("..//pdac2021_res_est_course//images//" + inp, width=400)
+            
+    with colz3:
+        sel_sect = st.selectbox(labe, options['Si', 'Fe', 'P'], index=0, key='g1')
+        st.image("..//pdac2021_res_est_course//images//" + sel_sect + "_sect.jpg", width=400)
 
 
