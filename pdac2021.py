@@ -4,6 +4,7 @@ import exercises.capping_ex as capping_ex
 import exercises.variograms as variograms
 import exercises.cut_off as cut_off
 import exercises.block_modelling as block_modelling
+import exercises.geo_interp as geo_interp
 
 max_width = 1200
 
@@ -58,7 +59,7 @@ exercise=st.sidebar.radio("",
 if exercise == radio_options[0]:
   about_course.about_course()
 if exercise == radio_options[1]:
-  capping_ex.capping_ex()
+  geo_interp.geo_interp()
 if exercise == radio_options[2]:
   capping_ex.capping_ex()
 if exercise == radio_options[3]:
