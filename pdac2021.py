@@ -1,11 +1,11 @@
-import streamlit as st
+rimport streamlit as st
 import exercises.about_course as about_course
 import exercises.capping_ex as capping_ex
 import exercises.variograms as variograms
 import exercises.cut_off as cut_off
 import exercises.block_modelling as block_modelling
 import exercises.geo_interp as geo_interp
-import reporting.reporting as reporting
+import exercises.reporting as reporting
 
 max_width = 1200
 
