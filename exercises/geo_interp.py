@@ -45,6 +45,6 @@ def geo_interp():
     with col3:
 
         cog2 = st.slider("Select a cut-off (% of economic cut-off)", min_value=0, value=0, step=1, key="sl1")
-        st.image("..//pdac2021_res_est_course//images//gt2" + str(int(cog2)) + ".jpg")
+        st.image("..//pdac2021_res_est_course//images//gt" + str(int(cog2)) + ".jpg")
 
 
