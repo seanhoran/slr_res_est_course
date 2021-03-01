@@ -35,7 +35,7 @@ def geo_interp():
 
     with col1:
         st.write("")
-        st.write("")
+        st.write("Litho")
         st.write("")
         st.write("")
         st.write("")
