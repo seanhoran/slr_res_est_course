@@ -40,6 +40,7 @@ def capping_ex():
   if q1_answer=='Something is wrong':
    count_correct +=3
 
+  st.write("Number correct = " + str(count_correct) + " out of 3")   
 
   st.header("Exercise 1 - Gold Deposit - Question 2")
    
@@ -69,7 +70,8 @@ def capping_ex():
   if q2_answer=='15 g/t Au':
    count_correct +=0.5
 
-
+  st.write("Number correct = " + str(count_correct) + " out of 6")
+  
   st.header("Exercise 1 - Gold Deposit - Question 3")
    
   q3_options = ['Please Select an Answer', 
@@ -101,7 +103,7 @@ def capping_ex():
   if q3_answer=='Something is wrong':
    count_correct +=3
 
-
+  st.write("Number correct = " + str(count_correct) + " out of 9")
 
   st.header("Exercise 1 - Gold Deposit - Question 4")
    
@@ -130,6 +132,7 @@ def capping_ex():
   if q4_answer=='15 g/t Au':
    count_correct +=1
 
+  st.write("Number correct = " + str(count_correct) + " out of 12")  
 
   st.header("Exercise 1 - Gold Deposit - Question 5")
    
@@ -159,8 +162,6 @@ def capping_ex():
    count_correct +=3
   if q5_answer=='25 g/t Au':
    count_correct +=1
-
-  
   
     
   st.write("Number correct = " + str(count_correct) + " out of 15")
@@ -168,9 +169,9 @@ def capping_ex():
 
   st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
   
-  st.write("As you might have gathered from the plan and oblique views, the gold deposit dataset from Question 1 contains a high grade and low grade population, where the high grade veins are contained within a lower grade alteration halo. The second exercise is a continuation from the first and requires you to match the domains shown in the images below with the statistics presented in each of the questions from the first exercise.")
+  st.write("As you might have gathered from the plan and oblique views, the gold deposit dataset from Question 1 contains a high grade and low grade population, where the high grade veins are contained within a lower grade alteration halo. The second exercise is a continuation from the first and requires you to match the domains shown in the images below with the statistics presented in each of the questions from the first exercise. If you had some incorrect responses in the first exercise, consult the information and images below prior to begining Exercise 2.")
   
-  st.write("Note: The images below are an inclined views and are looking down over the along strike oblique views presented in Exercise 1.")
+  st.write("Note: The images below are an inclined views and are looking down over the along strike oblique views presented in Exercise 1. Wireframes were constructed for Domains 1 and 2 at a nominal cut-off grade of 1 g/t Au while the Domain 3 wireframes were constructed at a nominal 0.20 g/t Au cut-off grade.")
 
   st.subheader("Domains 1, 2 and 3")
   st.image("..//pdac2021_res_est_course//images//Domains123.jpg", use_column_width=True)
