@@ -4,7 +4,7 @@ def geo_interp():
 
     st.title("Geological Interpretation")
 
-    '''
+    st.markdown("
     ## Question 1: Pick a modelling cut-off
     
     You are tasked with building a Mineral Resource domain for a typical orogenic gold deposit of Ontario.​
@@ -12,7 +12,7 @@ def geo_interp():
     The mineralization is erratic and, for the most part, hosted within a fractured basalt.​
 
     Review the following cross sections showing mineralization at a variety of cut-off grades, as well as lithology and answer the following questions:
-    '''
+    ")
 
     q1_options = ["Select an Answer",
                   "25% of the economic cut-off",
