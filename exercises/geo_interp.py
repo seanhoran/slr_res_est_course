@@ -51,5 +51,6 @@ def geo_interp():
     st.markdown("")
     text = funcs.get_text_block("geo_interp_q2.txt")
     st.markdown(text)
+    st.image("..//pdac2021_res_est_course//images//flow_chart.jpg")
 
 
