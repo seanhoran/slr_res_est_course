@@ -38,16 +38,16 @@ def geo_interp():
         st.write("")
         st.write("")
         st.write("")
-        st.image("..//pdac2021_res_est_course//images//litho.jpg", width=300)
+        st.image("..//pdac2021_res_est_course//images//litho.jpg", width=400)
 
     with col2:
 
         cog = st.slider("Select a cut-off (% of economic cut-off)", min_value=0,value=0, step=1, max_value=3, key="sl1")
-        st.image("..//pdac2021_res_est_course//images//gt" + str(int(cog)) + ".jpg", width=300)
+        st.image("..//pdac2021_res_est_course//images//gt" + str(int(cog)) + ".jpg", width=400)
 
     with col3:
 
-        cog2 = st.slider("Select a cut-off (% of economic cut-off)", min_value=0, value=0, step=1, max_value=3, key="sl1")
-        st.image("..//pdac2021_res_est_course//images//gt2" + str(int(cog2))+ ".jpg", width=300)
+        cog2 = st.slider("Select a cut-off (% of economic cut-off)", min_value=0, value=0, step=1, max_value=3, key="sl2")
+        st.image("..//pdac2021_res_est_course//images//gt2" + str(int(cog2))+ ".jpg", width=400)
 
 
