@@ -63,7 +63,7 @@ def geo_interp():
     with colz1:
         st.image("..//pdac2021_res_est_course//images//flow_chart.jpg", width=400)
     with colz2:
-        sel_graph = st.selectbox(labe, options['Fe vs Si', 'P vs Si'], index=0, key='g1')
+        sel_graph = st.selectbox("Select Graph", options['Fe vs Si', 'P vs Si'], index=0, key='g1')
         if sel_graph == 'Fe vs Si':
             inp = 'fesi.jpg'
         else:
@@ -71,7 +71,7 @@ def geo_interp():
         st.image("..//pdac2021_res_est_course//images//" + inp, width=400)
             
     with colz3:
-        sel_sect = st.selectbox(labe, options['Si', 'Fe', 'P'], index=0, key='g1')
+        sel_sect = st.selectbox("Display Section", options['Si', 'Fe', 'P'], index=0, key='g1')
         st.image("..//pdac2021_res_est_course//images//" + sel_sect + "_sect.jpg", width=400)
 
 
