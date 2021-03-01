@@ -87,10 +87,10 @@ def capping_ex():
    st.image("..//pdac2021_res_est_course//images//LG_PP.jpg", use_column_width=True)
   
   colc1, colc2 = st.beta_columns((1,1.6))
-  with cola1:
+  with colc1:
    st.subheader("Plan View - Looking Down")
    st.image("..//pdac2021_res_est_course//images//LG_PlanCaps.jpg", use_column_width=True)
-  with cola2:
+  with colc2:
    st.subheader("Oblique View - Looking Along Strike")
    st.image("..//pdac2021_res_est_course//images//LG_ObliqueCaps.jpg", use_column_width=True)
   
