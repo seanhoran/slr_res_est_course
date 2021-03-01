@@ -189,7 +189,7 @@ def capping_ex():
              'Domains 1 and 3',
              'Domains 1, 2, and 3']
   
-  q6_answer=st.radio('Which domains best reflect the histogram, probability plot and decile analysis presented in Question 1 from Exercise 1?', options=q6_options, index=0, key='quest6')
+  q6_answer=st.radio('Which domain(s) best reflect the histogram, probability plot and decile analysis presented in Question 1 from Exercise 1?', options=q6_options, index=0, key='quest6')
 
   
   if q6_answer=='Domains 1, 2, and 3':
@@ -206,7 +206,7 @@ def capping_ex():
              'Domains 1 and 3',
              'Domains 1, 2, and 3']
   
-  q7_answer=st.radio('Which domains best reflect the histogram, probability plot and decile analysis presented in Question 2 from Exercise 1?', options=q7_options, index=0, key='quest7')
+  q7_answer=st.radio('Which domain(s) best reflect the histogram, probability plot and decile analysis presented in Question 2 from Exercise 1?', options=q7_options, index=0, key='quest7')
 
   
   if q7_answer=='Domain 3':
@@ -223,7 +223,7 @@ def capping_ex():
              'Domains 1 and 3',
              'Domains 1, 2, and 3']
   
-  q9_answer=st.radio('Which domains best reflect the histogram, probability plot and decile analysis presented in Question 3 from Exercise 1?', options=q9_options, index=0, key='quest8')
+  q9_answer=st.radio('Which domain(s) best reflect the histogram, probability plot and decile analysis presented in Question 3 from Exercise 1?', options=q9_options, index=0, key='quest8')
 
   
   if q9_answer=='Domains 1 and 2':
@@ -240,7 +240,7 @@ def capping_ex():
              'Domains 1 and 3',
              'Domains 1, 2, and 3']
   
-  q9_answer=st.radio('Which domains best reflect the histogram, probability plot and decile analysis presented in Question 4 from Exercise 1?', options=q9_options, index=0, key='quest9')
+  q9_answer=st.radio('Which domain(s) best reflect the histogram, probability plot and decile analysis presented in Question 4 from Exercise 1?', options=q9_options, index=0, key='quest9')
 
   
   if q9_answer=='Domain 2':
@@ -258,7 +258,7 @@ def capping_ex():
              'Domains 1 and 3',
              'Domains 1, 2, and 3']
   
-  q10_answer=st.radio('Which domains best reflect the histogram, probability plot and decile analysis presented in Question 5 from Exercise 1?', options=q10_options, index=0, key='quest10')
+  q10_answer=st.radio('Which domain(s) best reflect the histogram, probability plot and decile analysis presented in Question 5 from Exercise 1?', options=q10_options, index=0, key='quest10')
 
   
   if q10_answer=='Domain 1':
