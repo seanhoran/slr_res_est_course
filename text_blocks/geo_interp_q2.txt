@@ -1,0 +1,11 @@
+You are tasked with building a Mineral Resource model for a hematite taconite deposit.  Your samples are based on a bench flotation process designed to mimic plant conditions, which concentrates iron in a reverse flotation process. A geological model and alteration model have been completed.
+
+* Phosphorus is present in low concentrations throughout the iron formation and is deleterious.  Concentration at levels above the iron-pellet specification limit occurs where the iron formation has been weathered.
+
+  ** A large sill has protected much of the iron formation at depth from weathering.  Below this sill, high phosphorus values occur at the sill contact, and in areas with a high concentration of faulting.
+  ** Above the large sill, the iron formation is intruded by several smaller sills and pervasive oxidation dominates.  Most of the material above the sill is waste as a consequence.
+  ** Historical sampling did not include phosphorus, and it is inconsistently present in the database. 
+
+* Silica alteration from intrusive filled sills, dykes, and faults impacts the iron concentration process in the plant and is considered deleterious.
+
+Use the flow chart and graphs to determine how you will model and estimate iron, silica and phosphorus in concentrate.
