@@ -68,16 +68,33 @@ def capping_ex():
                'Something is wrong']
   
   q2_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q2_options, index=0, key='quest2')
-  st.subheader("Decile Analysis")
-  st.image("..//pdac2021_res_est_course//images//LG_Decile.jpg", use_column_width=True)
-  st.subheader("Histogram")
-  st.image("..//pdac2021_res_est_course//images//LG_HISTO.jpg", use_column_width=True)
-  st.subheader("Probability Plot")
-  st.image("..//pdac2021_res_est_course//images//LG_PP.jpg", use_column_width=True)
-  st.subheader("Plan View - Looking Along Strike")
-  st.image("..//pdac2021_res_est_course//images//LG_PlanCaps.jpg", use_column_width=True)
-  st.subheader("Oblique View - Looking Along Strike")
-  st.image("..//pdac2021_res_est_course//images//LG_ObliqueCaps.jpg", use_column_width=True)
+  
+    colb1, colb2, colb3 = st.beta_columns((1,1.5,1))
+  with colb1:
+   st.subheader("Decile Analysis")
+   st.image("..//pdac2021_res_est_course//images//LG_Decile.jpg", use_column_width=True)
+  with colb2:
+   st.subheader("Histogram")
+   st.write("")
+   st.write("")
+   st.write("")
+   st.write("")
+   st.image("..//pdac2021_res_est_course//images//LG_HISTO.jpg", use_column_width=True)
+  with colb3:
+   st.subheader("Probability Plot")
+   st.write("")
+   st.write("")
+   st.write("")
+   st.image("..//pdac2021_res_est_course//images//LG_PP.jpg", use_column_width=True)
+  
+  colc1, colc2 = st.beta_columns((1,1.6))
+  with cola1:
+   st.subheader("Plan View - Looking Down")
+   st.image("..//pdac2021_res_est_course//images//LG_PlanCaps.jpg", use_column_width=True)
+  with cola2:
+   st.subheader("Oblique View - Looking Along Strike")
+   st.image("..//pdac2021_res_est_course//images//LG_ObliqueCaps.jpg", use_column_width=True)
+  
   
   if q2_answer=='5 g/t Au':
    count_correct +=3
