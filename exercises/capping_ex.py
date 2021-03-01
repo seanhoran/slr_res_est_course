@@ -8,7 +8,7 @@ def capping_ex():
   
   st.write("The grade restriction module introduced some of the tools that can help you identify whether high grade restraining is required. This exercise uses real data and shows how the high grade restraining workflow is iterative, and that your decision to domain, cap, or otherwise restrict outlier samples should be informed by a group of tools. Lastly, it is important to note that you may elect to revisit your high grade restraining workflow after validating your estimate visually and statistically since the impact of high grade samples on the final resource estimate can be significant.")
 
-  st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
+#   st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
 
   st.header("Exercise 1 - Gold Deposit - Question 1")
    
@@ -19,17 +19,26 @@ def capping_ex():
                'Other',
                'Something is wrong']
   
+  
   q1_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q1_options, index=0, key='quest1')
-  st.subheader("Decile Analysis")
-  st.image("..//pdac2021_res_est_course//images//HG_LG_Decile.jpg", use_column_width=True)
-  st.subheader("Histogram")
-  st.image("..//pdac2021_res_est_course//images//HG_LG_HISTO.jpg", use_column_width=True)
-  st.subheader("Probability Plot")
-  st.image("..//pdac2021_res_est_course//images//HG_LG_PP.jpg", use_column_width=True)
-  st.subheader("Plan View - Looking Along Strike")
-  st.image("..//pdac2021_res_est_course//images//HG_LG_PlanCaps.jpg", use_column_width=True)
-  st.subheader("Oblique View - Looking Along Strike")
-  st.image("..//pdac2021_res_est_course//images//HG_LG_ObliqueCaps.jpg", use_column_width=True)
+  col1, col2, col3 = st.beta_columns((1,1,1))
+  with col1:
+   st.subheader("Decile Analysis")
+   st.image("..//pdac2021_res_est_course//images//HG_LG_Decile.jpg", use_column_width=True)
+  with col2:
+   st.subheader("Histogram")
+   st.image("..//pdac2021_res_est_course//images//HG_LG_HISTO.jpg", use_column_width=True)
+  with col3:
+   st.subheader("Probability Plot")
+   st.image("..//pdac2021_res_est_course//images//HG_LG_PP.jpg", use_column_width=True)
+  
+  cola1, cola2, cola3 = st.beta_columns((1,1))
+  with cola1:
+   st.subheader("Plan View - Looking Along Strike")
+   st.image("..//pdac2021_res_est_course//images//HG_LG_PlanCaps.jpg", use_column_width=True)
+  with cola2:
+   st.subheader("Oblique View - Looking Along Strike")
+   st.image("..//pdac2021_res_est_course//images//HG_LG_ObliqueCaps.jpg", use_column_width=True)
   
   if q1_answer=='10 g/t Au':
    count_correct +=0.5
