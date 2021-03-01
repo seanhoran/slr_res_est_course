@@ -1,4 +1,5 @@
 import streamlit as st
+import funcs
 
 def geo_interp():
 
@@ -48,5 +49,7 @@ def geo_interp():
         
     st.markdown("## Question 2: Pick a modelling cut-off")
     st.markdown("")
+    text = funcs.get_text_block("variography_intro.txt")
+    st.markdown(text)
 
 
