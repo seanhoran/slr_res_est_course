@@ -32,7 +32,7 @@ def capping_ex():
    st.subheader("Probability Plot")
    st.image("..//pdac2021_res_est_course//images//HG_LG_PP.jpg", use_column_width=True)
   
-  cola1, cola2, cola3 = st.beta_columns((1,1))
+  cola1, cola2 = st.beta_columns((1,1))
   with cola1:
    st.subheader("Plan View - Looking Along Strike")
    st.image("..//pdac2021_res_est_course//images//HG_LG_PlanCaps.jpg", use_column_width=True)
