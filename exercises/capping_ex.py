@@ -41,7 +41,7 @@ def capping_ex():
   
   cola1, cola2 = st.beta_columns((1,1.6))
   with cola1:
-   st.subheader("Plan View - Looking Along Strike")
+   st.subheader("Plan View - Looking Down")
    st.image("..//pdac2021_res_est_course//images//HG_LG_PlanCaps.jpg", use_column_width=True)
   with cola2:
    st.subheader("Oblique View - Looking Along Strike")
