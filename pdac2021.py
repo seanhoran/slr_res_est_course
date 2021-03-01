@@ -5,6 +5,7 @@ import exercises.variograms as variograms
 import exercises.cut_off as cut_off
 import exercises.block_modelling as block_modelling
 import exercises.geo_interp as geo_interp
+import reporting.reporting as reporting
 
 max_width = 1200
 
@@ -49,7 +50,7 @@ radio_options = ["01 About the Course",
                  "04 Variograms", 
                  "05 Interpolation", 
                  "06 Cut-Off Grade", 
-                 "07 Classification"]
+                 "07 Reporting/Classification"]
 
 exercise=st.sidebar.radio("", 
                           options=radio_options, 
@@ -68,3 +69,5 @@ if exercise == radio_options[4]:
   block_modelling.block_modelling()
 if exercise == radio_options[5]:
   cut_off.cut_off()
+if exercise == radio_options[6]:
+  reporting.reporting()
