@@ -68,8 +68,7 @@ def capping_ex():
                'Something is wrong']
   
   q2_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate.', options=q2_options, index=0, key='quest2')
-  
-    colb1, colb2, colb3 = st.beta_columns((1,1.5,1))
+  colb1, colb2, colb3 = st.beta_columns((1,1.5,1))
   with colb1:
    st.subheader("Decile Analysis")
    st.image("..//pdac2021_res_est_course//images//LG_Decile.jpg", use_column_width=True)
