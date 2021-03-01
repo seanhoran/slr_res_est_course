@@ -165,4 +165,34 @@ def capping_ex():
     
   st.write("Number correct = " + str(count_correct) + " out of 15")
     
-    
+
+  st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
+  
+  st.write("As you might have gathered from the plan and oblique views, the gold deposit dataset from Question 1 contains a high grade and low grade population, where the high grade veins are contained within a lower grade alteration halo. The second exercise is a continuation from the first and requires you to match the domains shown in the images below with the statistics presented in each of the questions from the first exercise.")
+  
+  st.write("Note: The images below are an inclined views and are looking down over the along strike oblique views presented in Exercise 1.")
+
+  st.subheader("Domains 1, 2 and 3")
+  st.image("..//pdac2021_res_est_course//images//Domains123.jpg", use_column_width=True)
+  st.subheader("Domains 1, 2 and 3 with Capped Assays")
+  st.image("..//pdac2021_res_est_course//images//Domains123_Caps2.jpg", use_column_width=True)
+  st.subheader("Capped Assays")
+  st.image("..//pdac2021_res_est_course//images//Domains123_Caps.jpg", use_column_width=True)
+
+  st.header("Exercise 2 - Gold Deposit - Question 1")
+   
+  q6_options = ['Please Select an Answer', 
+             'Domain 1', 
+             'Domain 2', 
+             'Domain 3',
+             'Domains 1 and 2',
+             'Domains 1 and 3',
+             'Domains 1, 2, and 3']
+  
+  q6_answer=st.radio('Which domains best reflect the histogram, probability plot and decile analysis presented in Question 1 from Exercise 1?', options=q6_options, index=0, key='quest1')
+
+  
+  if q6_answer=='Domains 1, 2, and 3':
+   count_correct +=3
+
+  st.write("Number correct = " + str(count_correct) + " out of 18")
