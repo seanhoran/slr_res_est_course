@@ -51,6 +51,13 @@ def geo_interp():
     st.markdown("")
     text = funcs.get_text_block("geo_interp_q2.txt")
     st.markdown(text)
+    q3_options = ["Select an Answer",
+                  "All together.",
+                  "All separate.",
+                  "There is no need to model phosphorus.",
+                  "Silica and iron together, phosphorus separate."]
+
+    st.radio("How will I domain and estimate these elements?", options=q3_options, key="q3")
     st.image("..//pdac2021_res_est_course//images//flow_chart.jpg")
 
 
