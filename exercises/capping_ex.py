@@ -196,6 +196,7 @@ def capping_ex():
   if q6_answer=='Domains 1, 2, and 3':
    count_correct +=3
 
+  st.write("Number correct = " + str(count_correct) + " out of 18")   
    
   st.header("Exercise 2 - Gold Deposit - Question 2")
    
@@ -213,6 +214,7 @@ def capping_ex():
   if q7_answer=='Domain 3':
    count_correct +=3
    
+  st.write("Number correct = " + str(count_correct) + " out of 21")      
    
   st.header("Exercise 2 - Gold Deposit - Question 4")
    
@@ -230,7 +232,8 @@ def capping_ex():
   if q9_answer=='Domains 1 and 2':
    count_correct +=3
       
-    
+  st.write("Number correct = " + str(count_correct) + " out of 24")       
+  
   st.header("Exercise 2 - Gold Deposit - Question 4")
    
   q9_options = ['Please Select an Answer', 
@@ -247,7 +250,7 @@ def capping_ex():
   if q9_answer=='Domain 2':
    count_correct +=3
       
-      
+  st.write("Number correct = " + str(count_correct) + " out of 27")         
     
   st.header("Exercise 2 - Gold Deposit - Question 5")
    
