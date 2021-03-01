@@ -1,4 +1,4 @@
-rimport streamlit as st
+import streamlit as st
 import exercises.about_course as about_course
 import exercises.capping_ex as capping_ex
 import exercises.variograms as variograms
