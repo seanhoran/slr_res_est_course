@@ -47,7 +47,7 @@ def geo_interp():
         cog2 = st.slider("Select a cut-off (% of economic cut-off)", min_value=0, value=0, step=1, max_value=4, key="sl2")
         st.image("..//pdac2021_res_est_course//images//gt2" + str(int(cog2))+ ".jpg", width=400)
         
-    st.markdown("## Question 2: Pick a modelling cut-off")
+    st.markdown("## Question 2: Choose a domaining strategy")
     st.markdown("")
     text = funcs.get_text_block("geo_interp_q2.txt")
     st.markdown(text)
