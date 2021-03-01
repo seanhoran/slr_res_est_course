@@ -43,8 +43,8 @@ st.sidebar.image("..//pdac2021_res_est_course//055CF2A4-98DC-488C-B5A6-15CC02C99
 # Compositing - Q&A
 
 radio_options = ["01 About the Course", 
-                 "02 Capping", 
-                 "03 Compositing", 
+                 "02 Geological Interp", 
+                 "03 Capping", 
                  "04 Variograms", 
                  "05 Interpolation", 
                  "06 Cut-Off Grade", 
@@ -60,7 +60,7 @@ if exercise == radio_options[0]:
 if exercise == radio_options[1]:
   capping_ex.capping_ex()
 if exercise == radio_options[2]:
-  variograms.variograms()
+  capping_ex.capping_ex()
 if exercise == radio_options[3]:
   variograms.variograms()
 if exercise == radio_options[4]:
