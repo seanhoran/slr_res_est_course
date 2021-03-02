@@ -155,9 +155,9 @@ def capping_ex():
   st.header("Exercise 1 - Gold Deposit - Question 4")
    
   q4_options = ['Please Select an Answer', 
+             '5 g/t Au', 
              '10 g/t Au', 
-             '15 g/t Au', 
-             '25 g/t Au',
+             '15 g/t Au',
                'Other',
                'Something is wrong']
   
