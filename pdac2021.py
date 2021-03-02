@@ -6,6 +6,7 @@ import exercises.cut_off as cut_off
 import exercises.block_modelling as block_modelling
 import exercises.geo_interp as geo_interp
 import exercises.reporting as reporting
+import exercises.interp as interp
 
 max_width = 1200
 
@@ -66,8 +67,8 @@ if exercise == radio_options[2]:
 if exercise == radio_options[3]:
   variograms.variograms()
 if exercise == radio_options[4]:
-  pass
 #   block_modelling.block_modelling()
+  interp.block_modelling()
 if exercise == radio_options[5]:
   cut_off.cut_off()
 if exercise == radio_options[6]:
