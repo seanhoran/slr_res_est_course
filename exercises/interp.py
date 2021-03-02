@@ -76,9 +76,7 @@ def block_modelling():
     # fig, ax = plot_samps(df)
     # st.pyplot(fig)
     st.image("..//pdac2021_res_est_course//images//contour.jpg", use_column_width=True)
-    xx = spatial.distance_matrix(df[['YPT', 'ZPT']], df[['YPT', 'ZPT']])
-    xx = np.array(xx)
-
+    
     #-----------------------------------------------------------------------------------------------------------------#
     # Variogram
     # ----------------------------------------------------------------------------------------------------------------#
