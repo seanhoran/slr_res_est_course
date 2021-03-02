@@ -1,18 +1,11 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-import plotly.express as px
 import matplotlib.pyplot as plt
-import scipy.spatial as spatial
-from sklearn.neighbors import KDTree
 import warnings
-from multiprocessing.pool import ThreadPool as Pool
 from matplotlib.patches import Ellipse
 warnings.simplefilter("ignore")
-from scipy.interpolate import Rbf
 import matplotlib as mpl
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 
 color_seq = np.array(['grey', 'blue', 'green', 'yellow', 'orange', 'red', 'purple', 'purple'])
 cog = np.array([-99, 0., 1.0, 1.5, 2.0, 2.5, 3.0, 3.0001])
@@ -29,14 +22,6 @@ def get_text_block(fname):
   return f.read();
 
 
-def pad_matrix(mat, dim=2):
-    mat = np.array(mat)
-    if dim == 2:
-        mat = np.pad(mat, (0, 1), 'constant', constant_values=(1))
-        mat[-1, -1] = 0.
-    else:
-        mat = np.pad(mat, (0, 1), 'constant', constant_values=(1, 1))
-    return mat;
 
 
 def variogram(h, var, nugget):
@@ -47,21 +32,6 @@ def variogram(h, var, nugget):
         gamma += gam
     gamma[h == 0] = 0.
     return gamma;
-
-
-def OK(x, y, var, nugget):
-    # x is samples
-    # y in blocks
-    x = np.array(x)
-    y = np.array(y)
-    xx = spatial.distance_matrix(x, x)
-    xx_gamma = variogram(xx, var, nugget)
-    xx_gamma = pad_matrix(xx_gamma)
-    xy_gamma = variogram(y, var, nugget)
-    xy_gamma = pad_matrix(xy_gamma, dim=1)
-    xx_inv = np.linalg.inv(xx_gamma)
-    return np.dot(xy_gamma, xx_inv)[:-1];
-
 
 def rotate(pts, rot):
     c = np.cos(np.radians(rot))
@@ -87,47 +57,6 @@ def plot_samps(df, plot_contour=True):
     plt.xlabel('X')
     plt.ylabel('Y')
     return fig, ax;
-
-def plot_blocks(block_size, grades, df):
-    aniso = (300. + block_size) / (750. + block_size)
-    fig, ax = plt.subplots(figsize=(15, 15 * aniso))
-    xx, yy = dgrid(block_size)
-    extents = (0., 750 + block_size, 0., 300. + block_size)
-    ax.imshow(np.reshape(grades, xx.shape), origin='lower', extent=extents, alpha=0.8, cmap=cmap, norm=norm)
-    scat = ax.scatter(df.YPT, df.ZPT, c=df.AU_G_T, cmap=cmap, norm=norm, edgecolor="black", s=40)
-    cbar = fig.colorbar(scat, ticks=cog)
-    cbar.set_label('Au g/t', rotation=0)
-    plt.xlim((0, 750))
-    plt.ylim((0, 300))
-    plt.xlabel('X')
-    plt.ylabel('Y')
-    return fig, ax;
-
-
-def dgrid(block_size=5.):
-    x = np.arange(0., 750. + block_size, block_size)
-    y = np.arange(0., 300. + block_size, block_size)
-    return np.meshgrid(x, y);
-
-def gtcurve(grades, block_size):
-
-    cogs = [0., 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0]
-    grades[grades<0.] = 0.
-    grades[np.isnan(grades)]=-99.
-    bt = block_size*2.7
-
-    g = []
-    t = []
-    c = []
-
-    for cog in cogs:
-        filt = grades>cog
-        if np.sum(filt) > 0:
-            g.append(np.average(grades[filt]))
-            t.append(np.sum(filt)*bt)
-            c.append(cog)
-
-    return pd.DataFrame({'COG':c, 'Tonnes':t, 'Grade':g});
 
 def block_modelling():
 
