@@ -22,17 +22,6 @@ def get_text_block(fname):
   return f.read();
 
 
-
-
-def variogram(h, var, nugget):
-    gamma = nugget
-    for i in range(2):
-        gam = (var[i, 0]) * ((3 * h) / (2 * var[i, 1]) - (h ** 3) / (2 * var[i, 1] ** 3))
-        gam[h > var[i, 1]] = var[i, 0]
-        gamma += gam
-    gamma[h == 0] = 0.
-    return gamma;
-
 def rotate(pts, rot):
     c = np.cos(np.radians(rot))
     s = np.sin(np.radians(rot))
