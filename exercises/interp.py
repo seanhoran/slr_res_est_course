@@ -87,58 +87,7 @@ def block_modelling():
                 " the longest direction and longer than the shortest direction. Your job is to estimate the range" +
                 " in the longest direction given your observations from the plot above.")
 
-    g1, g2 = np.meshgrid(df.AU_G_T, df.AU_G_T)
-    col1, col2, col3  = st.beta_columns((1,1,1))
-
-    with col1:
-        st.markdown('#### Experimental Variogram')
-        lag_dist = st.slider('Lag Distance', min_value=5., max_value=50., value=10., step=5.,key='var_lag')
-        vartype = st.selectbox('Select Experimental Variogram Type',
-                               options=['Traditional Variogram', 'Correlogram'],
-                               index=0)
-    with col2:
-        st.markdown('#### Variogram Model (Variances)')
-        nugget = st.slider('Nugget Effect',min_value=0.0, max_value=1.0, value=0.1, step=0.05)
-        c1 = st.slider('C1', min_value=0.0, max_value=1.0-nugget, value=0.0, step=0.05)
-        c2 = 1.0 - (c1 + nugget)
-    with col3:
-        st.markdown('#### Variogram Model (Ranges)')
-        r1 = st.slider('Range s1', min_value=0.0, max_value=200.0, value=10., step=5., key='k1')
-        r2 = st.slider('Range s2', min_value=0.0, max_value=200.0, value=10., step=5., key='k2')
-
-    var = np.array([[c1, r1], [c2, r2]])
-    h = np.arange(0.,200., 1.)
-    vmod = variogram(h, var, nugget)
-    lags = np.arange(lag_dist, 200., lag_dist)
-    gammas = np.zeros(len(lags))
-    numpairs = np.zeros(len(lags))
-    fig, ax = plt.subplots()
-
-    for i, lag in enumerate(lags):
-        filt = (xx>=lag-lag_dist*0.75)&(xx<lag+lag_dist*0.75)
-        sq_dif = np.sum((g1[filt]-g2[filt])**2)
-        m = np.average(g1[filt])
-        s = np.std(g1[filt])
-        ns = np.sum(filt)
-        numpairs[i] = ns
-
-        if vartype == 'Traditional Variogram':
-            gammas[i] = sq_dif/(2*float(np.sum(filt))) / np.var(df.AU_G_T)
-        else:
-            gammas[i] = (np.sum(g1[filt]*g2[filt]) - ns*m**2)/(ns*s**2)
-            gammas[i] = 1.0 - gammas[i]
-        ax.annotate(str(ns), (lag, gammas[i]+0.05), size=5)
-
-    ax.bar(lags, numpairs/np.max(numpairs), width=lag_dist/2)
-    ax.plot(lags, gammas, '-or', markeredgecolor='k', markersize=4, markeredgewidth=0.5)
-    ax.plot(h, vmod, '-g', markeredgecolor='k', markersize=4, markeredgewidth=0.5)
-
-    plt.xlim((0, 200))
-    plt.ylim((0, 1.5))
-    ax.plot([0., 200], [1.0, 1.0], '--k')
-    plt.xlabel("Separation Distance/Lag Distance")
-    plt.ylabel("Gamma")
-    st.pyplot(fig)
+    st.image("..//pdac2021_res_est_course//images//interp_var.jpg")
 
     var_options = ["Select and Answer",
                    "Major = 75m, Semi-Major = 75m",
