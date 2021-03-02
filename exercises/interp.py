@@ -108,7 +108,7 @@ def block_modelling():
     e.set_facecolor('None')
     e.set_edgecolor('black')
     st.pyplot(fig)
-    src_options = ["Select and Answer",
+    src_options = ["Select an Answer",
                    "Major = 75m, Semi-Major = 75m, Rotated by 90, Min 2 Max 40",
                    "Major = 125m, Semi-Major = 60m, Rotated -60 towards South East, Min 3 Max 12",
                    "Major = 125m, Semi-Major = 60m, Rotated 20 towards South West, Min 2 Max 12",
@@ -135,7 +135,7 @@ def block_modelling():
         st.write("")
         st.image("..//pdac2021_res_est_course//images//interp_gt_q1.jpg", use_column_width=True)
 
-    gt_options = ["Select and Answer",
+    gt_options = ["Select an Answer",
                    "Light blue is NN, purple is OK and red is ID",
                    "Light blue is NN, purple is ID and red is OK",
                    "Light blue is OK, purple is NN and red is ID",
@@ -154,7 +154,7 @@ def block_modelling():
     st.image("..//pdac2021_res_est_course//images//interp_OK_q2.jpg")
     st.image("..//pdac2021_res_est_course//images//interp_ID_q2.jpg")
 
-    est_options = ["Select and Answer",
+    est_options = ["Select an Answer",
                    "Estimate A is more variable than estimate B. Estimate A is OK and Estimate B is ID",
                    "Estimate B is more variable than estimate B. Estimate A is OK and Estimate B is ID",
                    "Both estimates have equal variances as they use the same sample data. Estimate A is OK and Estimate B is ID",
