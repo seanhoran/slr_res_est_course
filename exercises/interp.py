@@ -146,7 +146,7 @@ def block_modelling():
     df = df[df.use==1].copy().reset_index(drop=True)
     # fig, ax = plot_samps(df)
     # st.pyplot(fig)
-    st.image(".//images//contour.jpg", use_column_width=True)
+    st.image("..//pdac2021_res_est_course//images//contour.jpg", use_column_width=True)
     xx = spatial.distance_matrix(df[['YPT', 'ZPT']], df[['YPT', 'ZPT']])
     xx = np.array(xx)
 
@@ -256,7 +256,7 @@ def block_modelling():
     st.markdown("The curves increasing to the right on the grade tonnage curves are the grades foe each technique at different cut-offs.")
     scol1, scol2 = st.beta_columns((1, 1))
     with scol1:
-        st.image(".//images//interp_ests_q1.jpg", use_column_width=True)
+        st.image("..//pdac2021_res_est_course//images//interp_ests_q1.jpg", use_column_width=True)
     with scol2:
         st.write("")
         st.write("")
@@ -268,7 +268,7 @@ def block_modelling():
         st.write("")
         st.write("")
         st.write("")
-        st.image(".//images//interp_gt_q1.jpg", use_column_width=True)
+        st.image("..//pdac2021_res_est_course//images//interp_gt_q1.jpg", use_column_width=True)
 
     gt_options = ["Select and Answer",
                    "Light blue is NN, purple is OK and red is ID",
@@ -286,8 +286,8 @@ def block_modelling():
     st.markdown("* Identical search parameters were used")
     st.markdown("* The variogram has nugget of around 0.3 and most of the variability is accounted for within about 20-30m.")
 
-    st.image(".//images//interp_OK_q2.jpg")
-    st.image(".//images//interp_ID_q2.jpg")
+    st.image("..//pdac2021_res_est_course//images//interp_OK_q2.jpg")
+    st.image("..//pdac2021_res_est_course//images//interp_ID_q2.jpg")
 
     est_options = ["Select and Answer",
                    "Estimate A is more variable than estimate B. Estimate A is OK and Estimate B is ID",
