@@ -63,13 +63,18 @@ if exercise == radio_options[0]:
 if exercise == radio_options[1]:
   geo_interp.geo_interp()
 if exercise == radio_options[2]:
+  pass
   capping_ex.capping_ex()
 if exercise == radio_options[3]:
+  pass
   variograms.variograms()
 if exercise == radio_options[4]:
 #   block_modelling.block_modelling()
+  pass
   interp.block_modelling()
 if exercise == radio_options[5]:
+  pass
   cut_off.cut_off()
 if exercise == radio_options[6]:
+  pass
   reporting.reporting()
