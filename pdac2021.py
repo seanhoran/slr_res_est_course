@@ -61,8 +61,8 @@ exercise=st.sidebar.radio("",
 if exercise == radio_options[0]:
   about_course.about_course()
 if exercise == radio_options[1]:
-  pass
-#   geo_interp.geo_interp()
+#   pass
+  geo_interp.geo_interp()
 if exercise == radio_options[2]:
   pass
 #   capping_ex.capping_ex()
@@ -74,8 +74,8 @@ if exercise == radio_options[4]:
   pass
 #   interp.block_modelling()
 if exercise == radio_options[5]:
-#   pass
-  cut_off.cut_off()
+  pass
+#   cut_off.cut_off()
 if exercise == radio_options[6]:
   pass
 #   reporting.reporting()
