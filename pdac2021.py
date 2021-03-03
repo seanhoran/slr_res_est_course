@@ -61,14 +61,14 @@ exercise=st.sidebar.radio("",
 if exercise == radio_options[0]:
   about_course.about_course()
 if exercise == radio_options[1]:
-#   pass
-  geo_interp.geo_interp()
+  pass
+#   geo_interp.geo_interp()
 if exercise == radio_options[2]:
   pass
 #   capping_ex.capping_ex()
 if exercise == radio_options[3]:
-  pass
-#   variograms.variograms()
+#   pass
+  variograms.variograms()
 if exercise == radio_options[4]:
 #   block_modelling.block_modelling()
   pass
