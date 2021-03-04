@@ -5,7 +5,7 @@ import funcs
 
 def about_course():
   
-  st.image("..//PDAC2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
+  st.image("..//pdac2021_res_est_course//images//wireframe_header.jpg", use_column_width=True)
   st.title("Fundamentals of Resource Estimation")
   
   # get text from text_blocks:
