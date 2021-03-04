@@ -64,7 +64,7 @@ if exercise == radio_options[1]:
   pass
 #   geo_interp.geo_interp()
 if exercise == radio_options[2]:
-  pass
+  st.write("Page available during nominated exercise session")
 #   capping_ex.capping_ex()
 if exercise == radio_options[3]:
   pass
