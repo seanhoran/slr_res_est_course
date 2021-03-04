@@ -64,11 +64,11 @@ if exercise == radio_options[1]:
   st.write("Page available during nominated exercise session")
 #   geo_interp.geo_interp()
 if exercise == radio_options[2]:
-#   st.write("Page available during nominated exercise session")
-  capping_ex.capping_ex()
-if exercise == radio_options[3]:
   st.write("Page available during nominated exercise session")
-#   variograms.variograms()
+#   capping_ex.capping_ex()
+if exercise == radio_options[3]:
+#   st.write("Page available during nominated exercise session")
+  variograms.variograms()
 if exercise == radio_options[4]:
   st.write("Page available during nominated exercise session")
 #   interp.block_modelling()
