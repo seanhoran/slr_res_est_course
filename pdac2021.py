@@ -61,11 +61,11 @@ exercise=st.sidebar.radio("",
 if exercise == radio_options[0]:
   about_course.about_course()
 if exercise == radio_options[1]:
-#   st.write("Page available during nominated exercise session")
-  geo_interp.geo_interp()
-if exercise == radio_options[2]:
   st.write("Page available during nominated exercise session")
-#   capping_ex.capping_ex()
+#   geo_interp.geo_interp()
+if exercise == radio_options[2]:
+#   st.write("Page available during nominated exercise session")
+  capping_ex.capping_ex()
 if exercise == radio_options[3]:
   st.write("Page available during nominated exercise session")
 #   variograms.variograms()
