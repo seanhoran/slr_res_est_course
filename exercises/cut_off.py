@@ -139,7 +139,7 @@ def cut_off():
   st.write("")
   st.markdown("### By Adjusting the various input parameters given below, comment on the following:")
   st.text_area("1. What copper price results in a revenue which is double the break-even cut-off grade", height=5, key='tt1')
-  st.markdown("## Answer: Around US$6 or US$7/lb")
+  st.markdown("## Answer: Around US$7/lb")
   st.text_area("2. What copper grade results in a revenue which is double the break-even cut-off grade", height=5, key='tt2')
   st.markdown("## Answer: The Cu grade slider does not go high enough suggesting >2% Cu.")
   st.write("")
