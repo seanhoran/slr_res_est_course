@@ -62,25 +62,25 @@ def variograms():
            hint='Hint: Contrary to popular flat earther beliefs.', 
            key_nugget='nug1', key_range='range1', key_stype='stype1', 
            im='sim1.jpg')
-  st.markdown("Answer: Spherical model, moderate to low nugget e.g. 0.2-0.3 and moderate to long range e.g. 60-80m")
+  st.markdown("## Answer: Spherical model, moderate to low nugget e.g. 0.2-0.3 and moderate to long range e.g. 60-80m")
   results.append([1, s,n,r])
   s,n,r = ex_var(example=2, 
            hint='Hint: Think about the seasons.', 
            key_nugget='nug2', key_range='range2', key_stype='stype2', 
            im='sim2.jpg')
-  st.markdown("Answer: Hole effect model, moderate to low nugget e.g. 0.2-0.3 and short range e.g. 10-20m")
+  st.markdown("## Answer: Hole effect model, moderate to low nugget e.g. 0.2-0.3 and short range e.g. 10-20m")
   results.append([2, s,n,r])
   s,n,r = ex_var(example=3, 
            hint='Hint: Think about sand...', 
            key_nugget='nug3', key_range='range3', key_stype='stype3', 
            im='sim3.jpg')
-  st.markdown("Answer: Power model, low nugget e.g. 0.0-0.1 and moderate to long range e.g. 50-70m")
+  st.markdown("## Answer: Power model, low nugget e.g. 0.0-0.1 and moderate to long range e.g. 50-70m")
   results.append([3, s,n,r])
   s,n,r = ex_var(example=4, 
            hint='Hint: This is when you wonder why you bother to get out of bed in the morning.', 
            key_nugget='nug4', key_range='range4', key_stype='stype4', 
            im='sim4.jpg')
-  st.markdown("Answer: Spherical model, high nugget e.g. 0.4-0.6 and moderate to short range e.g. 20-30m")
+  st.markdown("## Answer: Spherical model, high nugget e.g. 0.4-0.6 and moderate to short range e.g. 20-30m")
   results.append([4, s,n,r])
   df = pd.DataFrame(data=results, 
                     columns=['Example', 'Structure Type', 'Nugget', 'Range'])
