@@ -113,6 +113,7 @@ def cut_off():
   
   q1_options = ['yes', 'no']
   cog_q1_answer = st.radio("Do we send this block to the processing plant?", options=q1_options, key='cog_q1')
+  st.markdown("## Answer: It depends, we are missing information, fundamentally the metal prices and recoveries")
   
   st.write("")
   st.markdown("## Question 2: Complex Cut-off Calculation")
@@ -131,12 +132,16 @@ def cut_off():
                 'C. The block value is greater than the marginal but less than the break-even cut-off', 
                 'D. The block value exceeds all cut-off grades']
   cog_q2_answer = st.radio("Select the appropriate statement:", options=q2_options, key='cog_q2')
+  st.markdown("## Answer: C. The block value is greater than the marginal but less than the break-even cut-off. When you multiply the NSR factors by the grades it exceeds 60% of the mining cost + G&A + Processing but not 100% of the costs.")
+  
   st.write("")
   st.markdown("## Question 3: Sensitivities")
   st.write("")
   st.markdown("### By Adjusting the various input parameters given below, comment on the following:")
   st.text_area("1. What copper price results in a revenue which is double the break-even cut-off grade", height=5, key='tt1')
+  st.markdown("## Answer: Around US$6 or US$7/lb")
   st.text_area("2. What copper grade results in a revenue which is double the break-even cut-off grade", height=5, key='tt2')
+  st.markdown("## Answer: The Cu grade slider does not go high enough suggesting >2% Cu.")
   st.write("")
   adjust_calculation(df.copy())
   
