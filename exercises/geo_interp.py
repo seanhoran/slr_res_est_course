@@ -19,6 +19,7 @@ def geo_interp():
                   "Limit to host lithology irrespective of grade"]
 
     st.radio("What cut-off grade will you use to guide your Mineralization Domain?", options=q1_options, key="q1")
+    st.markdown("## Answer: 25% of the cut-off grade.")
 
     q2_options = ["Select an Answer",
                   "I will need to manage high grades.",
