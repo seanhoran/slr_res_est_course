@@ -1,10 +1,10 @@
-1. MII tallied in final row
+1. MII tallied in final row.
 
-2. No information as to whether Mineral Resources and Inclusive or Exclusive
+2. No information as to whether Mineral Resources and Inclusive or Exclusive.
 
 3. Missing information as to which cut-off grade is relevant for each ore type.
 
-4. Missing zinc metal prices 
+4. Missing zinc metal prices.
 
 5. Missing key assumption as to whether the deposit is envisaged to be mined using underground or open pit mining.
 
@@ -14,7 +14,7 @@
 
 8. Too many significant figures for silver grade.
 
-9. No unit for the material quantity (Million Tonnes)
+9. No unit for the material quantity (Million Tonnes).
 
 10. No details on metallurgical assumptions used to generate the cut-off value. 
 
