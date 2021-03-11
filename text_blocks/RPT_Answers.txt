@@ -1,13 +1,24 @@
-MII tallied in final row
-No information as to whether Mineral Resources and Inclusive or Exclusive
-Missing information as to which cut-off grade is relevant for each ore type.
-Missing zinc metal prices 
-Missing key assumption as to whether the deposit is envisaged to be mined using underground or open pit mining.
-Missing the statement reiterating that Mineral Resources that are not Mineral Reserves do not have demonstrated economic viability.
-Too many significant figures for contained zinc.
-Too many significant figures for silver grade.
-No unit for the material quantity (Million Tonnes)
-No details on metallurgical assumptions used to generate the cut-off value. 
-No information as to how the reasonable prospects for eventual economic extraction were determined.
-Missing Statement discussing issues relating to all relevant technical and economic factors likely to influence the prospect of economic extraction, and whether they can be resolved with further work.
+1. MII tallied in final row
+
+2. No information as to whether Mineral Resources and Inclusive or Exclusive
+
+3. Missing information as to which cut-off grade is relevant for each ore type.
+
+4. Missing zinc metal prices 
+
+5. Missing key assumption as to whether the deposit is envisaged to be mined using underground or open pit mining.
+
+6. Missing the statement reiterating that Mineral Resources that are not Mineral Reserves do not have demonstrated economic viability.
+
+7. Too many significant figures for contained zinc.
+
+8. Too many significant figures for silver grade.
+
+9. No unit for the material quantity (Million Tonnes)
+
+10. No details on metallurgical assumptions used to generate the cut-off value. 
+
+11. No information as to how the reasonable prospects for eventual economic extraction were determined.
+
+12. Missing Statement discussing issues relating to all relevant technical and economic factors likely to influence the prospect of economic extraction, and whether they can be resolved with further work.
 
