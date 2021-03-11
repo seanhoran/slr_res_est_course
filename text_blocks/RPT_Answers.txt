@@ -1,6 +1,6 @@
 1. MII tallied in final row.
 
-2. No information as to whether Mineral Resources and Inclusive or Exclusive.
+2. No information as to whether Mineral Resources are Inclusive or Exclusive of Mineral Reserves.
 
 3. Missing information as to which cut-off grade is relevant for each ore type.
 
