@@ -33,8 +33,7 @@ def geo_interp():
     st.markdown("## Answer: All of the above.")
     st.write("")       
     st.write("")
-    st.write("")
-   
+    
     st.markdown("## Question 2: Choose a domaining strategy")
     st.markdown("")
     
