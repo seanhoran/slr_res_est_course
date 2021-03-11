@@ -5,7 +5,7 @@ def geo_interp():
 
     st.title("Geological Interpretation")
 
-    st.markdown("## Question 1: Pick a modelling cut-off")
+    st.markdown("## Question 1a: Pick a modelling cut-off")
     st.markdown("")
     st.markdown("You are tasked with building a Mineral Resource domain for a typical orogenic gold deposit of Ontario.")
     st.markdown("The mineralization is erratic and, for the most part, is hosted within a fractured basalt.")
@@ -22,7 +22,7 @@ def geo_interp():
     st.markdown("## Answer: 25% of the cut-off grade.")
     
 
-    st.markdown("## Question 2: What is the impact?")
+    st.markdown("## Question 1b: What is the impact?")
     q2_options = ["Select an Answer",
                   "I will need to manage high grades.",
                   "I will need to carefully design the interpolation to not over-smooth grades.",
