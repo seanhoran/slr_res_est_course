@@ -20,7 +20,9 @@ def geo_interp():
 
     st.radio("What cut-off grade will you use to guide your Mineralization Domain?", options=q1_options, key="q1")
     st.markdown("## Answer: 25% of the cut-off grade.")
+    
 
+    st.markdown("## Question 2: What is the impact?")
     q2_options = ["Select an Answer",
                   "I will need to manage high grades.",
                   "I will need to carefully design the interpolation to not over-smooth grades.",
@@ -28,7 +30,8 @@ def geo_interp():
                   "I will need to confirm this choice using exploratory data analysis (EDA)."]
 
     st.radio("How will this choice impact how I design the downstream workflow for Mineral Resource estimation?", options=q2_options, key="q2")
-
+    st.markdown("## Answer: All of the above.")
+    
     col1, col2, col3 = st.beta_columns((1,1,1))
 
     with col1:
