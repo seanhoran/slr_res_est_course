@@ -1,5 +1,6 @@
 import streamlit as st
 import funcs
+import pandas
 
 def reporting():
   st.title("Reporting/Classification Exercise")
