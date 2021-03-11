@@ -31,9 +31,8 @@ def geo_interp():
 
     st.radio("How will this choice impact how I design the downstream workflow for Mineral Resource estimation?", options=q2_options, key="q2")
     st.markdown("## Answer: All of the above.")
-    
-    
-    
+    st.markdown("")
+        
     col1, col2, col3 = st.beta_columns((1,1,1))
 
     with col1:
