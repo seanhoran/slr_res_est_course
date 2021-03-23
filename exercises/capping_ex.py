@@ -48,10 +48,10 @@ def capping_ex():
    st.image("..//pdac2021_res_est_course//images//HG_LG_ObliqueCaps.jpg", use_column_width=True)
    st.subheader("Oblique View - Looking Along Strike")
   st.write("")
-  st.write("")
-  st.write("")
-  st.write("")
   st.subheader("Answer: Something is wrong - dataset has a distinct high grade population that should be evaluated independently.")
+  st.write("")
+  st.write("")
+  st.write("")
    
   q2_options = ['Please Select an Answer', 
              '5 g/t Au', 
