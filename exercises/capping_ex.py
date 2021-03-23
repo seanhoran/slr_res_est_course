@@ -46,9 +46,12 @@ def capping_ex():
   with cola2:
    st.subheader("Oblique View - Looking Along Strike")
    st.image("..//pdac2021_res_est_course//images//HG_LG_ObliqueCaps.jpg", use_column_width=True)
-  
-
-  st.header("Exercise 1 - Gold Deposit - Question 2")
+   st.subheader("Oblique View - Looking Along Strike")
+   st.write("")
+   st.write("")
+   st.write("")
+   st.write("")
+   st.header("Answer: Something is wrong - dataset has a distinct high grade population that should be evaluated independently.")
    
   q2_options = ['Please Select an Answer', 
              '5 g/t Au', 
