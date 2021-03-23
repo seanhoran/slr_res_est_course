@@ -51,7 +51,7 @@ def capping_ex():
   st.write("")
   st.write("")
   st.write("")
-  st.header("Answer: Something is wrong - dataset has a distinct high grade population that should be evaluated independently.")
+  st.subheader("Answer: Something is wrong - dataset has a distinct high grade population that should be evaluated independently.")
    
   q2_options = ['Please Select an Answer', 
              '5 g/t Au', 
