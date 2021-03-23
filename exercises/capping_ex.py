@@ -52,6 +52,7 @@ def capping_ex():
   st.write("")
   st.write("")
   st.write("")
+  
   st.header("Exercise 1 - Gold Deposit - Question 2")
   q2_options = ['Please Select an Answer', 
              '5 g/t Au', 
@@ -86,7 +87,11 @@ def capping_ex():
   with colc2:
    st.subheader("Oblique View - Looking Along Strike")
    st.image("..//pdac2021_res_est_course//images//LG_ObliqueCaps.jpg", use_column_width=True)
-  
+  st.write("")
+  st.subheader("Answer: 5 g/t Au or 10 g/t Au practitioner dependant.")
+  st.write("")
+  st.write("")
+  st.write("")
   
 
   
@@ -125,6 +130,11 @@ def capping_ex():
   with cole2:
    st.subheader("Oblique View - Looking Along Strike")
    st.image("..//pdac2021_res_est_course//images//HG_ObliqueCaps.jpg", use_column_width=True)
+  st.write("")
+  st.subheader("Answer: Something is wrong - The dataset has a distinct higher grade population that should be evaluated independently.")
+  st.write("")
+  st.write("")
+  st.write("")
   
 
   st.header("Exercise 1 - Gold Deposit - Question 4")
@@ -162,6 +172,11 @@ def capping_ex():
   with colg2:
    st.subheader("Oblique View - Looking Along Strike")
    st.image("..//pdac2021_res_est_course//images//HG_2_7_ObliqueCaps.jpg", use_column_width=True)
+  st.write("")
+  st.subheader("Answer: 10 g/t Au or 15 g/t Au practitioner dependant.")
+  st.write("")
+  st.write("")
+  st.write("")
   
 
 
@@ -200,6 +215,11 @@ def capping_ex():
   with coli2:
    st.subheader("Oblique View - Looking Along Strike")
    st.image("..//pdac2021_res_est_course//images//HG1_ObliqueCaps.jpg", use_column_width=True)
+  st.write("")
+  st.subheader("Answer: 25 g/t Au or potentially higher based on a more detailed spatial review.")
+  st.write("")
+  st.write("")
+  st.write("")
   
   
 
@@ -227,7 +247,11 @@ def capping_ex():
              'Domains 1, 2, and 3']
   
   q6_answer=st.radio('Which domain(s) best reflect the histogram, probability plot and decile analysis presented in Question 1 from Exercise 1?', options=q6_options, index=0, key='quest6')
-
+  st.write("")
+  st.subheader("Answer: Domains 1, 2, and 3")
+  st.write("")
+  st.write("")
+  st.write("")
   
 
    
@@ -242,7 +266,11 @@ def capping_ex():
              'Domains 1, 2, and 3']
   
   q7_answer=st.radio('Which domain(s) best reflect the histogram, probability plot and decile analysis presented in Question 2 from Exercise 1?', options=q7_options, index=0, key='quest7')
-
+  st.write("")
+  st.subheader("Answer: Domain 3")
+  st.write("")
+  st.write("")
+  st.write("")
   
 
    
@@ -258,7 +286,11 @@ def capping_ex():
   
   q9_answer=st.radio('Which domain(s) best reflect the histogram, probability plot and decile analysis presented in Question 3 from Exercise 1?', options=q9_options, index=0, key='quest8')
 
-  
+  st.write("")
+  st.subheader("Answer: Domains 1 and 2")
+  st.write("")
+  st.write("")
+  st.write("")
 
   
   st.header("Exercise 2 - Gold Deposit - Question 4")
@@ -273,7 +305,11 @@ def capping_ex():
   
   q9_answer=st.radio('Which domain(s) best reflect the histogram, probability plot and decile analysis presented in Question 4 from Exercise 1?', options=q9_options, index=0, key='quest9')
 
-  
+  st.write("")
+  st.subheader("Answer: Domain 2")
+  st.write("")
+  st.write("")
+  st.write("")
  
     
   st.header("Exercise 2 - Gold Deposit - Question 5")
@@ -287,6 +323,10 @@ def capping_ex():
              'Domains 1, 2, and 3']
   
   q10_answer=st.radio('Which domain(s) best reflect the histogram, probability plot and decile analysis presented in Question 5 from Exercise 1?', options=q10_options, index=0, key='quest10')
-
+  st.write("")
+  st.subheader("Answer: Domain 1")
+  st.write("")
+  st.write("")
+  st.write("")
   
 
