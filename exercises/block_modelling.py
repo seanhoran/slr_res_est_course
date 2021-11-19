@@ -208,7 +208,7 @@ def block_modelling():
     # ----------------------------------------------------------------------------------------------------------------#
     st.markdown("## **Search Ellipse**")
 
-    scol1, scol2 = st.beta_columns((1, 1))
+    scol1, scol2 = st.columns((1, 1))
     with scol1:
         st.markdown('#### Ellipse Shape')
         rot = st.number_input('Pick a Rotation (-360 to 360)', min_value=-360., max_value=360., value=0., step=5.)
@@ -232,7 +232,7 @@ def block_modelling():
 
     st.markdown("## **Additional Parameters**")
 
-    bcol1, bcol2 = st.beta_columns((1, 1))
+    bcol1, bcol2 = st.columns((1, 1))
     with bcol1:
         block_size = st.number_input('Block Size', min_value=5., max_value=100., value=10., step=5.)
     with bcol2:
