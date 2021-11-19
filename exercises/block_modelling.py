@@ -19,7 +19,7 @@ cog = np.array([-99, 0., 1.0, 1.5, 2.0, 2.5, 3.0, 3.0001])
 cmap = mpl.colors.ListedColormap(color_seq)
 norm = mpl.colors.BoundaryNorm(cog, cmap.N)
 
-#@st.cache
+@st.cache
 
 def get_text_block(fname):
   # this is how to read a block of text:
