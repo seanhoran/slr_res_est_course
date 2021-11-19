@@ -151,7 +151,7 @@ def block_modelling():
                 " in the longest direction given your observations from the plot above.")
 
     g1, g2 = np.meshgrid(df.AU_G_T, df.AU_G_T)
-    col1, col2, col3  = st.beta_columns((1,1,1))
+    col1, col2, col3  = st.columns((1,1,1))
 
     with col1:
         st.markdown('#### Experimental Variogram')
