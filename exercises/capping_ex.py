@@ -267,7 +267,7 @@ def capping_ex():
   
   q7_answer=st.radio('Which domain(s) best reflect the histogram, probability plot and decile analysis presented in Question 2 from Exercise 1?', options=q7_options, index=0, key='quest7')
   st.write("")
-  st.subheader("Answer: Domain 3")
+#   st.subheader("Answer: Domain 3")
   st.write("")
   st.write("")
   st.write("")
