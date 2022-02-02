@@ -54,7 +54,7 @@ def adjust_calculation(df2):
   df2.loc[30, 'Resource COG'] = np.round((df2.loc[27, 'Resource COG']*df2.loc[25, 'Resource COG']*1000./(df2.loc[0, 'Resource COG']*df2.loc[1, 'Resource COG'])),0)
   df2.loc[31, 'Resource COG'] = np.round((df2.loc[28, 'Resource COG']*df2.loc[25, 'Resource COG']*1000./(df2.loc[0, 'Resource COG']*df2.loc[2, 'Resource COG'])),0)
   
-  colz1, colz2, colz3 = st.beta_columns((1,1,1))
+  colz1, colz2, colz3 = st.columns((1,1,1))
   
   metal = ['Cu', 'Au']
   grades = np.array([cug, aug])
