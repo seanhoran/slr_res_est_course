@@ -133,7 +133,7 @@ def block_modelling():
     st.title("Block Modelling Exercise")
     st.markdown("The figure below is an orthogonal projection of full width intercepts within a narrow vein.")
     st.markdown("## **Visual Trend Analysis**")
-    df = pd.read_csv("..//pdac2021_res_est_course//data//sim_pts.csv")
+    df = pd.read_csv("..//slr_res_est_course//data//sim_pts.csv")
     df = df[df.use==1].copy().reset_index(drop=True)
     fig, ax = plot_samps(df)
     st.pyplot(fig)
