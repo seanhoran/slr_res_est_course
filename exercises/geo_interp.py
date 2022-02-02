@@ -19,7 +19,7 @@ def geo_interp():
                   "Limit to host lithology irrespective of grade"]
 
     st.radio("What cut-off grade will you use to guide your Mineralization Domain?", options=q1_options, key="q1")
-    st.markdown("## Answer: 25% of the cut-off grade.")
+#     st.markdown("## Answer: 25% of the cut-off grade.")
     
 
     st.markdown("## Question 1b: What is the impact?")
@@ -30,14 +30,14 @@ def geo_interp():
                   "I will need to confirm this choice using exploratory data analysis (EDA)."]
 
     st.radio("How will this choice impact how I design the downstream workflow for Mineral Resource estimation?", options=q2_options, key="q2")
-    st.markdown("## Answer: All of the above.")
+#     st.markdown("## Answer: All of the above.")
     st.write("")       
     st.write("")
     
     st.markdown("## Question 2: Choose a domaining strategy")
     st.markdown("")
     
-    col1, col2, col3 = st.beta_columns((1,1,1))
+    col1, col2, col3 = st.columns((1,1,1))
 
     with col1:
         st.write("")
@@ -66,7 +66,7 @@ def geo_interp():
                   "Silica and iron together, phosphorus separate."]
 
     st.radio("How will I domain and estimate these elements?", options=q3_options, key="q3")
-    colz1, colz2, colz3 = st.beta_columns((1,1,1))
+    colz1, colz2, colz3 = st.columns((1,1,1))
     
     with colz1:
         st.write("")
@@ -85,5 +85,5 @@ def geo_interp():
     with colz3:
         sel_sect = st.selectbox("Display Section", options=['Si', 'Fe', 'P'], index=0, key='g1')
         st.image("..//pdac2021_res_est_course//images//" + sel_sect + "_sect.jpg", width=500)
-    st.markdown("## Answer: Silica and iron together, phosphorus separate.")
+#     st.markdown("## Answer: Silica and iron together, phosphorus separate.")
 
