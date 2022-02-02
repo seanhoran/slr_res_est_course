@@ -2,6 +2,8 @@ import streamlit as st
 
 def capping_ex():
  
+  st.image("..//slr_res_est_course//images//wireframe_header.jpg", use_column_width=True)
+ 
   st.title("Capping Exercise")
   
   count_correct = 0
