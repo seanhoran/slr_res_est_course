@@ -86,6 +86,8 @@ def adjust_calculation(df2):
   
 def cut_off():
   
+  st.image("..//slr_res_est_course//images//wireframe_header.jpg", use_column_width=True)
+  
   df = pd.read_csv("..//slr_res_est_course//data//Worksheet COGs.csv")
   df = df.fillna("")
   df = df[:32].copy()
