@@ -68,7 +68,7 @@ def geo_interp():
                   "Silica and iron together, phosphorus separate."]
 
     st.radio("How will I domain and estimate these elements?", options=q3_options, key="q3")
-    colz1, colz2, colz3 = st.columns((1,1,1))
+    colz1, colz2, colz3 = st.columns((0.8,0.8,1))
     
     with colz1:
         st.write("")
