@@ -44,17 +44,17 @@ def geo_interp():
         st.write("Litho")
         st.write("")
         st.write("")
-        st.image("..//pdac2021_res_est_course//images//litho.jpg", width=400)
+        st.image("..//slr_res_est_course//images//litho.jpg", width=400)
 
     with col2:
 
         cog = st.slider("Select a cut-off (% of economic cut-off)", min_value=0,value=0, step=1, max_value=3, key="sl1")
-        st.image("..//pdac2021_res_est_course//images//gt" + str(int(cog)) + ".jpg", width=400)
+        st.image("..//rsl_res_est_course//images//gt" + str(int(cog)) + ".jpg", width=400)
 
     with col3:
 
         cog2 = st.slider("Select a cut-off (% of economic cut-off)", min_value=0, value=0, step=1, max_value=4, key="sl2")
-        st.image("..//pdac2021_res_est_course//images//gt2" + str(int(cog2))+ ".jpg", width=400)
+        st.image("..//slr_res_est_course//images//gt2" + str(int(cog2))+ ".jpg", width=400)
         
     st.markdown("")
     text = funcs.get_text_block("geo_interp_q2.txt")
@@ -73,17 +73,17 @@ def geo_interp():
         st.write("")
         st.write("")
         st.write("")
-        st.image("..//pdac2021_res_est_course//images//flow_chart.jpg", width=350)
+        st.image("..//slr_res_est_course//images//flow_chart.jpg", width=350)
     with colz2:
         sel_graph = st.selectbox("Select Graph", options=['Fe vs Si', 'P vs Si'], index=0, key='g1')
         if sel_graph == 'Fe vs Si':
             inp = 'fesi.jpg'
         else:
             inp = 'psi.jpg'
-        st.image("..//pdac2021_res_est_course//images//" + inp, width=300)
+        st.image("..//slr_res_est_course//images//" + inp, width=300)
             
     with colz3:
         sel_sect = st.selectbox("Display Section", options=['Si', 'Fe', 'P'], index=0, key='g1')
-        st.image("..//pdac2021_res_est_course//images//" + sel_sect + "_sect.jpg", width=500)
+        st.image("..//slr_res_est_course//images//" + sel_sect + "_sect.jpg", width=500)
 #     st.markdown("## Answer: Silica and iron together, phosphorus separate.")
 
