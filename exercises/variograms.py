@@ -50,6 +50,7 @@ def ex_var(example=1,
   return struct_type, nugget, srange
   
 def variograms():
+  st.image("..//slr_res_est_course//images//wireframe_header.jpg", use_column_width=True)
   st.title("Variogram Exercise")
   st.write("")
   st.markdown("## Model the appropriate variogram for each grade pattern observed")
