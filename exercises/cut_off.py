@@ -6,7 +6,7 @@ import plotly.express as px
 
 def adjust_calculation(df2):
   
-  colx1, colx2, colx3, colx4 = st.beta_columns((1,1,1,1))
+  colx1, colx2, colx3, colx4 = st.columns((1,1,1,1))
   
   with colx1:
     st.markdown("Block Grade")
@@ -86,7 +86,7 @@ def adjust_calculation(df2):
   
 def cut_off():
   
-  df = pd.read_csv("..//pdac2021_res_est_course//data//Worksheet COGs.csv")
+  df = pd.read_csv("..//slr_res_est_course//data//Worksheet COGs.csv")
   df = df.fillna("")
   df = df[:32].copy()
 
@@ -98,7 +98,7 @@ def cut_off():
   col1, col2 = st.beta_columns([1, 2])
   
   with col1:
-    st.image("..//pdac2021_res_est_course//images//cog1_block.jpg", width=300)
+    st.image("..//slr_res_est_course//images//cog1_block.jpg", width=300)
   with col2:
     st.write("")
     st.write("")
@@ -113,19 +113,19 @@ def cut_off():
   
   q1_options = ['yes', 'no']
   cog_q1_answer = st.radio("Do we send this block to the processing plant?", options=q1_options, key='cog_q1')
-  st.markdown("## Answer: It depends, we are missing information, fundamentally the metal prices and recoveries")
+#   st.markdown("## Answer: It depends, we are missing information, fundamentally the metal prices and recoveries")
   
   st.write("")
   st.markdown("## Question 2: Complex Cut-off Calculation")
   st.write("")
   st.markdown("### Considering the block grades from Question 1, analyze the NSR calculation and answer the question below.")
   st.write("")
-  col3, col4 = st.beta_columns([1, 2])
+  col3, col4 = st.columns([1, 2])
   with col3:
     text = funcs.get_text_block("cog_q2_intro.txt")
     st.markdown(text)
   with col4:
-    st.image("..//pdac2021_res_est_course//images//nsr_table.png", width=500)
+    st.image("..//slr_res_est_course//images//nsr_table.png", width=500)
     st.write("*Note that the average grade of the deposit is not known until the cut-off is known. This is normally an early approximation and an iterative process. While it does not impact the calculations, once the average grade is known, a simple cash flow analysis can be performed.")
   q2_options = ['A. I have no idea', 
                 'B. The block value is below all cut-off grades', 
@@ -139,9 +139,9 @@ def cut_off():
   st.write("")
   st.markdown("### By Adjusting the various input parameters given below, comment on the following:")
   st.text_area("1. What copper price results in a revenue which is double the break-even cut-off grade", height=5, key='tt1')
-  st.markdown("## Answer: Around US$7/lb")
+#   st.markdown("## Answer: Around US$7/lb")
   st.text_area("2. What copper grade results in a revenue which is double the break-even cut-off grade", height=5, key='tt2')
-  st.markdown("## Answer: The Cu grade slider does not go high enough suggesting >2% Cu.")
+#   st.markdown("## Answer: The Cu grade slider does not go high enough suggesting >2% Cu.")
   st.write("")
   adjust_calculation(df.copy())
   
