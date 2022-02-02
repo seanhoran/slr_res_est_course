@@ -95,7 +95,7 @@ def cut_off():
   st.markdown("## Question 1: Do we send this block to the processing plant?")
   st.write("")
   
-  col1, col2 = st.beta_columns([1, 2])
+  col1, col2 = st.columns([1, 2])
   
   with col1:
     st.image("..//slr_res_est_course//images//cog1_block.jpg", width=300)
