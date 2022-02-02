@@ -49,7 +49,7 @@ st.set_page_config(
      }
  )
 
-st.sidebar.image("..//slr_res_est_course//055CF2A4-98DC-488C-B5A6-15CC02C9974E.png", width=100)
+st.sidebar.image("..//slr_res_est_course//images//SLR Logo 2020_Blue.svg", width=100)
 
 # Capping Exercise - interactive
 # Compositing - Q&A
