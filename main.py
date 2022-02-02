@@ -7,6 +7,7 @@ import exercises.block_modelling as block_modelling
 import exercises.geo_interp as geo_interp
 import exercises.reporting as reporting
 import exercises.interp as interp
+import exercises.about_streamlit as about_streamlit
 
 max_width = 1200
 
@@ -62,7 +63,8 @@ radio_options = ["01 About the Course",
                  "04 Variograms", 
                  "05 Interpolation", 
                  "06 Cut-Off Grade", 
-                 "07 Reporting/Classification"]
+                 "07 Reporting/Classification", 
+                 "08 About Streamlit"]
 
 exercise=st.sidebar.radio("", 
                           options=radio_options, 
@@ -90,3 +92,6 @@ if exercise == radio_options[5]:
 if exercise == radio_options[6]:
 #   st.write("Page available during nominated exercise session")
   reporting.reporting()
+if exercise == radio_options[7]:
+#   st.write("Page available during nominated exercise session")
+  about_streamlit.about_streamlit()
