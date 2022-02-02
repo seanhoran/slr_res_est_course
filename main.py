@@ -39,7 +39,7 @@ BACKGROUND_COLOR = 'white'
 st.set_page_config(
      page_title="Fundamentals of Resource Estimation",
      page_icon="random",
-     layout="centered",
+     layout="wide",
      initial_sidebar_state="expanded",
      menu_items={
          'Get Help': 'https://www.extremelycoolapp.com/help',
