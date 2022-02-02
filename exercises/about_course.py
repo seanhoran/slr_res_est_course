@@ -21,7 +21,7 @@ def about_course():
     lcase_name = (split_name[0] + "_" + split_name[1]).lower()
     ucase_name = (split_name[0] + "_" + split_name[1])
 
-    col1, col2 = st.beta_columns([1,2.5])
+    col1, col2 = st.columns([1,2.5])
     with col1:
       st.image("..//SLR_res_est_course//headshots//" + ucase_name + ".jpg", use_column_width=True)
       text = funcs.get_text_block("title_" + lcase_name + ".txt")
