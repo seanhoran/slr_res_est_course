@@ -64,7 +64,7 @@ def block_modelling():
     df = df[df.use==1].copy().reset_index(drop=True)
     # fig, ax = plot_samps(df)
     # st.pyplot(fig)
-    st.image("..//pdac2021_res_est_course//images//contour.jpg", use_column_width=True)
+    st.image("..//slr_res_est_course//images//contour.jpg", use_column_width=True)
     
     #-----------------------------------------------------------------------------------------------------------------#
     # Variogram
@@ -76,7 +76,7 @@ def block_modelling():
                 " the longest direction and longer than the shortest direction. Your job is to estimate the range" +
                 " in the longest direction given your observations from the plot above.")
 
-    st.image("..//pdac2021_res_est_course//images//interp_var.jpg")
+    st.image("..//slr_res_est_course//images//interp_var.jpg")
 
     var_options = ["Select and Answer",
                    "Major = 75m, Semi-Major = 75m",
@@ -91,7 +91,7 @@ def block_modelling():
     # ----------------------------------------------------------------------------------------------------------------#
     st.markdown("## **Search Ellipse Activity**")
 
-    # scol1, scol2 = st.beta_columns((1, 1))
+    # scol1, scol2 = st.columns((1, 1))
     # with scol1:
     st.markdown('#### Ellipse Shape')
     rot = st.number_input('Pick a Rotation (-360 to 360)', min_value=-360., max_value=360., value=0., step=5.)
@@ -119,9 +119,9 @@ def block_modelling():
     st.markdown("## **Guess the Model: Question 1**")
     st.markdown("The interpolations given below are Nearest Neighbour (NN), Inverse Distance (ID) and Ordinary Kriging (OK) respectively")
     st.markdown("The curves increasing to the right on the grade tonnage curves are the grades foe each technique at different cut-offs.")
-    scol1, scol2 = st.beta_columns((1, 1))
+    scol1, scol2 = st.columns((1, 1))
     with scol1:
-        st.image("..//pdac2021_res_est_course//images//interp_ests_q1.jpg", use_column_width=True)
+        st.image("..//slr_res_est_course//images//interp_ests_q1.jpg", use_column_width=True)
     with scol2:
         st.write("")
         st.write("")
@@ -133,7 +133,7 @@ def block_modelling():
         st.write("")
         st.write("")
         st.write("")
-        st.image("..//pdac2021_res_est_course//images//interp_gt_q1.jpg", use_column_width=True)
+        st.image("..//slr_res_est_course//images//interp_gt_q1.jpg", use_column_width=True)
 
     gt_options = ["Select an Answer",
                    "Light blue is NN, purple is OK and red is ID",
@@ -151,8 +151,8 @@ def block_modelling():
     st.markdown("* Identical search parameters were used")
     st.markdown("* The variogram has nugget of around 0.3 and most of the variability is accounted for within about 20-30m.")
 
-    st.image("..//pdac2021_res_est_course//images//interp_OK_q2.jpg")
-    st.image("..//pdac2021_res_est_course//images//interp_ID_q2.jpg")
+    st.image("..//slr_res_est_course//images//interp_OK_q2.jpg")
+    st.image("..//slr_res_est_course//images//interp_ID_q2.jpg")
 
     est_options = ["Select an Answer",
                    "Estimate A is more variable than estimate B. Estimate A is OK and Estimate B is ID",
