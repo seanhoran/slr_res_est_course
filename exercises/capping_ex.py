@@ -105,7 +105,7 @@ def capping_ex():
                'Something is wrong']
   
   q3_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate. Careful review of the Plan and Oblique views should help provide a better sense of the spatial distribution of the pre-selected decile thresholds.', options=q3_options, index=0, key='quest3')
-  cold1, cold2, cold3 = st.beta_columns((1,1.5,1))
+  cold1, cold2, cold3 = st.columns((1,1.5,1))
   with cold1:
    st.subheader("Decile Analysis")
    st.image("..//slr_res_est_course//images//HG_Decile.jpg", use_column_width=True)
@@ -123,7 +123,7 @@ def capping_ex():
    st.write("")
    st.image("..//slr_res_est_course//images//HG_PP.jpg", use_column_width=True)
   
-  cole1, cole2 = st.beta_columns((1,1.6))
+  cole1, cole2 = st.columns((1,1.6))
   with cole1:
    st.subheader("Plan View - Looking Down")
    st.image("..//slr_res_est_course//images//HG_PlanCaps.jpg", use_column_width=True)
@@ -147,7 +147,7 @@ def capping_ex():
                'Something is wrong']
   
   q4_answer=st.radio('Review the following histogram, probability plot and decile analysis and determine which capping level is most appropriate. Careful review of the Plan and Oblique views should help provide a better sense of the spatial distribution of the pre-selected decile thresholds.', options=q4_options, index=0, key='quest4')
-  colf1, colf2, colf3 = st.beta_columns((1,1.5,1))
+  colf1, colf2, colf3 = st.columns((1,1.5,1))
   with colf1:
    st.subheader("Decile Analysis")
    st.image("..//slr_res_est_course//images//HG_2_7_Decile.jpg", use_column_width=True)
