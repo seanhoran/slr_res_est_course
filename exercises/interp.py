@@ -60,7 +60,7 @@ def block_modelling():
                 " The last tip is, be consistent with your legend,  make sure the samples and contours/blocks use the" +
                 " same colour scheme.")
 
-    df = pd.read_csv(".//data//sim_pts.csv")
+    df = pd.read_csv(".//slr_res_est_course//data//sim_pts.csv")
     df = df[df.use==1].copy().reset_index(drop=True)
     # fig, ax = plot_samps(df)
     # st.pyplot(fig)
