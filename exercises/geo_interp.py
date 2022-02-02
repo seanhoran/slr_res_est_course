@@ -2,6 +2,8 @@ import streamlit as st
 import funcs
 
 def geo_interp():
+    
+    st.image("..//slr_res_est_course//images//wireframe_header.jpg", use_column_width=True)
 
     st.title("Geological Interpretation")
 
