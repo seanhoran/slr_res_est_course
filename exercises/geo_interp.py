@@ -75,17 +75,17 @@ def geo_interp():
         st.write("")
         st.write("")
         st.write("")
-        st.image("..//slr_res_est_course//images//flow_chart.jpg", width=350)
+        st.image("..//slr_res_est_course//images//flow_chart.jpg")
     with colz2:
         sel_graph = st.selectbox("Select Graph", options=['Fe vs Si', 'P vs Si'], index=0, key='g1')
         if sel_graph == 'Fe vs Si':
             inp = 'fesi.jpg'
         else:
             inp = 'psi.jpg'
-        st.image("..//slr_res_est_course//images//" + inp, width=300)
+        st.image("..//slr_res_est_course//images//" + inp)
             
     with colz3:
         sel_sect = st.selectbox("Display Section", options=['Si', 'Fe', 'P'], index=0, key='g1')
-        st.image("..//slr_res_est_course//images//" + sel_sect + "_sect.jpg", width=500)
+        st.image("..//slr_res_est_course//images//" + sel_sect + "_sect.jpg")
 #     st.markdown("## Answer: Silica and iron together, phosphorus separate.")
 
