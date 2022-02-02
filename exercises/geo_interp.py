@@ -75,6 +75,7 @@ def geo_interp():
         st.write("")
         st.write("")
         st.write("")
+        st.write("")
         st.image("..//slr_res_est_course//images//flow_chart.jpg")
     with colz2:
         sel_graph = st.selectbox("Select Graph", options=['Fe vs Si', 'P vs Si'], index=0, key='g1')
