@@ -131,7 +131,7 @@ def capping_ex():
    st.subheader("Oblique View - Looking Along Strike")
    st.image("..//slr_res_est_course//images//HG_ObliqueCaps.jpg", use_column_width=True)
   st.write("")
-  st.subheader("Answer: Something is wrong - The dataset has a distinct higher grade population that should be evaluated independently.")
+#   st.subheader("Answer: Something is wrong - The dataset has a distinct higher grade population that should be evaluated independently.")
   st.write("")
   st.write("")
   st.write("")
