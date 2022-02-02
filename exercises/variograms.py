@@ -27,7 +27,7 @@ def ex_var(example=1,
            im='sim1.jpg'):  
   st.markdown("### Example " + str(example) + ":")
   st.markdown(hint)
-  col1, col2 = st.columns([1, 1])
+  col1, col2 = st.columns([1, 1.5])
   with col1:
     struct_type = st.selectbox("Structure Type", options=["Spherical", "Power", "Hole Effect"], index=0, key=key_stype)
     nugget = st.slider('Nugget', 0.0, 1.0, 0.1, 0.05, key=key_nugget) 
