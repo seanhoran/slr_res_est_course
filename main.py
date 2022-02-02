@@ -37,7 +37,7 @@ BACKGROUND_COLOR = 'white'
 #     )
 
 st.set_page_config(
-     page_title="Ex-stream-ly Cool App",
+     page_title="Fundamentals of Resource Estimation",
      page_icon="🧊",
      layout="wide",
      initial_sidebar_state="expanded",
