@@ -36,6 +36,17 @@ BACKGROUND_COLOR = 'white'
 #         unsafe_allow_html=True,
 #     )
 
+st.set_page_config(
+     page_title="Ex-stream-ly Cool App",
+     page_icon="🧊",
+     layout="wide",
+     initial_sidebar_state="expanded",
+     menu_items={
+         'Get Help': 'https://www.extremelycoolapp.com/help',
+         'Report a bug': "https://www.extremelycoolapp.com/bug",
+         'About': "# This is a header. This is an *extremely* cool app!"
+     }
+ )
 
 st.sidebar.image("..//slr_res_est_course//055CF2A4-98DC-488C-B5A6-15CC02C9974E.png", width=100)
 
