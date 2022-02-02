@@ -44,6 +44,8 @@ def geo_interp():
         st.write("Litho")
         st.write("")
         st.write("")
+        st.write("")
+        st.write("")
         st.image("..//slr_res_est_course//images//litho.jpg")
 
     with col2:
