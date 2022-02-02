@@ -49,7 +49,7 @@ st.set_page_config(
      }
  )
 
-st.sidebar.image("..//slr_res_est_course//images//SLR Logo 2020_Blue.svg", output_format="PNG")
+st.sidebar.image("..//slr_res_est_course//images//SLR Logo 2020_Blue.svg", output_format="PNG", width=50)
 
 # Capping Exercise - interactive
 # Compositing - Q&A
