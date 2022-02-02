@@ -129,6 +129,7 @@ def gtcurve(grades, block_size):
     return pd.DataFrame({'COG':c, 'Tonnes':t, 'Grade':g});
 
 def block_modelling():
+    st.image("..//slr_res_est_course//images//wireframe_header.jpg", use_column_width=True)
 
     st.title("Block Modelling Exercise")
     st.markdown("The figure below is an orthogonal projection of full width intercepts within a narrow vein.")
