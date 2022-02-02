@@ -46,7 +46,7 @@ def geo_interp():
         st.write("")
         st.write("")
         st.write("")
-        st.image("..//slr_res_est_course//images//litho.jpg")
+        st.image("..//slr_res_est_course//images//litho.jpg", output_format="PNG")
 
     with col2:
 
