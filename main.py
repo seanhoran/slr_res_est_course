@@ -42,9 +42,7 @@ st.set_page_config(
      page_icon="random",
      layout="wide",
      initial_sidebar_state="expanded",
-     menu_items={
-         'SLR Mining Advisory Website': 'https://www.slrconsulting.com/en/services/mining-advisory'
-     }
+     menu_items={'slr mining advisory website': 'https://www.slrconsulting.com/en/services/mining-advisory'}
  )
 
 st.sidebar.image("..//slr_res_est_course//images//SLR Logo 2020 _RGB-dark blue_for web.png")
