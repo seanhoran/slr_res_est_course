@@ -6,4 +6,4 @@ def about_streamlit():
   st.text("")
   st.markdown("Streamlit has truly been a game changer for the scientific community and hopefully will catch on in the geoscience/mining world. Geologist are not trained")
   
-  st.video(https://youtu.be/wL8niCeXwPI)
+  st.video('https://youtu.be/wL8niCeXwPI')
