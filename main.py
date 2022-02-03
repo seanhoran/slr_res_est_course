@@ -43,8 +43,7 @@ st.set_page_config(
      layout="wide",
      initial_sidebar_state="expanded",
      menu_items={
-         'SLR Mining Advisory Website': 'https://www.slrconsulting.com/en/services/mining-advisory',
-         'About': "# This is a header. This is an *extremely* cool app!"
+         'SLR Mining Advisory Website': 'https://www.slrconsulting.com/en/services/mining-advisory'
      }
  )
 
