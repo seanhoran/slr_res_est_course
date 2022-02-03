@@ -1,4 +1,4 @@
-Mineral resources, and their subsequent conversion to mineral reserves, are of key importance to mining companies and to the mineral industry. Their reliable estimation is critical to the confidence in a project, to its underlying economics, and to the day-to-day operation of a mine. There is a requirement for high quality interpretation and estimation of mineral resources in order to make sound investment and operational decisions. This short course builds and improves upon the 2019 PDAC short course offering, and is designed to share best practice guidance with practitioners, as well as relevant upstream and downstream stakeholders.
+Mineral resources, and their subsequent conversion to mineral reserves, are of key importance to mining companies and to the mineral industry. Their reliable estimation is critical to the confidence in a project, to its underlying economics, and to the day-to-day operation of a mine. There is a requirement for high quality interpretation and estimation of mineral resources in order to make sound investment and operational decisions. This short course builds and improves upon the 2021 PDAC short course offering, and is designed to share best practice guidance with practitioners, as well as relevant upstream and downstream stakeholders.
 
 This short course focuses on the practical aspects of resource estimation, and includes easy to follow guidelines for navigating the principal decision points in a resource estimation workflow:
 
@@ -8,7 +8,7 @@ This short course focuses on the practical aspects of resource estimation, and i
 * Outlier restriction tools (including capping)
 * Compositing
 * Trend analysis
-* Incorporation of conceptual mining inputs (minimum thickness, cut-off grade)
+* Incorporation of conceptual mining inputs (minimum thickness, scale of mining, cut-off grade, and reasonable prospects)
 * Interpolation design (search ellipse size and orientation, sample restrictions, etc.)
 * Classification considerations
 * Model verification tools
