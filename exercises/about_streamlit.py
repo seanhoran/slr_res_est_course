@@ -12,6 +12,6 @@ def about_streamlit():
   text += "All the basic widgets you will need along with all the fun stuff that python has to offer. "
   st.markdown(text)
   st.text("")
-  st.markdown("See the video below for an example of using Python and [Streamlit](https://streamlit.io/) in Datamine. Skip to minute 10 for the [streamlit](https://streamlit.io/) demonstration.")
+  st.markdown("See the video below for an example of using Python and [Streamlit](https://streamlit.io/) in [Datamine](https://www.dataminesoftware.com/). Skip to minute 10 for the [streamlit](https://streamlit.io/) demonstration.")
   
   st.video('https://youtu.be/wL8niCeXwPI')
