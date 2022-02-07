@@ -18,7 +18,7 @@ def adjust_calculation(df2):
   with colx2:
     st.markdown("Recoveries")
     df2.loc[4, 'Resource COG'] = st.slider("Cu Recovery", 60., 95., 87., 1.0, key="cgsl4")
-    df2.loc[5, 'Resource COG'] = st.slider("Au Recover", 60., 95., 90., 1.0, key="cgsl5")
+    df2.loc[5, 'Resource COG'] = st.slider("Au Recovery", 60., 95., 90., 1.0, key="cgsl5")
   with colx3:
     st.markdown("Metal Prices")
     df2.loc[16, 'Resource COG'] = st.slider("Cu Price ($/lbs)", 2.5, 10.0, 3.25, 0.1, key="cgsl6")
@@ -26,7 +26,7 @@ def adjust_calculation(df2):
   with colx4:
     st.markdown("Other")
     df2.loc[10, 'Resource COG'] = st.slider("Cu Con Grade", 20.0, 35.0, 25.0, 1.0, key="cgsl8")
-    df2.loc[13, 'Comments'] = st.slider("Payabe Cu", 85., 100., 90., 1.0, key="cgsl9")
+    df2.loc[13, 'Comments'] = st.slider("Payable Cu", 85., 100., 90., 1.0, key="cgsl9")
     df2.loc[14, 'Comments'] = st.slider("Payable Au", 85., 100., 99., 1.0, key="cgsl10")
   
   df2.loc[7, 'Resource COG'] = np.round(df2.loc[0, 'Resource COG']*(df2.loc[1, 'Resource COG']/100.)*(df2.loc[4, 'Resource COG']/100.)*2.20462,0)
