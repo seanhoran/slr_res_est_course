@@ -218,7 +218,7 @@ def capping_ex():
    st.subheader("Oblique View - Looking Along Strike")
    st.image("..//slr_res_est_course//images//HG1_ObliqueCaps.jpg", use_column_width=True)
   st.write("")
-  st.subheader("Answer: 25 g/t Au or potentially higher based on a more detailed spatial review.")
+#   st.subheader("Answer: 25 g/t Au or potentially higher based on a more detailed spatial review.")
   st.write("")
   st.write("")
   st.write("")
