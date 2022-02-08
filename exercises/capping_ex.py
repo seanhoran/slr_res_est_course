@@ -295,7 +295,7 @@ def capping_ex():
   st.write("")
 
   
-  st.header("Exercise 2 - Gold Deposit - Question 4")
+  st.header("Exercise 2 - Gold Deposit - Question 5")
    
   q9_options = ['Please Select an Answer', 
              'Domain 1', 
@@ -314,7 +314,7 @@ def capping_ex():
   st.write("")
  
     
-  st.header("Exercise 2 - Gold Deposit - Question 5")
+  st.header("Exercise 2 - Gold Deposit - Question 6")
    
   q10_options = ['Please Select an Answer', 
              'Domain 1', 
