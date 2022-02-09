@@ -11,7 +11,7 @@ def adjust_calculation(df2):
   with colx1:
     st.markdown("Block Grade")
     df2.loc[0, 'Resource COG'] = 1000000
-    df2.loc[1, 'Resource COG'] = st.slider("Cu %", 0., 2.0, 0.9, 0.1, key="cgsl2")
+    df2.loc[1, 'Resource COG'] = st.slider("Cu %", 0., 4.0, 0.9, 0.1, key="cgsl2")
     df2.loc[2, 'Resource COG'] = st.slider("Au g/t", 0., 2.0, 0.7, 0.1, key="cgsl3")
     cug = df2.loc[1, 'Resource COG']
     aug = df2.loc[2, 'Resource COG']
