@@ -21,7 +21,7 @@ def geo_interp():
                   "Limit to host lithology irrespective of grade"]
 
     st.radio("What cut-off grade will you use to guide your Mineralization Domain?", options=q1_options, key="q1")
-#     st.markdown("## Answer: 25% of the cut-off grade.")
+    st.markdown("## Answer: 25% of the cut-off grade.")
     
 
     st.markdown("## Question 1b: What is the impact?")
@@ -32,7 +32,7 @@ def geo_interp():
                   "I will need to confirm this choice using exploratory data analysis (EDA)."]
 
     st.radio("How will this choice impact how I design the downstream workflow for Mineral Resource estimation?", options=q2_options, key="q2")
-#     st.markdown("## Answer: All of the above.")
+    st.markdown("## Answer: All of the above.")
     st.write("")       
     st.write("")
     
@@ -90,5 +90,5 @@ def geo_interp():
     with colz3:
         sel_sect = st.selectbox("Display Section", options=['Si', 'Fe', 'P'], index=0, key='g1')
         st.image("..//slr_res_est_course//images//" + sel_sect + "_sect.jpg")
-#     st.markdown("## Answer: Silica and iron together, phosphorus separate.")
+    st.markdown("## Answer: Silica and iron together, phosphorus separate.")
 
