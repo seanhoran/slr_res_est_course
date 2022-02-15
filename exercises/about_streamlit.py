@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 def about_streamlit():
   st.markdown("# A Little Bit About Streamlit...")
@@ -15,3 +16,8 @@ def about_streamlit():
   st.markdown("See the video below for an example of using Python and [Streamlit](https://streamlit.io/) in [Datamine](https://www.dataminesoftware.com/). Skip to minute 10 for the [streamlit](https://streamlit.io/) demonstration.")
   
   st.video('https://youtu.be/wL8niCeXwPI')
+  components.html(
+    '''
+    <iframe src="https://publicscenes.seequent.com/f8f2fc71-713c-4b48-b708-4073b150d511" width=800 height=650 allowfullscreen></iframe>
+    ''')
+ 
