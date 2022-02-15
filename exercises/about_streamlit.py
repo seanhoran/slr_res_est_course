@@ -19,5 +19,5 @@ def about_streamlit():
   components.html(
     '''
     <iframe src="https://publicscenes.seequent.com/f8f2fc71-713c-4b48-b708-4073b150d511" width=800 height=650 allowfullscreen></iframe>
-    ''', height=600)
+    ''', height=1000)
  
