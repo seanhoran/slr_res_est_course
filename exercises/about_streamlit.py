@@ -18,6 +18,6 @@ def about_streamlit():
   st.video('https://youtu.be/wL8niCeXwPI')
   components.html(
     '''
-    <iframe src="https://publicscenes.seequent.com/f8f2fc71-713c-4b48-b708-4073b150d511" width=800 height=650 allowfullscreen></iframe>
+    <iframe src="https://publicscenes.seequent.com/0081f2c2-b237-4656-b0c1-16eda07e43cd" width=800 height=650 allowfullscreen></iframe>
     ''', height=1000)
  
