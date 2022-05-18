@@ -10,6 +10,6 @@ def reporting():
   st.markdown(text)
   st.image("..//slr_res_est_course//images//res_table.jpg", use_column_width=True)
   
-#   st.markdown("## Answers")
-#   text = funcs.get_text_block("RPT_Answers.txt")
-#   st.markdown(text)
+  st.markdown("## Answers")
+  text = funcs.get_text_block("RPT_Answers.txt")
+  st.markdown(text)
