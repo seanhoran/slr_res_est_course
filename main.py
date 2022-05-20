@@ -43,6 +43,8 @@ st.set_page_config(
      layout="wide",
      initial_sidebar_state="expanded")
 
+lang = st.selectbox("Select Language/Escoje Idioma", options=['English', 'Espanol'])
+
 st.sidebar.image("..//slr_res_est_course//images//SLR Logo 2020 _RGB-dark blue_for web.png")
 
 # Capping Exercise - interactive
@@ -51,14 +53,26 @@ st.sidebar.image("..//slr_res_est_course//images//SLR Logo 2020 _RGB-dark blue_f
 # Interpolation - interactive
 # Compositing - Q&A
 
-radio_options = ["01 About the Course", 
-                 "02 Geological Interp", 
-                 "03 Capping", 
-                 "04 Variograms", 
-                 "05 Interpolation", 
-                 "06 Cut-Off Grade", 
-                 "07 Reporting/Classification", 
-                 "08 About Streamlit"]
+if lang == 'English':
+
+    radio_options = ["01 About the Course",
+                     "02 Geological Interp",
+                     "03 Capping",
+                     "04 Variograms",
+                     "05 Interpolation",
+                     "06 Cut-Off Grade",
+                     "07 Reporting/Classification",
+                     "08 About Streamlit"]
+else:
+    radio_options = ["01 Sobre El Curso",
+                     "02 Interpretacion Geologica",
+                     "03 Capping",
+                     "04 Variogramas",
+                     "05 Interpolacion",
+                     "06 Ley de Corte",
+                     "07 Reportes/Classificacion",
+                     "08 Sobre Streamlit"]
+
 
 exercise=st.sidebar.radio("", 
                           options=radio_options, 
