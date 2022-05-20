@@ -9,7 +9,7 @@ def about_course():
   st.title("Fundamentos de la Estimación de Recursos Minerales")
   
   # get text from text_blocks:
-  text = funcs.get_text_block("about_course.txt")
+  text = funcs.get_text_block("about_course_esp.txt")
   st.write(text)
   
   st.write("")
