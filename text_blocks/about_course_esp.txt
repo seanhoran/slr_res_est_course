@@ -1,0 +1,22 @@
+Los recursos minerales y su posterior conversión en reservas minerales son de vital importancia para las empresas mineras y la industria minera. Su estimación confiable es fundamental para la confianza en un proyecto, para su economía subyacente y para la operación diaria de una mina. Existe un requisito de interpretación y estimación de alta calidad de los recursos minerales para poder tomar decisiones operativas y de inversión sólidas. Este curso corto se basa y mejora las ofertas de cursos cortos anteriores, y está diseñado para compartir la guía de mejores prácticas con los profesionales, así como con las partes interesadas relevantes aguas arriba y aguas abajo.
+
+Este breve curso se centra en los aspectos prácticos de la estimación de recursos e incluye pautas fáciles de seguir para navegar por los principales puntos de decisión en un flujo de trabajo de estimación de recursos:
+
+*La base de datos de recursos
+*Modelado geológico y de dominio de recursos
+*Análisis exploratorio de datos
+*Herramientas de restricción de valores atípicos (incluida la limitación)
+*Compositación
+*Análisis de tendencia
+*Incorporación de insumos mineros conceptuales (espesor mínimo, escala de minado, ley de corte y prospectos razonables)
+*Diseño de interpolación (búsqueda de tamaño y orientación de elipse, restricciones de muestra, etc.)
+*Consideraciones de clasificación
+*Herramientas de verificación de modelos
+*Informes de recursos minerales
+
+Que vas a aprender:
+
+*Comprender los pasos necesarios para estimar los Recursos Minerales.
+*Construya un kit de herramientas básico para estimar los recursos minerales.
+*Identificar, navegar y mediar riesgos y brechas comunes en el proceso de estimación.
+*Aplicar consideraciones prácticas de estimación de recursos y minería a la recopilación y recopilación de datos de campo.
