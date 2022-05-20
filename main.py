@@ -9,6 +9,17 @@ import exercises.reporting as reporting
 import exercises.interp as interp
 import exercises.about_streamlit as about_streamlit
 
+
+import exercises.about_course_esp as about_course_esp
+# import exercises.capping_ex_esp as capping_ex
+# import exercises.variograms_esp as variograms
+# import exercises.cut_off_esp as cut_off
+# import exercises.block_modelling_esp as block_modelling
+# import exercises.geo_interp_esp as geo_interp
+# import exercises.reporting_esp as reporting
+import exercises.interp as interp
+# import exercises.about_streamlit as about_streamlit
+
 max_width = 1200
 
 padding_top = 0
