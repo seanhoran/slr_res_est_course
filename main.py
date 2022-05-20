@@ -11,12 +11,12 @@ import exercises.about_streamlit as about_streamlit
 
 
 import exercises.about_course_esp as about_course_esp
-# import exercises.capping_ex_esp as capping_ex
-# import exercises.variograms_esp as variograms
-# import exercises.cut_off_esp as cut_off
-# import exercises.block_modelling_esp as block_modelling
-# import exercises.geo_interp_esp as geo_interp
-# import exercises.reporting_esp as reporting
+import exercises.capping_ex_esp as capping_ex_esp
+import exercises.variograms_esp as variograms_esp
+import exercises.cut_off_esp as cut_off_esp
+import exercises.block_modelling_esp as block_modelling_esp
+import exercises.geo_interp_esp as geo_interp_esp
+import exercises.reporting_esp as reporting_esp
 import exercises.interp as interp
 # import exercises.about_streamlit as about_streamlit
 
