@@ -43,7 +43,7 @@ st.set_page_config(
      layout="wide",
      initial_sidebar_state="expanded")
 
-lang = st.selectbox("Select Language/Escoje Idioma", options=['English', 'Espanol'])
+lang = st.sidebar.selectbox("Select Language/Escoje Idioma", options=['English', 'Espanol'])
 
 st.sidebar.image("..//slr_res_est_course//images//SLR Logo 2020 _RGB-dark blue_for web.png")
 
@@ -79,27 +79,54 @@ exercise=st.sidebar.radio("",
                           index=0, 
                           key=None)
 
-if exercise == radio_options[0]:
-  about_course.about_course()
-if exercise == radio_options[1]:
-#   st.write("Page available during nominated exercise session")
-  geo_interp.geo_interp()
-if exercise == radio_options[2]:
-#   st.write("Page available during nominated exercise session")
-  capping_ex.capping_ex()
-if exercise == radio_options[3]:
-#   st.write("Page available during nominated exercise session")
-  variograms.variograms()
-if exercise == radio_options[4]:
-#   st.write("Page available during nominated exercise session")
-#   interp.block_modelling()
-  block_modelling.block_modelling()
-if exercise == radio_options[5]:
-#   st.write("Page available during nominated exercise session")
-  cut_off.cut_off()
-if exercise == radio_options[6]:
-#   st.write("Page available during nominated exercise session")
-  reporting.reporting()
-if exercise == radio_options[7]:
-#   st.write("Page available during nominated exercise session")
-  about_streamlit.about_streamlit()
+if lang == 'English':
+    if exercise == radio_options[0]:
+      about_course.about_course()
+    if exercise == radio_options[1]:
+    #   st.write("Page available during nominated exercise session")
+      geo_interp.geo_interp()
+    if exercise == radio_options[2]:
+    #   st.write("Page available during nominated exercise session")
+      capping_ex.capping_ex()
+    if exercise == radio_options[3]:
+    #   st.write("Page available during nominated exercise session")
+      variograms.variograms()
+    if exercise == radio_options[4]:
+    #   st.write("Page available during nominated exercise session")
+    #   interp.block_modelling()
+      block_modelling.block_modelling()
+    if exercise == radio_options[5]:
+    #   st.write("Page available during nominated exercise session")
+      cut_off.cut_off()
+    if exercise == radio_options[6]:
+    #   st.write("Page available during nominated exercise session")
+      reporting.reporting()
+    if exercise == radio_options[7]:
+    #   st.write("Page available during nominated exercise session")
+      about_streamlit.about_streamlit()
+else:
+    if exercise == radio_options[0]:
+      about_course_esp.about_course()
+    if exercise == radio_options[1]:
+    #   st.write("Page available during nominated exercise session")
+      geo_interp_esp.geo_interp()
+    if exercise == radio_options[2]:
+    #   st.write("Page available during nominated exercise session")
+      capping_ex.capping_ex()
+    if exercise == radio_options[3]:
+    #   st.write("Page available during nominated exercise session")
+      variograms_esp.variograms()
+    if exercise == radio_options[4]:
+    #   st.write("Page available during nominated exercise session")
+    #   interp.block_modelling()
+      block_modelling_esp.block_modelling()
+    if exercise == radio_options[5]:
+    #   st.write("Page available during nominated exercise session")
+      cut_off_esp.cut_off()
+    if exercise == radio_options[6]:
+    #   st.write("Page available during nominated exercise session")
+      reporting_esp.reporting()
+    if exercise == radio_options[7]:
+    #   st.write("Page available during nominated exercise session")
+      about_streamlit_esp.about_streamlit()
+
