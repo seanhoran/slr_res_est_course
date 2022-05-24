@@ -51,13 +51,13 @@ def block_modelling():
 
     st.title("Block Modelling Exercise")
 
-    st.markdown("## **Análisis visual de tendencias**")
-    st.markdown("La siguiente figura es una proyección ortogonal de todo el ancho de interseccion de una veta delgada.")
-    st.markdown("Antes de cualquier análisis estadístico, es útil mirar sus datos." +
-                " Trate, busque dónde se encuentran las calificaciones altas y qué tendencias puede observar." +
-                " Al seleccionar una leyenda de colores, trate de usar una que resalte las tendencias pero considere algunos aspectos económicos." +
-                " criteria too. It is always useful to have one or two colour bins below your cut-off grade." +
-                " El último consejo es, sea coherente con su leyenda, asegúrese de que las muestras y los contornos/bloques utilicen el" +
+    st.markdown("## **Analisis visual de tendencias**")
+    st.markdown("La siguiente figura es una proyeccion ortogonal de todo el ancho de interseccion de una veta delgada.")
+    st.markdown("Antes de cualquier analisis estadistico, es util mirar los datos." +
+                " Trate, busque donde se encuentran las leyes altas y que tendencias puede observar." +
+                " Al seleccionar una leyenda de colores, trate de usar una que resalte las tendencias pero considere algunos aspectos economicos." +
+                " criterio tambien. Es siempre util tener una o dos leyendas de colores bajo la ley de corte." +
+                " El ultimo consejo es, sea coherente con su leyenda, asegurese de que las muestras y los contornos/bloques utilicen el" +
                 " mismo esquema de color.")
 
     df = pd.read_csv(".//slr_res_est_course//data//sim_pts.csv")
@@ -71,10 +71,10 @@ def block_modelling():
     # ----------------------------------------------------------------------------------------------------------------#
 
     st.markdown("## **Actividad: Variograma**")
-    st.markdown("El variograma omnidireccional se muestra en el siguiente gráfico." +
-                " Tenga en cuenta que no se ha elegido ninguna dirección y que el alcance que se muestra será más corto que" +
-                " la dirección mayor y más larga que la dirección menor. Su trabajo es estimar el alcance" +
-                " en la dirección máyor dadas tus observaciones del gráfico anterior.")
+    st.markdown("El variograma omnidireccional se muestra en el siguiente grafico." +
+                " Tenga en cuenta que no se ha elegido ninguna direccion y que el alcance que se muestra sera mas corto que" +
+                " la direccion mayor y mas largo que la direccion menor. Su trabajo es estimar el alcance" +
+                " en la direccion mayor dadas tus observaciones del grafico anterior.")
 
     st.image("..//slr_res_est_course//images//interp_var.jpg")
 
@@ -84,7 +84,7 @@ def block_modelling():
                    "Mayor = 75m, Semi-Mayor = 100m",
                    "Mayor = 150m, Semi-Mayor = 75m"]
 
-    st.radio("¿Cuál es su estimación de los alcances en las direcciones mayor y semi mayor?", options=var_options, key='vv1')
+    st.radio("Cual es su estimacion de los alcances en las direcciones mayor y semi mayor?", options=var_options, key='vv1')
 
     #-----------------------------------------------------------------------------------------------------------------#
     # Set up search ellipse
@@ -112,13 +112,13 @@ def block_modelling():
                    "Mayjor = 75m, Semi-Mayor = 75m, Rotada en 90, Min 2 Max 40",
                    "Mayor = 125m, Semi-Mayor = 60m, Rotada -60 hacia el Sureste, Min 3 Max 12",
                    "Mayor = 125m, Semi-Mayor = 60m, Rotada 20 hacia el Suroeste, Min 2 Max 12",
-                   "Mayor = 150m, Semi-Mayor = 75m, Min 2 Max 10, Sin Rotación"]
+                   "Mayor = 150m, Semi-Mayor = 75m, Min 2 Max 10, Sin Rotacion"]
 
-    st.radio("¿Seleccionar los parámetros de búsqueda apropiados?", options=src_options, key='ss1')
+    st.radio("Seleccionar los parametros de busqueda apropiados?", options=src_options, key='ss1')
 
     st.markdown("## **Adivina la modelo: Pregunta 1**")
-    st.markdown("Las interpolaciones que se dan a continuación son Vecino más cercano (NN), Distancia inversa (ID) y Kriging ordinario (OK) respectivamente")
-    st.markdown("Las curvas que aumentan hacia la derecha son las leyes para cada técnica en diferentes cortes.")
+    st.markdown("Las interpolaciones que se dan a continuacion son Vecino mas cercano (NN), Distancia inversa (ID) y Kriging ordinario (OK) respectivamente")
+    st.markdown("Las curvas que aumentan hacia la derecha son las leyes para cada tecnica en diferentes leyes de cortes.")
     scol1, scol2 = st.columns((1, 1))
     with scol1:
         st.image("..//slr_res_est_course//images//interp_ests_q1.jpg", use_column_width=True)
@@ -141,24 +141,24 @@ def block_modelling():
                    "El azul claro es OK, el violeta es NN y el rojo es ID",
                    "El azul claro es OK, el violeta es ID y el rojo es NN"]
 
-    st.radio("¿Qué líneas en la gt_curve pertenecen a qué estimación?", options=gt_options, key='gg1')
+    st.radio("Que lineas en la gt_curve pertenecen a que estimacion?", options=gt_options, key='gg1')
     st.text("Any additional comments?")
 
     st.markdown("## **Adivina la modelo: Pregunta 2**")
-    st.markdown("Usa tu conocimiento adquirido para descifrar el misterio de las imágenes a continuación.")
+    st.markdown("Usa tu conocimiento adquirido para descifrar el misterio de las imagenes a continuacion.")
     st.markdown("Que sabemos:")
-    st.markdown("* ID al cuadrado se usó para una estimación y OK para otra")
-    st.markdown("* Se utilizaron parámetros de búsqueda idénticos.")
-    st.markdown("* TEl variograma tiene un efecto pepita de alrededor de 0,3 y la mayor parte de la variabilidad se explica dentro de unos 20-30 m.")
+    st.markdown("* ID al cuadrado se usa para una estimacion y OK para otra")
+    st.markdown("* Se utilizaron parametros de busqueda identicos.")
+    st.markdown("* El variograma tiene un efecto pepita de alrededor de 0,3 y la mayor parte de la variabilidad se explica dentro de unos 20-30 m.")
 
     st.image("..//slr_res_est_course//images//interp_OK_q2.jpg")
     st.image("..//slr_res_est_course//images//interp_ID_q2.jpg")
 
     est_options = ["Selecione una respuesta",
-                   "La estimación A es más variable que la estimación B. La estimación A es OK y la estimación B es ID",
-                   "La estimación B es más variable que la estimación B. La estimación A es OK y la estimación B es ID",
-                   "Ambas estimaciones tienen varianzas iguales ya que usan los mismos datos de muestra. La estimación A es OK y la estimación B es ID",
-                   "La estimación B es más variable que la estimación A. La estimación A es ID y la estimación B es OK",]
+                   "La estimacion A es mas variable que la estimacion B. La estimacion A es OK y la estimacion B es ID",
+                   "La estimacion B es mas variable que la estimacion B. La estimacion A es OK y la estimacion B es ID",
+                   "Ambas estimaciones tienen varianzas iguales ya que usan los mismos datos de muestra. La estimacion A es OK y la estimacion B es ID",
+                   "La estimacion B es mas variable que la estimacion A. La estimacion A es ID y la estimacion B es OK",]
 
     st.radio("Select the correct statement", options=est_options, key='est1')
 

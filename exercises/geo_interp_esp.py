@@ -9,8 +9,8 @@ def geo_interp():
 
     st.markdown("## Pregunta 1a: Elija una ley de corte para modelamiento")
     st.markdown("")
-    st.markdown("Tiene la tarea de construir un dominio de recursos minerales para un deposito de oro orogonico tipico de Ontario.")
-    st.markdown("La mineralizacion es erretica y, en su mayor parte, esta alojada dentro de un basalto fracturado.")
+    st.markdown("Tiene la tarea de construir un dominio de recursos minerales para un deposito de oro orogenico tipico de Ontario.")
+    st.markdown("La mineralizacion es erratica y, en su mayor parte, esta alojada dentro de un basalto fracturado.")
     st.markdown("Revise las siguientes secciones transversales que muestran la mineralizacion en una variedad de leyes de corte, asi como la litologia y responda las siguientes preguntas:")
 
     q1_options = ["Selecione una Respuesta",
@@ -24,11 +24,11 @@ def geo_interp():
     st.markdown("## Respuesta: 25% de la ley de corte.")
     
 
-    st.markdown("## Question 1b: Cual es el impacto?")
+    st.markdown("## Pregunta 1b: Cual es el impacto?")
     q2_options = ["Selecione una Respuesta",
                   "Tendra que manejar las altas leyes.",
                   "Tendra que disenar cuidadosamente la interpolacion para no sobre suavizar leyes.",
-                  "Tendra que ser cauteloso sobre como conecto la mineralizacion en areas menos perforadas.",
+                  "Tendra que ser cauteloso sobre como conectar la mineralizacion en areas menos perforadas.",
                   "Tendra que confirmar esta opcion usando analisis exploratorio de datos (EDA)."]
 
     st.radio("Como afectara esta eleccion a la forma en que diseno el flujo de trabajo aguas abajo para la estimacion de recursos minerales?", options=q2_options, key="q2")

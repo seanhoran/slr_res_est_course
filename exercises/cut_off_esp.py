@@ -115,12 +115,12 @@ def cut_off():
 
   q1_options = ['yes', 'no']
   cog_q1_answer = st.radio("¿Enviamos este bloque a la planta de procesamiento?", options=q1_options, key='cog_q1')
-#   st.markdown("## Answer: Depende, nos falta información, fundamentalmente los precios de los metales y las recuperaciones")
+#   st.markdown("## Respuesta: Depende, nos falta informacion, fundamentalmente los precios de los metales y las recuperaciones")
 
   st.write("")
-  st.markdown("## Pregunta 2: Cálculo Complejo de Ley de Corte")
+  st.markdown("## Pregunta 2: Calculo Complejo de Ley de Corte")
   st.write("")
-  st.markdown("### Teniendo en cuenta la ley del bloque de la Pregunta 1, analice el cálculo de NSR y responda la pregunta a continuación.")
+  st.markdown("### Teniendo en cuenta la ley del bloque de la Pregunta 1, analice el calculo de NSR y responda la pregunta a continuacion.")
   st.write("")
   col3, col4 = st.columns([1, 2])
   with col3:
@@ -128,21 +128,21 @@ def cut_off():
     st.markdown(text)
   with col4:
     st.image("..//slr_res_est_course//images//nsr_table.png", width=500)
-    st.write("*Tenga en cuenta que la ley promedio del depósito no se conoce hasta que se conoce la ley de corte. Esta es normalmente una primera aproximación y un proceso iterativo. Si bien no afecta los cálculos, una vez que se conoce la ley meedia, se puede realizar un análisis de flujo de caja simple.")
+    st.write("*Tenga en cuenta que la ley promedio del deposito no se conoce hasta que se conoce la ley de corte. Esta es normalmente una primera aproximacion y un proceso iterativo. Si bien no afecta los calculos, una vez que se conoce la ley meedia, se puede realizar un analisis de flujo de caja simple.")
   q2_options = ['A. No tengo idea',
-                'B. El valor del bloque está por debajo de todas las leyes de corte',
+                'B. El valor del bloque esta por debajo de todas las leyes de corte',
                 'C. El valor del bloque es mayor que el marginal pero menor que el break-even cut-off',
                 'D. El valor del bloque excede todas leyes de corte']
   cog_q2_answer = st.radio("Select the appropriate statement:", options=q2_options, key='cog_q2')
-#   st.markdown("## Respuesta: C. El valor del bloque es mayor que el marginal pero menor que el break-even cut-off. Cuando multiplica los factores NSR por las leyes, supera el 60 % del costo de extracción + G&A + Procesamiento, pero no el 100 % de los costos.")
+#   st.markdown("## Respuesta: C. El valor del bloque es mayor que el marginal pero menor que el break-even cut-off. Cuando multiplica los factores NSR por las leyes, supera el 60 % del costo de extraccion + G&A + Procesamiento, pero no el 100 % de los costos.")
 
   st.write("")
   st.markdown("## Pregunta 3: Sensibilidades")
   st.write("")
-  st.markdown("### Al ajustar los diversos parámetros de entrada que se dan a continuación, comente lo siguiente")
-  st.text_area("1. Qué precio del cobre da como resultado un ingreso que es el doble de la ley de corte de equilibrio", height=5, key='tt1')
+  st.markdown("### Al ajustar los diversos parametros de entrada que se dan a continuacion, comente lo siguiente")
+  st.text_area("1. Que precio del cobre da como resultado un ingreso que es el doble de la ley de corte de equilibrio", height=5, key='tt1')
 #   st.markdown("## Respuesta: Alrededor US$7/lb")
-  st.text_area("2. Qué leyo de cobre da como resultado un ingreso que es el doble de la ley de corte de equilibrio", height=5, key='tt2')
+  st.text_area("2. Que leyo de cobre da como resultado un ingreso que es el doble de la ley de corte de equilibrio", height=5, key='tt2')
 #   st.markdown("## Respuesta: La ley de Cu no sube lo suficiente lo que sugiere es >2% Cu.")
   st.write("")
   adjust_calculation(df.copy())
