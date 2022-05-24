@@ -8,7 +8,7 @@ def reporting():
   st.title("Declaracion de Recursos Minerales")
   text = funcs.get_text_block("reporting_esp.txt")
   st.markdown(text)
-  st.image("..//slr_res_est_course//images//res_table.jpg", use_column_width=True)
+  st.image("..//slr_res_est_course//images//res_table_esp.jpg", use_column_width=True)
   
 #   st.markdown("## Answers")
 #   text = funcs.get_text_block("RPT_Answers_esp.txt")
