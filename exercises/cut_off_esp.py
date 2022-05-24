@@ -92,9 +92,9 @@ def cut_off():
   df = df.fillna("")
   df = df[:32].copy()
 
-  st.title("Cut-off Grade Exercise")
+  st.title("Ejercico de ley de corte")
   st.write("")
-  st.markdown("## Question 1: Do we send this block to the processing plant?")
+  st.markdown("## Pregunta 1: ¿Enviamos este bloque a la planta de procesamiento?")
   st.write("")
 
   col1, col2 = st.columns([1, 2])
@@ -114,13 +114,13 @@ def cut_off():
     st.markdown('* G&A: $15/t')
 
   q1_options = ['yes', 'no']
-  cog_q1_answer = st.radio("Do we send this block to the processing plant?", options=q1_options, key='cog_q1')
-#   st.markdown("## Answer: It depends, we are missing information, fundamentally the metal prices and recoveries")
+  cog_q1_answer = st.radio("¿Enviamos este bloque a la planta de procesamiento?", options=q1_options, key='cog_q1')
+#   st.markdown("## Answer: Depende, nos falta información, fundamentalmente los precios de los metales y las recuperaciones")
 
   st.write("")
-  st.markdown("## Question 2: Complex Cut-off Calculation")
+  st.markdown("## Pregunta 2: Cálculo Complejo de Ley de Corte")
   st.write("")
-  st.markdown("### Considering the block grades from Question 1, analyze the NSR calculation and answer the question below.")
+  st.markdown("### Teniendo en cuenta la ley del bloque de la Pregunta 1, analice el cálculo de NSR y responda la pregunta a continuación.")
   st.write("")
   col3, col4 = st.columns([1, 2])
   with col3:
@@ -128,22 +128,22 @@ def cut_off():
     st.markdown(text)
   with col4:
     st.image("..//slr_res_est_course//images//nsr_table.png", width=500)
-    st.write("*Note that the average grade of the deposit is not known until the cut-off is known. This is normally an early approximation and an iterative process. While it does not impact the calculations, once the average grade is known, a simple cash flow analysis can be performed.")
-  q2_options = ['A. I have no idea',
-                'B. The block value is below all cut-off grades',
-                'C. The block value is greater than the marginal but less than the break-even cut-off',
-                'D. The block value exceeds all cut-off grades']
+    st.write("*Tenga en cuenta que la ley promedio del depósito no se conoce hasta que se conoce la ley de corte. Esta es normalmente una primera aproximación y un proceso iterativo. Si bien no afecta los cálculos, una vez que se conoce la ley meedia, se puede realizar un análisis de flujo de caja simple.")
+  q2_options = ['A. No tengo idea',
+                'B. El valor del bloque está por debajo de todas las leyes de corte',
+                'C. El valor del bloque es mayor que el marginal pero menor que el break-even cut-off',
+                'D. El valor del bloque excede todas leyes de corte']
   cog_q2_answer = st.radio("Select the appropriate statement:", options=q2_options, key='cog_q2')
-#   st.markdown("## Answer: C. The block value is greater than the marginal but less than the break-even cut-off. When you multiply the NSR factors by the grades it exceeds 60% of the mining cost + G&A + Processing but not 100% of the costs.")
+#   st.markdown("## Respuesta: C. El valor del bloque es mayor que el marginal pero menor que el break-even cut-off. Cuando multiplica los factores NSR por las leyes, supera el 60 % del costo de extracción + G&A + Procesamiento, pero no el 100 % de los costos.")
 
   st.write("")
-  st.markdown("## Question 3: Sensitivities")
+  st.markdown("## Pregunta 3: Sensibilidades")
   st.write("")
-  st.markdown("### By Adjusting the various input parameters given below, comment on the following:")
-  st.text_area("1. What copper price results in a revenue which is double the break-even cut-off grade", height=5, key='tt1')
-#   st.markdown("## Answer: Around US$7/lb")
-  st.text_area("2. What copper grade results in a revenue which is double the break-even cut-off grade", height=5, key='tt2')
-#   st.markdown("## Answer: The Cu grade slider does not go high enough suggesting >2% Cu.")
+  st.markdown("### Al ajustar los diversos parámetros de entrada que se dan a continuación, comente lo siguiente")
+  st.text_area("1. Qué precio del cobre da como resultado un ingreso que es el doble de la ley de corte de equilibrio", height=5, key='tt1')
+#   st.markdown("## Respuesta: Alrededor US$7/lb")
+  st.text_area("2. Qué leyo de cobre da como resultado un ingreso que es el doble de la ley de corte de equilibrio", height=5, key='tt2')
+#   st.markdown("## Respuesta: La ley de Cu no sube lo suficiente lo que sugiere es >2% Cu.")
   st.write("")
   adjust_calculation(df.copy())
   

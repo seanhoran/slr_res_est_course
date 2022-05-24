@@ -22,10 +22,10 @@ norm = mpl.colors.BoundaryNorm(cog, cmap.N)
 @st.cache
 
 def get_text_block(fname):
-  # this is how to read a block of text:
+  # Asi es como leer un bloque de texto:
   path = ""
   f = open(fname, "r")
-  # and then write it to the app
+  # y después escribirlo en la aplicación
   return f.read();
 
 
@@ -145,17 +145,17 @@ def block_modelling():
     # Variogram
     # ----------------------------------------------------------------------------------------------------------------#
 
-    st.markdown("## **Variogram**")
-    st.markdown("The omni-directional variogram is given in the chart that follows." +
-                " Keep in mind that no direction has been chosen and that the range shown will be shorter than" +
-                " the longest direction and longer than the shortest direction. Your job is to estimate the range" +
-                " in the longest direction given your observations from the plot above.")
+    st.markdown("## **Variograma**")
+    st.markdown("El variograma omni-direccional es mostrado en el siguiente gráfico." +
+                " Tener en cuenta que no hay una dirección elegida y que el alcance sera más corto que" +
+                " la dirección mayor y más largo quela dirección menor. Tu función es estimar el alcance" +
+                " en la dirección mayor basado en tus observaciones del gráfico de arriba.")
 
     g1, g2 = np.meshgrid(df.AU_G_T, df.AU_G_T)
     col1, col2, col3  = st.columns((1,1,1))
 
     with col1:
-        st.markdown('#### Experimental Variogram')
+        st.markdown('#### Variograma Experimental')
         lag_dist = st.slider('Lag Distance', min_value=5., max_value=50., value=10., step=5.,key='var_lag')
         vartype = st.selectbox('Select Experimental Variogram Type',
                                options=['Traditional Variogram', 'Correlogram'],
@@ -166,7 +166,7 @@ def block_modelling():
         c1 = st.slider('C1', min_value=0.0, max_value=1.0-nugget, value=0.0, step=0.05)
         c2 = 1.0 - (c1 + nugget)
     with col3:
-        st.markdown('#### Variogram Model (Ranges)')
+        st.markdown('#### Modelo de Variograma (Alcances)')
         r1 = st.slider('Range s1', min_value=0.0, max_value=200.0, value=10., step=5., key='k1')
         r2 = st.slider('Range s2', min_value=0.0, max_value=200.0, value=10., step=5., key='k2')
 
@@ -231,7 +231,7 @@ def block_modelling():
     # Block modelling parameters
     # ----------------------------------------------------------------------------------------------------------------#
 
-    st.markdown("## **Additional Parameters**")
+    st.markdown("## **Parámetros Adicionales**")
 
     bcol1, bcol2 = st.columns((1, 1))
     with bcol1:
