@@ -63,8 +63,7 @@ def capping_ex():
                'Otro',
                'Algo esta mal']
   
-  q2_answer=st.radio('
-  Revise el siguiente histograma, grafico de probabilidad y el analisis de deciles y determine sobre que ley es mas apropiado limitar. Revisie cuidadosamente las plantas y secciones para obtener una mejor idea de la distribucion espacial de los deciles preseleccionados.', options=q2_options, index=0, key='quest2')
+  q2_answer=st.radio('Revise el siguiente histograma, grafico de probabilidad y el analisis de deciles y determine sobre que ley es mas apropiado limitar. Revisie cuidadosamente las plantas y secciones para obtener una mejor idea de la distribucion espacial de los deciles preseleccionados.', options=q2_options, index=0, key='quest2')
   colb1, colb2, colb3 = st.columns((1,1.5,1))
   with colb1:
    st.subheader("Decile Analysis")
@@ -107,7 +106,7 @@ def capping_ex():
                'Otro',
                'Algo esta mal']
   
-  q3_answer=st.radio('Revise el siguiente histograma, grafico de probabilidad y el analisis de deciles y determine sobre que ley es m?s apropiado limitar. Una revision cuidadosa de las plantas y secciones proporciona una mejor idea de la distribucion espacial de los deciles preseleccionados.', options=q3_options, index=0, key='quest3')
+  q3_answer=st.radio('Revise el siguiente histograma, grafico de probabilidad y el analisis de deciles y determine sobre que ley es mas apropiado limitar. Una revision cuidadosa de las plantas y secciones proporciona una mejor idea de la distribucion espacial de los deciles preseleccionados.', options=q3_options, index=0, key='quest3')
   cold1, cold2, cold3 = st.columns((1,1.5,1))
   with cold1:
    st.subheader("Decile Analysis")
