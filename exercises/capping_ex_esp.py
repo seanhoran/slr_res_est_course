@@ -326,7 +326,7 @@ def capping_ex():
   
   q10_answer=st.radio('?Que dominio(s) refleja(n) mejor el histograma, la grafica de probabilidad y el analisis de decil presentado en la Pregunta 5 del Ejercicio 1?', options=q10_options, index=0, key='quest10')
   st.write("")
-  st.subheader("Respuesta: Dominio 1")1
+  st.subheader("Respuesta: Dominio 1")
   st.write("")
   st.write("")
   st.write("")
