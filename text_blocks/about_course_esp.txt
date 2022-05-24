@@ -2,21 +2,21 @@ Los recursos minerales y su posterior conversión en reservas minerales son de v
 
 Este breve curso se centra en los aspectos prácticos de la estimación de recursos e incluye pautas fáciles de seguir para navegar por los principales puntos de decisión en un flujo de trabajo de estimación de recursos:
 
-*La base de datos de recursos
-*Modelamiento geológico y definición de dominios de estimación
-*Análisis exploratorio de datos
-*Herramientas de restricción de valores atípicos (incluido el corte the valores extremos altos)
-*Compositación
-*Análisis de tendencia
-*Incorporación de parámetros mineros conceptuales (espesor mínimo, escala de minado, ley de corte y prospectos razonables)
-*Diseño de interpolación (búsqueda de tamaño y orientación de elipse, restricciones de muestra, etc.)
-*Consideraciones para clasificación de recursos
-*Herramientas de verificación de modelos
-*Informes de recursos minerales
+* La base de datos de recursos
+* Modelamiento geológico y definición de dominios de estimación
+* Análisis exploratorio de datos
+* Herramientas de restricción de valores atípicos (incluido el corte the valores extremos altos)
+* Compositación
+* Análisis de tendencia
+* Incorporación de parámetros mineros conceptuales (espesor mínimo, escala de minado, ley de corte y prospectos razonables)
+* Diseño de interpolación (búsqueda de tamaño y orientación de elipse, restricciones de muestra, etc.)
+* Consideraciones para clasificación de recursos
+* Herramientas de verificación de modelos
+* Informes de recursos minerales
 
 Que vas a aprender:
 
-*Comprender los pasos necesarios para estimar Recursos Minerales.
-*Construir un kit de herramientas básico para estimar Recursos Minerales.
-*Identificar, navegar y manejar riesgos y brechas comunes en el proceso de estimación.
-*Aplicar consideraciones prácticas de estimación de recursos y minería a la recopilación y comparación de datos de campo.
+* Comprender los pasos necesarios para estimar Recursos Minerales.
+* Construir un kit de herramientas básico para estimar Recursos Minerales.
+* Identificar, navegar y manejar riesgos y brechas comunes en el proceso de estimación.
+* Aplicar consideraciones prácticas de estimación de recursos y minería a la recopilación y comparación de datos de campo.
