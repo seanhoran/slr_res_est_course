@@ -25,7 +25,7 @@ def get_text_block(fname):
   # Asi es como leer un bloque de texto:
   path = ""
   f = open(fname, "r")
-  # y después escribirlo en la aplicación
+  # y despues escribirlo en la aplicacion
   return f.read();
 
 
@@ -146,10 +146,10 @@ def block_modelling():
     # ----------------------------------------------------------------------------------------------------------------#
 
     st.markdown("## **Variograma**")
-    st.markdown("El variograma omni-direccional es mostrado en el siguiente gráfico." +
-                " Tener en cuenta que no hay una dirección elegida y que el alcance sera más corto que" +
-                " la dirección mayor y más largo quela dirección menor. Tu función es estimar el alcance" +
-                " en la dirección mayor basado en tus observaciones del gráfico de arriba.")
+    st.markdown("El variograma omni-direccional es mostrado en el siguiente grafico." +
+                " Tener en cuenta que no hay una direccion elegida y que el alcance sera mas corto que" +
+                " la direccion mayor y mas largo que la direccion menor. Tu funcion es estimar el alcance" +
+                " en la direccion mayor basado en tus observaciones del grafico de arriba.")
 
     g1, g2 = np.meshgrid(df.AU_G_T, df.AU_G_T)
     col1, col2, col3  = st.columns((1,1,1))
@@ -231,7 +231,7 @@ def block_modelling():
     # Block modelling parameters
     # ----------------------------------------------------------------------------------------------------------------#
 
-    st.markdown("## **Parámetros Adicionales**")
+    st.markdown("## **Parametros Adicionales**")
 
     bcol1, bcol2 = st.columns((1, 1))
     with bcol1:

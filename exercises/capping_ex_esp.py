@@ -8,21 +8,21 @@ def capping_ex():
   
   count_correct = 0
   
-  st.write("El módulo de restricción de leyes altas tiene algunas herramientas que pueden ayudar a identificar si se requiere una restricción de las leyes altas. Este ejercicio utiliza datos reales y muestra cómo el flujo de trabajo de restricción de leyes altas es iterativo, y que su decisión de modelarlas geológicamente y/o cortar o restringir valores extremos debe ser basada en un grupo de herramientas. Por último, es importante tener en cuenta que puede optar por revisar su flujo de trabajo de restricción de leyes altas después de validar su estimación visual y estadísticamente, ya que el impacto de las muestras de leyes altas en la estimación final de recurso puede ser significativo.")
+  st.write("El modulo de restriccion de leyes altas tiene algunas herramientas que pueden ayudar a identificar si se requiere una restriccion de las leyes altas. Este ejercicio utiliza datos reales y muestra como el flujo de trabajo de restriccion de leyes altas es iterativo, y que su decision de modelarlas geologicamente y/o cortar o restringir valores extremos debe ser basada en un grupo de herramientas. Por ultimo, es importante tener en cuenta que puede optar por revisar su flujo de trabajo de restriccion de leyes altas despues de validar su estimacion visual y estadisticamente, ya que el impacto de las muestras de leyes altas en la estimacion final de recurso puede ser significativo.")
 
 #   st.image("..//slr_res_est_course//images//wireframe_header.jpg", use_column_width=True)
 
-  st.header("Ejercicio 1 - Depósito de Oro - Pregunta 1")
+  st.header("Ejercicio 1 - Deposito de Oro - Pregunta 1")
    
   q1_options = ['Por favor, Seleccione una respuesta', 
              '10 g/t Au', 
              '20 g/t Au', 
              '25 g/t Au',
                'Otro',
-               'Algo está mal']
+               'Algo esta mal']
   
   
-  q1_answer=st.radio('Revise el siguiente histograma, gráfico de probabilidad y el análisis de deciles y determine sobre qué ley es más apropiado limitar. Una revisión cuidadosa de las plantas y secciones proporciona una mejor idea de la distribución espacial de los deciles preseleccionados.', options=q1_options, index=0, key='quest1')
+  q1_answer=st.radio('Revise el siguiente histograma, grafico de probabilidad y el analisis de deciles y determine sobre que ley es mas apropiado limitar. Una revision cuidadosa de las plantas y secciones proporciona una mejor idea de la distribucion espacial de los deciles preseleccionados.', options=q1_options, index=0, key='quest1')
   col1, col2, col3 = st.columns((1,1.5,1))
   with col1:
    st.subheader("Decile Analysis")
@@ -50,21 +50,21 @@ def capping_ex():
    st.image("..//slr_res_est_course//images//HG_LG_ObliqueCaps.jpg", use_column_width=True)
    st.subheader("Oblique View - Looking Along Strike")
   st.write("")
-  st.subheader("Respuesta: Algo está mal: el conjunto de datos tiene una población de alta ley que debe evaluarse de forma independiente.")
+  st.subheader("Respuesta: Algo esta mal: el conjunto de datos tiene una poblacion de alta ley que debe evaluarse de forma independiente.")
   st.write("")
   st.write("")
   st.write("")
   
-  st.header("Ejercicio 1 - Depósito de Oro - Pregunta 2")
+  st.header("Ejercicio 1 - Deposito de Oro - Pregunta 2")
   q2_options = ['Por favor, Seleccione una respuesta', 
              '5 g/t Au', 
              '10 g/t Au', 
              '15 g/t Au',
                'Otro',
-               'Algo está mal']
+               'Algo esta mal']
   
   q2_answer=st.radio('
-  Revise el siguiente histograma, gráfico de probabilidad y el análisis de deciles y determine sobre qué ley es más apropiado limitar. Revisie cuidadosamente las plantas y secciones para obtener una mejor idea de la distribución espacial de los deciles preseleccionados.', options=q2_options, index=0, key='quest2')
+  Revise el siguiente histograma, grafico de probabilidad y el analisis de deciles y determine sobre que ley es mas apropiado limitar. Revisie cuidadosamente las plantas y secciones para obtener una mejor idea de la distribucion espacial de los deciles preseleccionados.', options=q2_options, index=0, key='quest2')
   colb1, colb2, colb3 = st.columns((1,1.5,1))
   with colb1:
    st.subheader("Decile Analysis")
@@ -98,16 +98,16 @@ def capping_ex():
   
 
   
-  st.header("Ejercicio 1 - Depósito de Oro - Pregunta 3")
+  st.header("Ejercicio 1 - Deposito de Oro - Pregunta 3")
    
   q3_options = ['Por favor, Seleccione una respuesta', 
              '10 g/t Au', 
              '20 g/t Au', 
              '25 g/t Au',
                'Otro',
-               'Algo está mal']
+               'Algo esta mal']
   
-  q3_answer=st.radio('Revise el siguiente histograma, gráfico de probabilidad y el análisis de deciles y determine sobre qué ley es más apropiado limitar. Una revisión cuidadosa de las plantas y secciones proporciona una mejor idea de la distribución espacial de los deciles preseleccionados.', options=q3_options, index=0, key='quest3')
+  q3_answer=st.radio('Revise el siguiente histograma, grafico de probabilidad y el analisis de deciles y determine sobre que ley es m?s apropiado limitar. Una revision cuidadosa de las plantas y secciones proporciona una mejor idea de la distribucion espacial de los deciles preseleccionados.', options=q3_options, index=0, key='quest3')
   cold1, cold2, cold3 = st.columns((1,1.5,1))
   with cold1:
    st.subheader("Decile Analysis")
@@ -134,22 +134,22 @@ def capping_ex():
    st.subheader("Oblique View - Looking Along Strike")
    st.image("..//slr_res_est_course//images//HG_ObliqueCaps.jpg", use_column_width=True)
   st.write("")
-  st.subheader("Respuesta: Algo está mal: el conjunto de datos tiene una población de alta ley que debe evaluarse de forma independiente.")
+  st.subheader("Respuesta: Algo esta mal: el conjunto de datos tiene una poblacion de alta ley que debe evaluarse de forma independiente.")
   st.write("")
   st.write("")
   st.write("")
   
 
-  st.header("Ejercicio 1 - Depósito de Oro - Pregunta 4")
+  st.header("Ejercicio 1 - Deposito de Oro - Pregunta 4")
    
   q4_options = ['Por favor, Seleccione una respuesta', 
              '5 g/t Au', 
              '10 g/t Au', 
              '15 g/t Au',
                'Otro',
-               'Algo está mal']
+               'Algo esta mal']
   
-  q4_answer=st.radio('Revise el siguiente histograma, gráfico de probabilidad y el análisis de deciles y determine sobre qué ley es más apropiado limitar. Una revisión cuidadosa de las plantas y secciones proporciona una mejor idea de la distribución espacial de los deciles preseleccionados.', options=q4_options, index=0, key='quest4')
+  q4_answer=st.radio('Revise el siguiente histograma, grafico de probabilidad y el analisis de deciles y determine sobre que ley es mas apropiado limitar. Una revision cuidadosa de las plantas y secciones proporciona una mejor idea de la distribucion espacial de los deciles preseleccionados.', options=q4_options, index=0, key='quest4')
   colf1, colf2, colf3 = st.columns((1,1.5,1))
   with colf1:
    st.subheader("Decile Analysis")
@@ -183,16 +183,16 @@ def capping_ex():
   
 
 
-  st.header("Ejercicio 1 - Depósito de Oro - Pregunta 5")
+  st.header("Ejercicio 1 - Deposito de Oro - Pregunta 5")
    
   q5_options = ['Por favor, Seleccione una respuesta', 
              '10 g/t Au', 
              '20 g/t Au', 
              '25 g/t Au',
                'Otro',
-               'Algo está mal']
+               'Algo esta mal']
   
-  q5_answer=st.radio('Revise el siguiente histograma, gráfico de probabilidad y el análisis de deciles y determine sobre qué ley es más apropiado limitar. Una revisión cuidadosa de las plantas y secciones proporciona una mejor idea de la distribución espacial de los deciles preseleccionados.', options=q5_options, index=0, key='quest5')
+  q5_answer=st.radio('Revise el siguiente histograma, grafico de probabilidad y el analisis de deciles y determine sobre que ley es mas apropiado limitar. Una revision cuidadosa de las plantas y secciones proporciona una mejor idea de la distribucion espacial de los deciles preseleccionados.', options=q5_options, index=0, key='quest5')
   colh1, colh2, colh3 = st.columns((1,1.5,1))
   with colh1:
    st.subheader("Decile Analysis")
@@ -219,7 +219,7 @@ def capping_ex():
    st.subheader("Oblique View - Looking Along Strike")
    st.image("..//slr_res_est_course//images//HG1_ObliqueCaps.jpg", use_column_width=True)
   st.write("")
-  st.subheader("Answer: 25 g/t Au o potencialmente más alto basado en una revisión espacial más detallada.")
+  st.subheader("Respuesta: 25 g/t Au o potencialmente mas alto basado en una revision espacial mas detallada.")
   st.write("")
   st.write("")
   st.write("")
@@ -228,9 +228,9 @@ def capping_ex():
 
   st.image("..//slr_res_est_course//images//wireframe_header.jpg", use_column_width=True)
   
-  st.write("Como se habrán dado cuenta en las vistas en planta y secciones, el conjunto de datos del depósito de oro de la Pregunta 1 contiene una población de ley alta y baja, donde las vetas de ley alta están rodeadas por un halo de alteración de ley inferior. El segundo ejercicio es una continuación del primero y requiere que haga coincidir los dominios que se muestran en las imágenes a continuación con las estadísticas presentadas en cada una de las preguntas del primer ejercicio. Si tuvo algunas respuestas incorrectas en el primer ejercicio, consulte la información y las imágenes a continuación antes de comenzar el Ejercicio 2.")
+  st.write("Como se habran dado cuenta en las vistas en planta y secciones, el conjunto de datos del deposito de oro de la Pregunta 1 contiene una poblacion de ley alta y baja, donde las vetas de ley alta estan rodeadas por un halo de alteracion de baja ley. El segundo ejercicio es una continuacion del primero y requiere que haga coincidir los dominios que se muestran en las imagenes a continuacion con las estadisticas presentadas en cada una de las preguntas del primer ejercicio. Si tuvo algunas respuestas incorrectas en el primer ejercicio, consulte la informacion y las imagenes a continuacion antes de comenzar el Ejercicio 2.")
   
-  st.write("Note: Las siguientes imágenes son vistas inclinadas y miran hacia abajo a lo largo del rumbo como las presentadas en el Ejercicio 1. Se construyeron sólidos para los Dominios 1 y 2 con una ley de corte nominal de 1 g/t Au, mientras que los sólidos del Dominio 3 se construyeron a una ley de corte nominal de 0,20 g/t Au.")
+  st.write("Note: Las siguientes imagenes son vistas inclinadas y miran hacia abajo a lo largo del rumbo, como las presentadas en el Ejercicio 1. Se construyeron solidos para los Dominios 1 y 2 con una ley de corte nominal de 1 g/t Au, mientras que los solidos del Dominio 3 se construyeron a una ley de corte nominal de 0,20 g/t Au.")
 
   st.subheader("Domains 1, 2 and 3")
   st.image("..//slr_res_est_course//images//Domains123.jpg", use_column_width=True)
@@ -239,7 +239,7 @@ def capping_ex():
   st.subheader("Capped Assays")
   st.image("..//slr_res_est_course//images//Domains123_Caps.jpg", use_column_width=True)
 
-  st.header("Ejercicio 2 - Depósito de Oro - Pregunta 1")
+  st.header("Ejercicio 2 - Deposito de Oro - Pregunta 1")
    
   q6_options = ['Por favor, Seleccione una respuesta', 
              'Dominio 1', 
@@ -249,7 +249,7 @@ def capping_ex():
              'Dominios 1 and 3',
              'Dominios 1, 2, and 3']
   
-  q6_answer=st.radio('¿Qué dominio(s) refleja(n) mejor el histograma, la gráfica de probabilidad y el análisis de decil presentado en la Pregunta 1 del Ejercicio 1?', options=q6_options, index=0, key='quest6')
+  q6_answer=st.radio('?Que dominio(s) refleja(n) mejor el histograma, la grafica de probabilidad y el analisis de decil presentado en la Pregunta 1 del Ejercicio 1?', options=q6_options, index=0, key='quest6')
   st.write("")
   st.subheader("Respuesta: Dominios 1, 2 y 3")
   st.write("")
@@ -258,7 +258,7 @@ def capping_ex():
   
 
    
-  st.header("Ejercicio 2 - Depósito de Oro - Pregunta 2")
+  st.header("Ejercicio 2 - Deposito de Oro - Pregunta 2")
    
   q7_options = ['Por favor, Seleccione una respuesta', 
              'Dominio 1', 
@@ -268,7 +268,7 @@ def capping_ex():
              'Dominios 1 and 3',
              'Dominios 1, 2, and 3']
   
-  q7_answer=st.radio('¿Qué dominio(s) refleja(n) mejor el histograma, la gráfica de probabilidad y el análisis de decil presentado en la Pregunta 2 del Ejercicio 1?', options=q7_options, index=0, key='quest7')
+  q7_answer=st.radio('?Que dominio(s) refleja(n) mejor el histograma, la grafica de probabilidad y el analisis de decil presentado en la Pregunta 2 del Ejercicio 1?', options=q7_options, index=0, key='quest7')
   st.write("")
   st.subheader("Respuesta: Dominio 3")
   st.write("")
@@ -277,7 +277,7 @@ def capping_ex():
   
 
    
-  st.header("Ejercicio 2 - Depósito de Oro - Pregunta 4")
+  st.header("Ejercicio 2 - Deposito de Oro - Pregunta 4")
    
   q9_options = ['Por favor, Seleccione una respuesta', 
              'Dominio 1', 
@@ -287,7 +287,7 @@ def capping_ex():
              'Dominios 1 and 3',
              'Dominios 1, 2, and 3']
   
-  q9_answer=st.radio('¿Qué dominio(s) refleja(n) mejor el histograma, la gráfica de probabilidad y el análisis de decil presentado en la Pregunta 3 del Ejercicio 1?', options=q9_options, index=0, key='quest8')
+  q9_answer=st.radio('?Que dominio(s) refleja(n) mejor el histograma, la grafica de probabilidad y el analisis de decil presentado en la Pregunta 3 del Ejercicio 1?', options=q9_options, index=0, key='quest8')
 
   st.write("")
   st.subheader("Respuesta: Dominios 1 y 2")
@@ -296,7 +296,7 @@ def capping_ex():
   st.write("")
 
   
-  st.header("Ejercicio 2 - Depósito de Oro - Pregunta 5")
+  st.header("Ejercicio 2 - Deposito de Oro - Pregunta 5")
    
   q9_options = ['Por favor, Seleccione una respuesta', 
              'Dominio 1', 
@@ -306,7 +306,7 @@ def capping_ex():
              'Dominios 1 and 3',
              'Dominios 1, 2, and 3']
   
-  q9_answer=st.radio('¿Qué dominio(s) refleja(n) mejor el histograma, la gráfica de probabilidad y el análisis de decil presentado en la Pregunta 4 del Ejercicio 1?', options=q9_options, index=0, key='quest9')
+  q9_answer=st.radio('?Que dominio(s) refleja(n) mejor el histograma, la grafica de probabilidad y el analisis de decil presentado en la Pregunta 4 del Ejercicio 1?', options=q9_options, index=0, key='quest9')
 
   st.write("")
   st.subheader("Respuesta: Dominio 2")
@@ -315,7 +315,7 @@ def capping_ex():
   st.write("")
  
     
-  st.header("Ejercicio 2 - Depósito de Oro - Pregunta 6")
+  st.header("Ejercicio 2 - Deposito de Oro - Pregunta 6")
    
   q10_options = ['Por favor, Seleccione una respuesta', 
              'Dominio 1', 
@@ -325,7 +325,7 @@ def capping_ex():
              'Dominios 1 and 3',
              'Dominios 1, 2, and 3']
   
-  q10_answer=st.radio('¿Qué dominio(s) refleja(n) mejor el histograma, la gráfica de probabilidad y el análisis de decil presentado en la Pregunta 5 del Ejercicio 1?', options=q10_options, index=0, key='quest10')
+  q10_answer=st.radio('?Que dominio(s) refleja(n) mejor el histograma, la grafica de probabilidad y el analisis de decil presentado en la Pregunta 5 del Ejercicio 1?', options=q10_options, index=0, key='quest10')
   st.write("")
   st.subheader("Respuesta: Dominio 1")1
   st.write("")
