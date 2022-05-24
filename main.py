@@ -123,7 +123,7 @@ else:
       geo_interp_esp.geo_interp()
     if exercise == radio_options[2]:
     #   st.write("Page available during nominated exercise session")
-      capping_ex.capping_ex()
+      capping_ex_esp.capping_ex()
     if exercise == radio_options[3]:
     #   st.write("Page available during nominated exercise session")
       variograms_esp.variograms()
