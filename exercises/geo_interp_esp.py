@@ -60,7 +60,7 @@ def geo_interp():
         st.image("..//slr_res_est_course//images//gt2" + str(int(cog2))+ ".jpg")
         
     st.markdown("")
-    text = funcs.get_text_block("geo_interp_q2.txt")
+    text = funcs.get_text_block("geo_interp_q2_esp.txt")
     st.markdown(text)
     q3_options = ["Selecione una Respuesta",
                   "Todas combinadas.",
