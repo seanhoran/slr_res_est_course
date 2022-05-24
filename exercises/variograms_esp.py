@@ -54,7 +54,7 @@ def variograms():
   st.title("Ejercicio de Variograma")
   st.write("")
   st.markdown("## Modele el variograma apropiado para cada patron de ley observado")
-  text = funcs.get_text_block("variography_intro.txt")
+  text = funcs.get_text_block("variography_intro_esp.txt")
   st.markdown(text)
   
   results = []
