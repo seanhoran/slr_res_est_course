@@ -94,7 +94,7 @@ def cut_off():
 
   st.title("Ejercico de ley de corte")
   st.write("")
-  st.markdown("## Pregunta 1: ¿Enviamos este bloque a la planta de procesamiento?")
+  st.markdown("## Pregunta 1: Enviamos este bloque a la planta de procesamiento?")
   st.write("")
 
   col1, col2 = st.columns([1, 2])
@@ -114,7 +114,7 @@ def cut_off():
     st.markdown('* G&A: $15/t')
 
   q1_options = ['yes', 'no']
-  cog_q1_answer = st.radio("¿Enviamos este bloque a la planta de procesamiento?", options=q1_options, key='cog_q1')
+  cog_q1_answer = st.radio("Enviamos este bloque a la planta de procesamiento?", options=q1_options, key='cog_q1')
 #   st.markdown("## Respuesta: Depende, nos falta informacion, fundamentalmente los precios de los metales y las recuperaciones")
 
   st.write("")
