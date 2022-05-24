@@ -1,8 +1,8 @@
-El modelamiento de variogramas debe tratarse como algo más que un simple ejercicio de ajuste de curvas a puntos de datos. El variograma experimental puede verse afectado por falta de datos, sesgo de muestreo, agrupación y efecto proporcional. Un geólogo de recursos experimentado ya tendrá un variograma en mente antes de realizar cualquier variografía exploratoria. Los puntos en el gráfico son simplemente una confirmación de la hipótesis.
+El modelamiento de variogramas debe tratarse como algo mas que un simple ejercicio de ajuste de curvas a puntos de datos. El variograma experimental puede verse afectado por falta de datos, sesgo de muestreo, agrupaciÃ³n y efecto proporcional. Un geÃ³logo de recursos experimentado ya tendrÃ¡ un variograma en mente antes de realizar cualquier variografia exploratoria. Los puntos en el grafico son simplemente una confirmaciÃ³n de la hipÃ³tesis.
 
 El objetivo de este ejercicio es imaginar el modelo de variograma para las diferentes distribuciones espaciales de leyes. Los pasos que debes seguir son los siguientes:
 
-* Seleccionar el modelo de variograma, el efecto de pepita y el alcance adecuado para la línea A-B.
+* Seleccionar el modelo de variograma, el efecto de pepita y el alcance adecuado para la lÃ­nea A-B.
 * Suponga que las figuras miden 100 m por 100 m.
-* Piense en los colores como si representaran el espectro completo de rangos de ley. Imagine qué colores representan la media y la desviación estándar (más y menos).
-* Mire el comportamieto de la ley y la escala de la anisotropía de la imagen, las direcciones de continuidad y cualquier otra característica que observe.
+* Piense en los colores como si representaran el espectro completo de rangos de ley. Imagine que colores representan la media y la desviacion estÃ¡ndar (mas y menos).
+* Mire el comportamieto de la ley y la escala de la anisotropÃ­a de la imagen, las direcciones de continuidad y cualquier otra caracterÃ­stica que observe.
