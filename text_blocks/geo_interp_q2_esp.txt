@@ -1,11 +1,11 @@
-Est·s comisionado a crear un modelo de recursos para un depÛsito de hematita/taconita. Las muestras corresponden a proceso de flotaciÛn de bancos diseÒado para condiciones de planta mÌmica, el cual concentra fierro en un proceso de flotaciÛn reverso. Un modelo geolÛgico y de alteraciÛn ha sido completado. 
+Est√°s comisionado a crear un modelo de recursos para un dep√≥sito de hematita/taconita. Las muestras corresponden a proceso de flotaci√≥n de bancos dise√±ado para condiciones de planta m√≠mica, el cual concentra fierro en un proceso de flotaci√≥n reverso. Un modelo geol√≥gico y de alteraci√≥n ha sido completado. 
 
-* FÛsforo est· presente en bajas concentraciones a travÈs de la formaciÛn de fierro y es un contaminante. ConcentraciÛn sobre el lÌmite aceptable especificado del producto iron-pellet ocurre donde la formaciÛn de fierro ha sufrido meteorizaciÛn.
+* F√≥sforo est√° presente en bajas concentraciones a trav√©s de la formaci√≥n de fierro y es un contaminante. Concentraci√≥n sobre el l√≠mite aceptable especificado del producto iron-pellet ocurre donde la formaci√≥n de fierro ha sufrido meteorizaci√≥n.
 
-  * Un largo filÛn ha protegido de la meteorizaciÛn en profundidad mucho de la formaciÛn de fierro.  Bajo el contacto inferior del filÛn, ocurren altos valores de FÛsforo, adem·s en ·reas con una alta concentraciÛn de fallas.
-  * sobre el filÛn grande, la formaciÛn de fierro es instruida por muchos filones m·s pequeÒos y domina la oxidaciÛn penetrante.  Como consecuencia, la mayorÌa del material sobre el filÛn es estÈril.
-  * Muestreo histÛrico no incluyÛ el an·lisis de FÛsforo, y por lo tanto est· inconsistentemente presente en la base d datos. 
+  * Un largo fil√≥n ha protegido de la meteorizaci√≥n en profundidad mucho de la formaci√≥n de fierro.  Bajo el contacto inferior del fil√≥n, ocurren altos valores de F√≥sforo, adem√°s en √°reas con una alta concentraci√≥n de fallas.
+  * sobre el fil√≥n grande, la formaci√≥n de fierro es instruida por muchos filones m√°s peque√±os y domina la oxidaci√≥n penetrante.  Como consecuencia, la mayor√≠a del material sobre el fil√≥n es est√©ril.
+  * Muestreo hist√≥rico no incluy√≥ el an√°lisis de F√≥sforo, y por lo tanto est√° inconsistentemente presente en la base d datos. 
 
-* AlteraciÛn silÌcea proveniente del intrusivo afecta a filones, diques y rellena fallas impactando el proceso de concentraciÛn de fierro en la planta y es considerado un contaminante.
+* Alteraci√≥n sil√≠cea proveniente del intrusivo afecta a filones, diques y rellena fallas impactando el proceso de concentraci√≥n de fierro en la planta y es considerado un contaminante.
 
-Use el diagrama de flujo y gr·ficos para determinar cÛmo modelar y estimar el fierro, sÌlice y fÛsforo en el concentrado.
+Use el diagrama de flujo y gr√°ficos para determinar c√≥mo modelar y estimar el fierro, s√≠lice y f√≥sforo en el concentrado. 
