@@ -5,33 +5,33 @@ def geo_interp():
     
     st.image("..//slr_res_est_course//images//wireframe_header.jpg", use_column_width=True)
 
-    st.title("Interprtación Geológica")
+    st.title("Interprtacion Geoloogica")
 
     st.markdown("## Pregunta 1a: Elija una ley de corte para modelamiento")
     st.markdown("")
-    st.markdown("Tiene la tarea de construir un dominio de recursos minerales para un depósito de oro orogénico típico de Ontario.")
-    st.markdown("La mineralización es errática y, en su mayor parte, está alojada dentro de un basalto fracturado.")
-    st.markdown("Revise las siguientes secciones transversales que muestran la mineralización en una variedad de leyes de corte, así como la litología y responda las siguientes preguntas:")
+    st.markdown("Tiene la tarea de construir un dominio de recursos minerales para un deposito de oro orogonico tipico de Ontario.")
+    st.markdown("La mineralizacion es erretica y, en su mayor parte, esta alojada dentro de un basalto fracturado.")
+    st.markdown("Revise las siguientes secciones transversales que muestran la mineralizacion en una variedad de leyes de corte, asi como la litologia y responda las siguientes preguntas:")
 
     q1_options = ["Selecione una Respuesta",
-                  "25% de la ley de corte económica",
-                  "50% de la ley de corte económica",
-                  "75% de la ley de corte económica",
-                  "100% de la ley de corte económica",
+                  "25% de la ley de corte economica",
+                  "50% de la ley de corte economica",
+                  "75% de la ley de corte economica",
+                  "100% de la ley de corte economica",
                   "Limitar a la roca de caja independiente de la ley"]
 
-    st.radio("¿Qué ley de corte usaría para guiar su Dominio de Mineralización?", options=q1_options, key="q1")
+    st.radio("Que ley de corte usaria para guiar su Dominio de Mineralizacion?", options=q1_options, key="q1")
     st.markdown("## Respuesta: 25% de la ley de corte.")
     
 
-    st.markdown("## Question 1b: Cuál es el impacto?")
+    st.markdown("## Question 1b: Cual es el impacto?")
     q2_options = ["Selecione una Respuesta",
-                  "Tendré que manejar las altas leyes.",
-                  "Tendré que diseñar cuidadosamente la interpolación para no sobre suavizar leyes.",
-                  "Tendré que ser cauteloso sobre cómo conecto la mineralización en áreas menos perforadas.",
-                  "Tendré que confirmar esta opción usando análisis exploratorio de datos (EDA)."]
+                  "Tendra que manejar las altas leyes.",
+                  "Tendra que disenar cuidadosamente la interpolacion para no sobre suavizar leyes.",
+                  "Tendra que ser cauteloso sobre como conecto la mineralizacion en areas menos perforadas.",
+                  "Tendra que confirmar esta opcion usando analisis exploratorio de datos (EDA)."]
 
-    st.radio("¿Cómo afectará esta elección a la forma en que diseño el flujo de trabajo aguas abajo para la estimación de recursos minerales?", options=q2_options, key="q2")
+    st.radio("Como afectara esta eleccion a la forma en que diseno el flujo de trabajo aguas abajo para la estimacion de recursos minerales?", options=q2_options, key="q2")
     st.markdown("## Respuesta: Todas las anteriores.")
     st.write("")       
     st.write("")
@@ -65,10 +65,10 @@ def geo_interp():
     q3_options = ["Selecione una Respuesta",
                   "Todas combinadas.",
                   "Todas separadas.",
-                  "No hay necesidad de modelar fósforo.",
-                  "Sílice y hierro juntos, fósforo separado."]
+                  "No hay necesidad de modelar fosforo.",
+                  "Silice y hierro juntos, fosforo separado."]
 
-    st.radio("¿Cómo modelaré y estimaré estos elementos?", options=q3_options, key="q3")
+    st.radio("Como modelara y estimara estos elementos?", options=q3_options, key="q3")
     colz1, colz2, colz3 = st.columns((0.8,0.7,1))
     
     with colz1:
