@@ -1,0 +1,11 @@
+Estás comisionado a crear un modelo de recursos para un depósito de hematita/taconita. Las muestras corresponden a proceso de flotación de bancos diseñado para condiciones de planta mímica, el cual concentra fierro en un proceso de flotación reverso. Un modelo geológico y de alteración ha sido completado. 
+
+* Fósforo está presente en bajas concentraciones a través de la formación de fierro y es un contaminante. Concentración sobre el límite aceptable especificado del producto iron-pellet ocurre donde la formación de fierro ha sufrido meteorización.
+
+  * Un largo filón ha protegido de la meteorización en profundidad mucho de la formación de fierro.  Bajo el contacto inferior del filón, ocurren altos valores de Fósforo, además en áreas con una alta concentración de fallas.
+  * sobre el filón grande, la formación de fierro es instruida por muchos filones más pequeños y domina la oxidación penetrante.  Como consecuencia, la mayoría del material sobre el filón es estéril.
+  * Muestreo histórico no incluyó el análisis de Fósforo, y por lo tanto está inconsistentemente presente en la base d datos. 
+
+* Alteración silícea proveniente del intrusivo afecta a filones, diques y rellena fallas impactando el proceso de concentración de fierro en la planta y es considerado un contaminante.
+
+Use el diagrama de flujo y gráficos para determinar cómo modelar y estimar el fierro, sílice y fósforo en el concentrado.

@@ -1,0 +1,23 @@
+1. MII reportado en la fila final.
+
+2. No hay información sobre si los Recursos Minerales son Inclusivos o Exclusivos de las Reservas Minerales.
+
+3. Falta información sobre qué ley de corte es relevante para cada tipo de mineral.
+
+4. Faltan el precio del zinc.
+
+5. Falta el supuesto clave sobre si el depósito se explotará mediante minería subterránea o a cielo abierto.
+
+6. Falta la declaración que enfatiza que los Recursos Minerales no son Reservas Minerales y por tanto no tienen viabilidad económica demostrada.
+
+7. Demasiadas cifras significativas para el contenido de zinc.
+
+8. Demasiadas cifras significativas para la ley de plata.
+
+9. Sin unidad para la cantidad de material (Millones de Toneladas).
+
+10. No hay detalles sobre los supuestos metalúrgicos utilizados para generar la ley de corte.
+
+11. No hay información sobre cómo se determinaron las perspectivas razonables para una eventual extracción económica.
+
+12. Falta declaración que discuta todos los factores técnicos y económicos relevantes que puedan influir en la perspectiva de extracción económica, y si pueden resolverse con más trabajo.

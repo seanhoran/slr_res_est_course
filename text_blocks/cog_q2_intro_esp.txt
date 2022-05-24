@@ -1,0 +1,26 @@
+
+
+Recuperaciones Metalúrgicas 
+* Cu = **87%**
+* Au = **90%**
+
+Ley de Concentrado 
+* **25%** Cu  
+
+Metales Pagables
+* Cu = **90%**
+* Au = **99%** 
+
+Precios de Metales
+* Cu = **US$3.25/lb**
+* Au = **US$1,500/oz** 
+
+TC/RC  
+* Cu: TC = **$90/t** 
+* Cu: RC = **$0.09/lb**
+* Au: RC = **$5.00/oz**  
+
+Costos de Operación:
+* Mining: $50/t
+* Process: $20/t
+* G&A: $15/t
