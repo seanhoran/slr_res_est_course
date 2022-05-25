@@ -21,7 +21,7 @@ def geo_interp():
                   "Limitar a la roca de caja independiente de la ley"]
 
     st.radio("Que ley de corte usaria para guiar su Dominio de Mineralizacion?", options=q1_options, key="q1")
-#     st.markdown("## Respuesta: 25% de la ley de corte.")
+    st.markdown("## Respuesta: 25% de la ley de corte.")
     
 
     st.markdown("## Pregunta 1b: Cual es el impacto?")
