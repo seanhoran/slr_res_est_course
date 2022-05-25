@@ -5,7 +5,7 @@ def geo_interp():
     
     st.image("..//slr_res_est_course//images//wireframe_header.jpg", use_column_width=True)
 
-    st.title("Interprtacion Geoloogica")
+    st.title("Interpretacion Geologica")
 
     st.markdown("## Pregunta 1a: Elija una ley de corte para modelamiento")
     st.markdown("")
