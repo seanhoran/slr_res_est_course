@@ -21,7 +21,7 @@ def geo_interp():
                   "Limitar a la roca de caja independiente de la ley"]
 
     st.radio("Que ley de corte usaria para guiar su Dominio de Mineralizacion?", options=q1_options, key="q1")
-    st.markdown("## Respuesta: 25% de la ley de corte.")
+#     st.markdown("## Respuesta: 25% de la ley de corte.")
     
 
     st.markdown("## Pregunta 1b: Cual es el impacto?")
@@ -32,7 +32,7 @@ def geo_interp():
                   "Tendra que confirmar esta opcion usando analisis exploratorio de datos (EDA)."]
 
     st.radio("Como afectara esta eleccion a la forma en que diseno el flujo de trabajo aguas abajo para la estimacion de recursos minerales?", options=q2_options, key="q2")
-    st.markdown("## Respuesta: Todas las anteriores.")
+#     st.markdown("## Respuesta: Todas las anteriores.")
     st.write("")       
     st.write("")
     
@@ -90,5 +90,5 @@ def geo_interp():
     with colz3:
         sel_sect = st.selectbox("Display Section", options=['Si', 'Fe', 'P'], index=0, key='g1')
         st.image("..//slr_res_est_course//images//" + sel_sect + "_sect.jpg")
-    st.markdown("## Answer: Silica and iron together, phosphorus separate.")
+#     st.markdown("## Answer: Silica and iron together, phosphorus separate.")
 
