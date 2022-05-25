@@ -32,7 +32,7 @@ def geo_interp():
                   "Tendra que confirmar esta opcion usando analisis exploratorio de datos (EDA)."]
 
     st.radio("Como afectara esta eleccion a la forma en que diseno el flujo de trabajo aguas abajo para la estimacion de recursos minerales?", options=q2_options, key="q2")
-#     st.markdown("## Respuesta: Todas las anteriores.")
+    st.markdown("## Respuesta: Todas las anteriores.")
     st.write("")       
     st.write("")
     
