@@ -50,7 +50,7 @@ def capping_ex():
    st.image("..//slr_res_est_course//images//HG_LG_ObliqueCaps.jpg", use_column_width=True)
    st.subheader("Oblique View - Looking Along Strike")
   st.write("")
-  st.subheader("Respuesta: Algo esta mal: el conjunto de datos tiene una poblacion de alta ley que debe evaluarse de forma independiente.")
+#   st.subheader("Respuesta: Algo esta mal: el conjunto de datos tiene una poblacion de alta ley que debe evaluarse de forma independiente.")
   st.write("")
   st.write("")
   st.write("")
