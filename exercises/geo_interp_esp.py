@@ -90,5 +90,5 @@ def geo_interp():
     with colz3:
         sel_sect = st.selectbox("Display Section", options=['Si', 'Fe', 'P'], index=0, key='g1')
         st.image("..//slr_res_est_course//images//" + sel_sect + "_sect.jpg")
-#     st.markdown("## Answer: Silica and iron together, phosphorus separate.")
+    st.markdown("## Answer: Silica and iron together, phosphorus separate.")
 
