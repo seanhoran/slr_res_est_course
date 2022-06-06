@@ -13,28 +13,7 @@ def geo_interp():
     st.markdown("The mineralization is erratic and, for the most part, is hosted within a fractured basalt.")
     st.markdown("Review the following cross sections showing mineralization at a variety of cut-off grades, as well as lithology and answer the following questions:")
 
-    q1_options = ["Select an Answer",
-                  "25% of the economic cut-off",
-                  "50% of the economic cut-off",
-                  "75% of the economic cut-off",
-                  "100% of the economic cut-off",
-                  "Limit to host lithology irrespective of grade"]
-
-    st.radio("What cut-off grade will you use to guide your Mineralization Domain?", options=q1_options, key="q1")
-#     st.markdown("## Answer: 25% of the cut-off grade.")
     
-
-    st.markdown("## Question 1b: What is the impact?")
-    q2_options = ["Select an Answer",
-                  "I will need to manage high grades.",
-                  "I will need to carefully design the interpolation to not over-smooth grades.",
-                  "I will need to be cautious about how I connect mineralization in less tightly drilled areas.",
-                  "I will need to confirm this choice using exploratory data analysis (EDA)."]
-
-    st.radio("How will this choice impact how I design the downstream workflow for Mineral Resource estimation?", options=q2_options, key="q2")
-    st.markdown("## Answer: All of the above.")
-    st.write("")       
-    st.write("")
     
     
     
@@ -58,6 +37,29 @@ def geo_interp():
         cog2 = st.slider("Select a cut-off (% of economic cut-off)", min_value=0, value=0, step=1, max_value=4, key="sl2")
         st.image("..//slr_res_est_course//images//gt2" + str(int(cog2))+ ".jpg")
         
+    q1_options = ["Select an Answer",
+                  "25% of the economic cut-off",
+                  "50% of the economic cut-off",
+                  "75% of the economic cut-off",
+                  "100% of the economic cut-off",
+                  "Limit to host lithology irrespective of grade"]
+
+    st.radio("What cut-off grade will you use to guide your Mineralization Domain?", options=q1_options, key="q1")
+#     st.markdown("## Answer: 25% of the cut-off grade.")
+    
+
+    st.markdown("## Question 1b: What is the impact?")
+    q2_options = ["Select an Answer",
+                  "I will need to manage high grades.",
+                  "I will need to carefully design the interpolation to not over-smooth grades.",
+                  "I will need to be cautious about how I connect mineralization in less tightly drilled areas.",
+                  "I will need to confirm this choice using exploratory data analysis (EDA)."]
+
+    st.radio("How will this choice impact how I design the downstream workflow for Mineral Resource estimation?", options=q2_options, key="q2")
+#     st.markdown("## Answer: All of the above.")
+    st.write("")       
+    st.write("")
+    
     st.markdown("")
     st.markdown("## Question 2: Choose a domaining strategy")
     st.markdown("")
