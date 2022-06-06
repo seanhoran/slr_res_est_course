@@ -21,7 +21,7 @@ def geo_interp():
                   "Limit to host lithology irrespective of grade"]
 
     st.radio("What cut-off grade will you use to guide your Mineralization Domain?", options=q1_options, key="q1")
-    st.markdown("## Answer: 25% of the cut-off grade.")
+#     st.markdown("## Answer: 25% of the cut-off grade.")
     
 
     st.markdown("## Question 1b: What is the impact?")
@@ -36,8 +36,7 @@ def geo_interp():
     st.write("")       
     st.write("")
     
-    st.markdown("## Question 2: Choose a domaining strategy")
-    st.markdown("")
+    
     
     col1, col2, col3 = st.columns((1,1,1))
 
@@ -59,6 +58,8 @@ def geo_interp():
         cog2 = st.slider("Select a cut-off (% of economic cut-off)", min_value=0, value=0, step=1, max_value=4, key="sl2")
         st.image("..//slr_res_est_course//images//gt2" + str(int(cog2))+ ".jpg")
         
+    st.markdown("")
+    st.markdown("## Question 2: Choose a domaining strategy")
     st.markdown("")
     text = funcs.get_text_block("geo_interp_q2.txt")
     st.markdown(text)
