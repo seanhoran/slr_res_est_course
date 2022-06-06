@@ -13,10 +13,6 @@ def geo_interp():
     st.markdown("The mineralization is erratic and, for the most part, is hosted within a fractured basalt.")
     st.markdown("Review the following cross sections showing mineralization at a variety of cut-off grades, as well as lithology and answer the following questions:")
 
-    
-    
-    
-    
     col1, col2, col3 = st.columns((1,1,1))
 
     with col1:
